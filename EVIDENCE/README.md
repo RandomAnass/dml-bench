@@ -9,8 +9,8 @@ verify a claim go: paper → `claims_registry.csv` → `results/<directory>`
 
 | File | Purpose | Rows |
 |---|---|---:|
-| `claims_registry.csv` | Every numerical / structural claim in the paper, mapped to source files and producing script. | 276 |
-| `numbers_source_map.csv` | Every numerical *value* (with units) appearing in the paper, mapped to producing script + verification status. | 121 |
+| `claims_registry.csv` | Every numerical / structural claim in the paper, mapped to source files and producing script. | 275 |
+| `numbers_source_map.csv` | Every numerical *value* (with units) appearing in the paper, mapped to producing script + verification status. | 120 |
 | `README.md` | This file. | — |
 
 ## How a claim is verified
@@ -32,12 +32,11 @@ where the existing JSON is missing; running the aggregator
 
 ## Status notation in `claims_registry.csv`
 
-| Status | Meaning |
-|---|---|
-| `complete` | result corpus fully on disk; aggregator runs to completion |
-| `partial` | producing script exists but result dir empty / count below claim |
-| `pre-autodiff` | result was produced before the autodiff fix (commit `dc27c606`); kept for audit only |
-| `superseded` | claim or directory replaced by a newer entry; kept for audit trail |
+| Status | Count | Meaning |
+|---|---:|---|
+| `supported`   | 235 | claim is backed by JSONs on disk and an aggregator that reproduces the number. |
+| `partial`     |  33 | producing script exists but the result corpus is incomplete (cell count below the claim, or aggregator runs but covers a subset). |
+| `unsupported` |   7 | claim text in the paper is not yet backed by a runnable artefact (textbook value, deferred experiment, or audit-only). |
 
 ## Croissant integration
 
