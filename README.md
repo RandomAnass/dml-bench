@@ -10,7 +10,7 @@ This repository ships the code, configuration, and per-cell JSON corpus
 paper. Re-running the aggregator scripts on the released JSONs reproduces
 every numerical value without retraining.
 
-Anonymous code mirror: `https://anonymous.4open.science/r/dml-bench-XXXX`
+Anonymous code mirror: `https://anonymous.4open.science/r/dml-bench-EB7F`
 (URL added at submission). Hugging Face datasets and Zenodo DOIs at
 camera-ready (placeholders below).
 
@@ -33,7 +33,7 @@ camera-ready (placeholders below).
 ### 1. Clone
 
 ```bash
-git clone https://anonymous.4open.science/r/dml-bench-XXXX dml-bench
+git clone https://anonymous.4open.science/r/dml-bench-EB7F dml-bench
 cd dml-bench
 ```
 
@@ -198,7 +198,7 @@ Camera-ready will publish:
   `https://doi.org/10.5281/zenodo.XXXX` (added at camera-ready).
 
 The anonymous review-period URL is
-`https://anonymous.4open.science/r/dml-bench-XXXX` (URL added at submission).
+`https://anonymous.4open.science/r/dml-bench-EB7F` (URL added at submission).
 
 ---
 

@@ -57,7 +57,7 @@
   "conformsTo": "http://mlcommons.org/croissant/1.1",
   "description": "DML-Bench is a systematic benchmark for Derivative-enhanced Machine Learning (DML) covering four scientific-ML pillars: (i) a synthetic corpus of approximately 17,000 result cells across six function families (poly_trig, trig, step, heston, bachelier, barrier_bs), seven dimensions in [1, 50], six training-set sizes in [256, 32768], five gradient-noise levels, and five seeds; (ii) a 1,000-cell rMD17 molecular grid (10 molecules x 5 splits x 7 methods x 3 backbones: PaiNN, MLP, GATv2); (iii) PDEBench Burgers (1+1D) and Darcy (steady 2D) with two label regimes (bare and ic); (iv) a 1,440-cell SPY-options panel (240 temporal + 1,200 purged-CV, evaluated against both Black-Scholes and SVI supervisors). Each result cell records (function-family or dataset, dimension or grid, n_train, sigma-noise, seed, method) and reports test value MSE, test gradient MSE, training time, and run metadata. The benchmark answers when training neural networks with both function values and their derivatives helps versus hurts.",
   "license": "https://spdx.org/licenses/MIT.html",
-  "url": "https://anonymous.4open.science/r/dmlbench-XXXX",
+  "url": "https://anonymous.4open.science/r/dml-bench-EB7F",
   "version": "0.2.0-anonymous",
   "datePublished": "2026-05-03",
   "dateCreated": "2025-10-01",
@@ -78,7 +78,7 @@
     "differential-machine-learning",
     "responsible-ai"
   ],
-  "citeAs": "@misc{anonymous2026dmlbench,\n  title  = {DML-Bench: A Systematic Benchmark for Derivative-Enhanced Machine Learning},\n  author = {[Anonymous]},\n  year   = {2026},\n  note   = {NeurIPS 2026 Evaluations and Datasets Track submission, double-blind review},\n  url    = {https://anonymous.4open.science/r/dmlbench-XXXX}\n}",
+  "citeAs": "@misc{anonymous2026dmlbench,\n  title  = {DML-Bench: A Systematic Benchmark for Derivative-Enhanced Machine Learning},\n  author = {[Anonymous]},\n  year   = {2026},\n  note   = {NeurIPS 2026 Evaluations and Datasets Track submission, double-blind review},\n  url    = {https://anonymous.4open.science/r/dml-bench-EB7F}\n}",
   "creator": [
     {
       "@type": "sc:Person",
@@ -105,7 +105,7 @@
   "rai:dataLimitations": "Synthetic functions are smooth or piecewise-smooth in low dimensions; they do not capture realistic high-dimensional structure such as natural-image pixel correlations. The SPY options dataset is a single equity index over a finite calendar window (purged 5-fold CV with embargo) and may not transfer to other underlyings. The rMD17 subset covers ten small organic molecules; transfer to larger molecules or different chemistries is out of scope. PDEBench Burgers (1+1D) and Darcy (steady 2D) cover one viscosity and one beta value, respectively. Gradient labels for Heston and step functions are intentionally noisy or undefined and constitute deliberate failure cases.",
   "rai:personalSensitiveInformation": "None. The benchmark contains no personal data, no protected attributes, no biometric or health information, and no human-subject content. All data is either deterministically synthetic, derived from published scientific datasets (rMD17, PDEBench), or aggregated public market data (SPY end-of-day option chains, CC0).",
   "rai:dataSocialImpact": "DML-Bench is a methodology benchmark on synthetic data and public scientific datasets. Direct social impact is small: no people, no protected attributes, no biometrics, no health data. Indirect impact: by clarifying when derivative supervision helps, the benchmark can reduce wasted compute and energy in training-recipe search across scientific machine-learning communities. Estimated full-grid energy: approximately 150 kWh on 2x NVIDIA A6000 GPUs (carbon estimate documented in paper Section 8). Misuse risk: the SPY price-prediction component is a research benchmark, not a production trading signal; deployment without rigorous out-of-sample evaluation could lead to financial loss for the deployer.",
-  "rai:dataLifeCycle": "Code and synthetic generators are versioned in git (anonymous mirror at https://anonymous.4open.science/r/dmlbench-XXXX). Result JSONs are append-only; each cell is identified by (family/dataset, dim, n_train, noise, seed, method) and is reproducible from the runner script. The repository includes requirements-lock.txt and environment.yml for environment pinning. After camera-ready, the repository will be moved to a non-anonymous host (HuggingFace or Dataverse, decision pending) and a DOI will be minted. No deletion or expiry policy applies; superseded result files are archived under results/_archive_pre_publish_2026-05-03 with their original timestamps.",
+  "rai:dataLifeCycle": "Code and synthetic generators are versioned in git (anonymous mirror at https://anonymous.4open.science/r/dml-bench-EB7F). Result JSONs are append-only; each cell is identified by (family/dataset, dim, n_train, noise, seed, method) and is reproducible from the runner script. The repository includes requirements-lock.txt and environment.yml for environment pinning. After camera-ready, the repository will be moved to a non-anonymous host (HuggingFace or Dataverse, decision pending) and a DOI will be minted. No deletion or expiry policy applies; superseded result files are archived under results/_archive_pre_publish_2026-05-03 with their original timestamps.",
   "rai:responsibleUse": "Users should: (a) cite the original sources of redistributed data (rMD17: Christensen and von Lilienfeld 2020; PDEBench: Takamoto et al. 2022; SPY: Kaggle CC0 dump); (b) not use SPY supervised-learning results as a trading signal without independent forward-test validation; (c) not use rMD17-derived models as a substitute for ab initio simulation in safety-critical chemistry applications; (d) report seeds, method, dimension, n_train, and noise level when citing individual cells, since headline numbers depend strongly on these axes; (e) preserve the noise-level and function-family axes when reporting headline DML gains, since the benchmark documents regimes where DML hurts (heston, step, sigma > sigma_star).",
   "rai:hasSyntheticData": true,
   "rai:syntheticData": "The synthetic pillar (~17,000 result cells under results/tier3_benchmark and results/tier4_benchmark) is generated by deterministic, seeded function families. The rMD17, PDEBench, and SPY pillars are not synthetic.",
@@ -177,7 +177,7 @@
       "@id": "anonymous-repo",
       "name": "DML-Bench Anonymous Repository",
       "description": "Full benchmark code, data generators, experiment runners, and result JSONs (zip archive of the full repository tree, with internal notes and .git removed).",
-      "contentUrl": "https://anonymous.4open.science/r/dmlbench-XXXX",
+      "contentUrl": "https://anonymous.4open.science/r/dml-bench-EB7F",
       "encodingFormat": "application/zip",
       "md5": "98879d6181b8516b9189acf518adb978",
       "license": "https://spdx.org/licenses/MIT.html"
