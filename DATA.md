@@ -256,7 +256,7 @@ released JSON corpus into a Parquet-friendly layout for low-bandwidth
 reproduction:
 
 ```
-hf://datasets/dml-bench/dml-bench (placeholder)
+hf://datasets/[anonymous]/dml-bench    # populated at camera-ready
 ├── synthetic/
 │   └── per_cell.parquet           # union of tier1/2/3/4 with tier label
 ├── unified_comparison/

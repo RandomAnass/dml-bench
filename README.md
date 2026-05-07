@@ -10,9 +10,8 @@ This repository ships the code, configuration, and per-cell JSON corpus
 paper. Re-running the aggregator scripts on the released JSONs reproduces
 every numerical value without retraining.
 
-Anonymous code mirror: `https://anonymous.4open.science/r/dml-bench-EB7F`
-(URL added at submission). Hugging Face datasets and Zenodo DOIs at
-camera-ready (placeholders below).
+Anonymous code mirror: `https://anonymous.4open.science/r/dml-bench-EB7F`.
+The Hugging Face dataset URL and Zenodo DOI will be added at camera-ready.
 
 ---
 
@@ -191,14 +190,12 @@ Camera-ready will publish:
 
 - **Hugging Face dataset** — pre-processed JSON corpus + Parquet aggregates,
   validates against the Croissant 1.1 metadata in `metadata/croissant.json`.
-  Placeholder URL: `https://huggingface.co/datasets/dml-bench/XXXX` (added at
-  camera-ready).
+  URL added at camera-ready.
 - **Zenodo deposit** — frozen tarball of the code mirror at submission tag
-  with a permanent DOI. Placeholder DOI:
-  `https://doi.org/10.5281/zenodo.XXXX` (added at camera-ready).
+  with a permanent DOI. DOI added at camera-ready.
 
 The anonymous review-period URL is
-`https://anonymous.4open.science/r/dml-bench-EB7F` (URL added at submission).
+`https://anonymous.4open.science/r/dml-bench-EB7F`.
 
 ---
 

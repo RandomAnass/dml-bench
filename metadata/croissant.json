@@ -176,10 +176,10 @@
       "@type": "cr:FileObject",
       "@id": "anonymous-repo",
       "name": "DML-Bench Anonymous Repository",
-      "description": "Full benchmark code, data generators, experiment runners, and result JSONs (zip archive of the full repository tree, with internal notes and .git removed).",
+      "description": "Full benchmark code, data generators, experiment runners, and result JSONs. anonymous.4open.science serves the tree both browsable and as a downloadable zip; the md5 below corresponds to the canonical zip built from the export root with internal notes and .git removed.",
       "contentUrl": "https://anonymous.4open.science/r/dml-bench-EB7F",
       "encodingFormat": "application/zip",
-      "md5": "98879d6181b8516b9189acf518adb978",
+      "md5": "34d663783665a8d3649ce65c9cbeb71c",
       "license": "https://spdx.org/licenses/MIT.html"
     },
     {
@@ -442,6 +442,14 @@
       "@id": "synthetic-results",
       "name": "Synthetic benchmark results",
       "description": "One record per synthetic experiment cell: function family x dimension x n_train x noise x seed x method.",
+      "key": [
+        { "@id": "synthetic-results/func_type" },
+        { "@id": "synthetic-results/dim" },
+        { "@id": "synthetic-results/n_samples" },
+        { "@id": "synthetic-results/noise_level" },
+        { "@id": "synthetic-results/seed" },
+        { "@id": "synthetic-results/method" }
+      ],
       "field": [
         {
           "@type": "cr:Field",
@@ -647,6 +655,7 @@
       "@id": "molecular-results",
       "name": "rMD17 molecular benchmark results",
       "description": "One record per molecular cell: backbone x molecule x split x method. Backbone is implicit per FileSet (PaiNN, MLP, GATv2).",
+      "key": { "@id": "molecular-results/key" },
       "field": [
         {
           "@type": "cr:Field",
@@ -806,6 +815,12 @@
       "@id": "pde-results",
       "name": "PDEBench (Burgers and Darcy) benchmark results",
       "description": "One record per PDE cell: equation x label-regime x method x seed.",
+      "key": [
+        { "@id": "pde-results/equation" },
+        { "@id": "pde-results/regime" },
+        { "@id": "pde-results/method" },
+        { "@id": "pde-results/seed" }
+      ],
       "field": [
         {
           "@type": "cr:Field",
@@ -920,6 +935,14 @@
       "@id": "spy-results",
       "name": "SPY options benchmark results",
       "description": "One record per SPY options cell: split-mode x supervisor (BS or SVI) x method x n_train x seed x (fold for purged CV).",
+      "key": [
+        { "@id": "spy-results/split_mode" },
+        { "@id": "spy-results/supervisor" },
+        { "@id": "spy-results/method" },
+        { "@id": "spy-results/n_train" },
+        { "@id": "spy-results/seed" },
+        { "@id": "spy-results/fold" }
+      ],
       "field": [
         {
           "@type": "cr:Field",
