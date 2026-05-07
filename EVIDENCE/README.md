@@ -9,7 +9,7 @@ verify a claim go: paper → `claims_registry.csv` → `results/<directory>`
 
 | File | Purpose | Rows |
 |---|---|---:|
-| `claims_registry.csv` | Every numerical / structural claim in the paper, mapped to source files and producing script. | 275 |
+| `claims_registry.csv` | Every numerical / structural claim in the paper, mapped to source files and producing script. | 268 |
 | `numbers_source_map.csv` | Every numerical *value* (with units) appearing in the paper, mapped to producing script + verification status. | 120 |
 | `README.md` | This file. | — |
 
@@ -34,9 +34,13 @@ where the existing JSON is missing; running the aggregator
 
 | Status | Count | Meaning |
 |---|---:|---|
-| `supported`   | 235 | claim is backed by JSONs on disk and an aggregator that reproduces the number. |
-| `partial`     |  33 | producing script exists but the result corpus is incomplete (cell count below the claim, or aggregator runs but covers a subset). |
-| `unsupported` |   7 | claim text in the paper is not yet backed by a runnable artefact (textbook value, deferred experiment, or audit-only). |
+| `supported` | 235 | claim is backed by JSONs on disk and an aggregator that reproduces the number. |
+| `partial`   |  33 | producing script exists but the result corpus is incomplete (cell count below the claim, or aggregator runs but covers a subset). |
+
+The registry tracks experimental claims only. Textbook facts, citation
+claims, and compute totals are documented in the paper itself with
+inline references; they are not entered as registry rows because there
+is no JSON artefact to map onto.
 
 ## Croissant integration
 

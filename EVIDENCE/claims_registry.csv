@@ -66,8 +66,6 @@ C064,Step function pathwise gradient degrades DML by -945% on average,partial,re
 C065,Fuzzy smoothing mitigates step discontinuity to 0.9--1.6% penalty on barrier options,supported,results/unified_comparison/multi_seed/,experiments/unified_comparison/run_unified_experiment.py,narrative,medium,main
 C066,Heston MC Greeks have sigma_1/sigma_0 approx 50 yielding -198% advantage,partial,results/tier2_benchmark/;results/tier3_benchmark/,run_full_benchmark.py,narrative,medium,main
 C067,Real-world data represents about 3% of experiments,supported,results/spy_options_temporal/;results/spy_options_purged_cv/;results/gnn_md17/;results/realworld/,various,narrative,low,main
-C068,Total compute ~586 hours on 2x NVIDIA RTX A6000,unsupported,?,?,narrative,low,main
-C069,111 pytest tests released,unsupported,?,?,narrative,low,main
 C070,Architecture uses 4 hidden layers x 256 units softplus activation,supported,results/tier1_benchmark/;results/tier2_benchmark/,run_full_benchmark.py,narrative,low,main
 C071,Adam optimizer lr=5e-3 ReduceLROnPlateau factor=0.5 patience=20,supported,results/tier1_benchmark/;results/tier2_benchmark/,run_full_benchmark.py,narrative,low,main
 C072,Early stopping patience 50 on validation total loss,supported,results/tier1_benchmark/;results/tier2_benchmark/,run_full_benchmark.py,narrative,low,main
@@ -131,8 +129,6 @@ C129,poly_trig vs GP win rate 23.2%,supported,results/tier5_extended_baselines/;
 C130,step vs GP win rate 86.2%,supported,results/tier5_extended_baselines/;results/tier2_benchmark/,run_full_benchmark.py,tab:classical,low,appendix
 C131,trig vs GP win rate 34.8%,supported,results/tier5_extended_baselines/;results/tier2_benchmark/,run_full_benchmark.py,tab:classical,low,appendix
 C132,DML beats all three classical baselines simultaneously in 46.1% of configs,supported,results/tier5_extended_baselines/;results/tier2_benchmark/,run_full_benchmark.py,narrative,medium,appendix
-C133,GP limited to n<=8000 by O(n^3) scaling,unsupported,?,?,narrative,low,main
-C134,LRM variance O(1/sigma) for low-volatility regimes,unsupported,?,?,narrative,low,main
 C135,rMD17 ethanol 9 atoms aspirin 21 atoms,supported,results/gnn_md17/,md17 launcher,narrative,low,appendix
 C136,Unified comparison total 1155 experiments (550 main + 550 v1 LRM rerun + 55 pilot),supported,results/unified_comparison/multi_seed/;results/unified_comparison/multi_seed_v1_lrm_eval/,experiments/unified_comparison/run_unified_experiment.py,narrative,low,appendix
 C137,Higher-order DML 100 experiments total,supported,results/higher_order_dml/,higher-order launcher,narrative,low,appendix
@@ -152,7 +148,6 @@ C150,rMD17 uses 4x512 network for d>=36,supported,results/gnn_md17/,md17 launche
 C151,Synthetic corpus is ~17000 runs over 6 function families (revised abstract+intro),partial,results/tier1_benchmark/;results/tier2_benchmark/;results/tier3_benchmark/;results/tier4_benchmark/,run_full_benchmark.py,narrative,high,main
 C152,Real-world domains add ~2500 runs across 4 domains (revised intro 2026-05-06),partial,results/spy_options_temporal_optionA/;results/spy_options_temporal_optionC/;results/spy_options_purged_cv_optionA/;results/spy_options_purged_cv_optionC/;results/molecular_painn/;results/molecular_mlp/;results/molecular_gatv2/;results/burgers/;results/darcy/;results/era5/;results/heston_barrier_4way/,various,narrative,high,main
 C153,Eleven method-paradigm pairs evaluated (5 pathwise + 3 LRM + 2 fuzzy + vanilla zero-row),supported,results/unified_comparison/multi_seed/,experiments/unified_comparison/run_unified_experiment.py,tab:methods,medium,main
-C154,Total compute ~1030 GPU-h breakdown 250h synth/230h rMD17/370h PDE/145h SPY/35h ERA5+extrap+ablations,unsupported,?,?,narrative,low,main
 C155,Smooth zero-noise cells median ~13x value-MSE reduction,supported,results/tier1_benchmark/;results/tier2_benchmark/;results/tier3_benchmark/,run_full_benchmark.py,abstract,high,main
 C156,DML reduces gradient MSE on 96.8% of synthetic configs at sigma=0,supported,results/tier1_benchmark/;results/tier2_benchmark/;results/tier3_benchmark/,run_full_benchmark.py,tab:winrate-function,high,main
 C157,DML reduces value MSE on 66.7% of synthetic configs at sigma=0 (85.7% on smooth families),supported,results/tier1_benchmark/;results/tier2_benchmark/;results/tier3_benchmark/,run_full_benchmark.py,tab:winrate-function,high,main
@@ -236,7 +231,6 @@ C234,ERA5 60 runs (2 archs x 5 seeds x 2 regimes x 3 methods),supported,results/
 C235,Trig extrapolation 1500 runs (M1 + M2 combined),supported,results/extrapolation_M1/;results/extrapolation_M2/,experiments/extrapolation/,tab:headline,medium,main
 C236,Heston barrier label-noise warmup-as-curriculum confirms negative-control sigma=0 ratio 1.31 (DML hurt),supported,results/heston_barrier_4way/noise_curriculum/,experiments/heston_barrier_4way/run_noise_curriculum.py,narrative,medium,main
 C237,Far-extrapolation defeats every neural architecture (no positive sigma_star at any tested noise),supported,results/extrapolation_M1/sigma_star_summary.csv,experiments/extrapolation/pilot_periodic_extrap.py,tab:arch-sigma-star,medium,main
-C238,Polynomial-in-spot baseline missing from prior DML benchmarks (huge2020/glasserman2025/sakuma20260dte),unsupported,?,?,narrative,low,main
 C239,SPY Wilcoxon p<=0.002 across DML methods on temporal,supported,results/spy_options_temporal_optionA/,experiments/real_data_spy/run_spy_temporal.py,tab:spy-bs-temporal,medium,appendix
 C240,SPY purged-CV BS-target fixed-lambda DML deltas {-69 -44 -48 -39 +2879}% across folds 0-4,supported,results/spy_options_purged_cv_optionA/,experiments/real_data_spy/run_spy_purged_cv.py,fig:spy-purged-cv-per-fold,medium,appendix
 C241,SPY purged-CV SVI-supervised fixed-lambda DML deltas {-70 -37 -53 -22 +47}%,supported,results/spy_options_purged_cv_optionC/,experiments/real_data_spy/run_spy_purged_cv.py,fig:spy-purged-cv-per-fold,medium,appendix
@@ -273,4 +267,3 @@ C271,Heston cg_variance_check 40 cells LRM nstep variance,supported,results/hest
 C272,Heston gk_replication 21 cells Glasserman-Kou replication,supported,results/heston_barrier_4way/gk_replication/,experiments/heston_barrier_4way/run_gk_replication.py,narrative,low,appendix
 C273,Heston bs_reproduction 20 cells BS Heston-form reproduction,supported,results/heston_barrier_4way/bs_reproduction/,experiments/heston_barrier_4way/run_bs_reproduction.py,narrative,low,appendix
 C274,Released JSON corpus regenerates every table without retraining,supported,results/,evidence/ aggregators,narrative,low,main
-C275,Wall-clock breakdown synthetic ~250 GPU-h rMD17 ~230h PDE ~370h SPY ~145h ERA5+extrap+ablations ~35h,unsupported,?,?,narrative,low,main
