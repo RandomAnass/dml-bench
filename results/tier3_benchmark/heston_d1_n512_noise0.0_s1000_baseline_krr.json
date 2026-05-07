@@ -1,0 +1,14 @@
+{
+  "method": "baseline_krr",
+  "func_type": "heston",
+  "dim": 1,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 1000,
+  "lambda": 1.0,
+  "test_value_mse": 2.742122644914443,
+  "test_grad_mse": 331357.64657304424,
+  "time_s": 0.010364532470703125,
+  "key": "heston_d1_n512_noise0.0_s1000_baseline_krr",
+  "timestamp": "2026-04-08T10:21:45.240726"
+}

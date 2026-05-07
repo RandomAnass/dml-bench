@@ -1,0 +1,16 @@
+{
+  "method": "dml_relobralo",
+  "func_type": "step",
+  "dim": 1,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 456,
+  "lambda": 1.0,
+  "test_value_mse": 0.0986910931396306,
+  "test_grad_mse": 0.3206920274418005,
+  "best_epoch": 84,
+  "time_s": 3.408979892730713,
+  "n_epochs_actual": 135,
+  "key": "step_d1_n512_noise0.0_s456_dml_relobralo",
+  "timestamp": "2026-04-26T10:50:36.136848"
+}

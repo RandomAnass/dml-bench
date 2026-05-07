@@ -1,0 +1,16 @@
+{
+  "method": "dml_softmax_balance",
+  "func_type": "trig",
+  "dim": 50,
+  "n_samples": 8192,
+  "noise_level": 0.0,
+  "seed": 456,
+  "lambda": 1.0,
+  "test_value_mse": 36.0567512512207,
+  "test_grad_mse": 8.065831184387207,
+  "best_epoch": 5,
+  "time_s": 7.169519424438477,
+  "n_epochs_actual": 56,
+  "key": "trig_d50_n8192_noise0.0_s456_dml_softmax_balance",
+  "timestamp": "2026-04-26T13:22:45.641790"
+}

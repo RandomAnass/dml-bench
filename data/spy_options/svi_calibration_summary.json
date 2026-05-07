@@ -1,0 +1,26 @@
+{
+  "n_slices": 23335,
+  "n_quotes_total": 1576418,
+  "convergence_rate": 0.998842939790015,
+  "rmse_iv": {
+    "mean": 0.029835680880997806,
+    "median": 0.019897743695791822,
+    "p95": 0.08543834838843968
+  },
+  "rmse_total_variance": {
+    "mean": 0.001482247381507142,
+    "median": 0.001087388828366393
+  },
+  "data_sha16": "3813494ab98b3210",
+  "calibration_time_s": 359.0690019130707,
+  "coverage": {
+    "n_total": 1576419,
+    "n_fitted": 1576418,
+    "fraction_fitted": 0.9999993656508834
+  },
+  "sigma_SVI_vs_market": {
+    "abs_diff_mean": 0.03004279173910618,
+    "abs_diff_median": 0.015593156218528748,
+    "abs_diff_p95": 0.0986003577709198
+  }
+}

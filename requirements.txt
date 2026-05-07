@@ -1,0 +1,31 @@
+# DML Benchmark Requirements
+# These are the exact versions used to produce the published results.
+# Minimum compatible versions are in pyproject.toml.
+
+# Core ML
+torch>=2.1.0        # Tested: 2.8.0+cu128
+numpy>=1.24.0       # Tested: 2.2.6
+
+# JAX for function generators (exact gradients via autodiff)
+jax>=0.4.20         # Tested: 0.9.0.1
+jaxlib>=0.4.20
+
+# Visualization
+matplotlib>=3.8.0   # Tested: 3.10.3
+seaborn>=0.13.0     # Tested: 0.13.2
+plotly>=5.18.0      # Optional, for interactive plots
+
+# Scientific computing
+scipy>=1.11.0       # Tested: 1.15.3
+
+# Progress bars
+tqdm>=4.66.0        # Tested: 4.67.1
+
+# Data handling
+pandas>=2.1.0       # Tested: 2.2.3
+
+# Baselines (GP, KRR, RF)
+scikit-learn>=1.3.0  # Tested: 1.7.1
+
+# Testing
+pytest>=7.4.0       # Tested: 9.0.2

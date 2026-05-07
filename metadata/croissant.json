@@ -1,0 +1,1154 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "dct": "http://purl.org/dc/terms/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "equivalentProperty": {
+      "@id": "cr:equivalentProperty",
+      "@type": "@vocab"
+    },
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": {
+      "@id": "cr:samplingRate",
+      "@type": "sc:Number"
+    },
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "DML-Bench",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "description": "DML-Bench is a systematic benchmark for Derivative-enhanced Machine Learning (DML) covering four scientific-ML pillars: (i) a synthetic corpus of approximately 17,000 result cells across six function families (poly_trig, trig, step, heston, bachelier, barrier_bs), seven dimensions in [1, 50], six training-set sizes in [256, 32768], five gradient-noise levels, and five seeds; (ii) a 1,000-cell rMD17 molecular grid (10 molecules x 5 splits x 7 methods x 3 backbones: PaiNN, MLP, GATv2); (iii) PDEBench Burgers (1+1D) and Darcy (steady 2D) with two label regimes (bare and ic); (iv) a 1,440-cell SPY-options panel (240 temporal + 1,200 purged-CV, evaluated against both Black-Scholes and SVI supervisors). Each result cell records (function-family or dataset, dimension or grid, n_train, sigma-noise, seed, method) and reports test value MSE, test gradient MSE, training time, and run metadata. The benchmark answers when training neural networks with both function values and their derivatives helps versus hurts.",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "url": "https://anonymous.4open.science/r/dmlbench-XXXX",
+  "version": "0.2.0-anonymous",
+  "datePublished": "2026-05-03",
+  "dateCreated": "2025-10-01",
+  "dateModified": "2026-05-03",
+  "inLanguage": "en",
+  "keywords": [
+    "machine-learning",
+    "benchmark",
+    "derivatives",
+    "gradient-matching",
+    "neural-networks",
+    "scientific-ml",
+    "quantitative-finance",
+    "option-pricing",
+    "molecular-dynamics",
+    "PDE-solving",
+    "Sobolev-training",
+    "differential-machine-learning",
+    "responsible-ai"
+  ],
+  "citeAs": "@misc{anonymous2026dmlbench,\n  title  = {DML-Bench: A Systematic Benchmark for Derivative-Enhanced Machine Learning},\n  author = {[Anonymous]},\n  year   = {2026},\n  note   = {NeurIPS 2026 Evaluations and Datasets Track submission, double-blind review},\n  url    = {https://anonymous.4open.science/r/dmlbench-XXXX}\n}",
+  "creator": [
+    {
+      "@type": "sc:Person",
+      "name": "[Anonymous]",
+      "description": "Author identity withheld during NeurIPS 2026 Evaluations and Datasets Track double-blind review; restored at camera-ready."
+    }
+  ],
+  "publisher": {
+    "@type": "sc:Organization",
+    "name": "[Anonymous]",
+    "description": "Publisher identity withheld during double-blind review."
+  },
+  "rai:dataCollection": "Synthetic samples are generated deterministically by seeded function generators in dml_benchmark/functions.py (Black-Scholes, Bachelier, Heston, polynomial-trigonometric, trigonometric, step, barrier_bs) and recorded by experiments/run_full_benchmark.py. The rMD17 molecular geometries and energies/forces are taken verbatim from the published rMD17 release (Christensen and von Lilienfeld 2020) under CC-BY-4.0 and processed by experiments/molecular/run_painn.py, experiments/molecular/run_mlp.py, and experiments/molecular/run_gatv2.py. PDEBench Burgers (1+1D) and Darcy (steady 2D) fields are taken verbatim from the PDEBench release (Takamoto et al. 2022) under Apache-2.0 and consumed by scripts/run_burgers.py and scripts/run_darcy.py. SPY end-of-day option chains (2020-2022) are sourced from a public Kaggle dump licensed CC0 and processed by experiments/real_data_spy/build_spy_dataset.py to produce the SPY temporal split and 5-fold purged walk-forward CV. No human-subject data is collected.",
+  "rai:dataCollectionType": "Composite: deterministic synthetic generation; redistribution of published scientific datasets (rMD17, PDEBench); and processed redistribution of public CC0 financial market data (SPY).",
+  "rai:dataCollectionRawData": "Synthetic data is regenerated on demand from seeds (no raw archive). rMD17 raw data: https://figshare.com/articles/dataset/rMD17/12672038 . PDEBench raw data: https://github.com/pdebench/PDEBench . SPY raw data: public Kaggle SPY end-of-day options dump (CC0); the processed feature panel ships in data/spy_options/spy_processed.npz.",
+  "rai:dataCollectionTimeframe": "Software development: 2025-10 to 2026-05. Synthetic experiments: 2025-12 to 2026-05. SPY market window covered: 2020-01 to 2022-12. rMD17 source release: 2020. PDEBench source release: 2022.",
+  "rai:dataAnnotation": "All labels are machine-generated. Synthetic cells carry analytical ground-truth values and gradients (closed-form; or COS-method / reflection-principle / high-k MC LRM at k = 100,000 for the discontinuous-payoff subset). rMD17 cells carry the published energies and per-atom forces. PDEBench cells carry the published function fields plus PDE-residual targets. SPY cells carry market-quoted option prices and Black-Scholes-implied or SVI-implied auxiliary Greeks (delta, gamma, vega, theta) computed by build_spy_dataset.py. No human annotators were used; no annotation guidelines, demographics, or compensation apply.",
+  "rai:dataAnnotationProtocol": "Not applicable: labels are produced by deterministic mathematical procedures (analytical formulas, numerical integration, or physical simulation). The SPY auxiliary Greeks are computed by inverting the Black-Scholes formula and a fitted SVI surface; both procedures are fully specified in experiments/real_data_spy/build_spy_dataset.py.",
+  "rai:dataAnnotationPlatform": "None. No annotation platform or workforce was involved.",
+  "rai:dataAnnotationAnalysis": "Not applicable. Label provenance is deterministic and reproducible from seeds and source code.",
+  "rai:dataAnnotationPerItem": "Synthetic: per cell, ground-truth value and ground-truth gradient (vector of length d). rMD17: per cell, total energy and per-atom force vectors. PDEBench: per cell, function field on the simulation grid plus PDE-residual targets. SPY: per cell, market price and four Greeks (delta, gamma, vega, theta).",
+  "rai:dataUseCases": "Intended for: (a) controlled study of when derivative supervision improves regression of smooth or piecewise-smooth scalar fields; (b) replication and extension of Sobolev training, Differential ML, and PINN training-recipe results; (c) sensitivity analysis on noise level, sample size, dimension, function family, and balancer hyper-parameters; (d) cross-pillar comparison (synthetic vs molecular vs PDE vs financial). Out of scope: production option pricing, real-time molecular dynamics deployment, or any safety-critical decision system.",
+  "rai:dataBiases": "Synthetic data is unbiased by construction (deterministic generators with fixed seeds, full factorial across families x dims x sizes x noise x seeds). rMD17 inherits the original MD17 selection bias toward small flexible organic molecules. SPY-only finance results may overestimate gains for liquid US equity indices and underestimate them for less-liquid markets or non-equity instruments. PDEBench coverage of physics regimes is by design narrow (one diffusion coefficient for Burgers, one beta for Darcy).",
+  "rai:dataLimitations": "Synthetic functions are smooth or piecewise-smooth in low dimensions; they do not capture realistic high-dimensional structure such as natural-image pixel correlations. The SPY options dataset is a single equity index over a finite calendar window (purged 5-fold CV with embargo) and may not transfer to other underlyings. The rMD17 subset covers ten small organic molecules; transfer to larger molecules or different chemistries is out of scope. PDEBench Burgers (1+1D) and Darcy (steady 2D) cover one viscosity and one beta value, respectively. Gradient labels for Heston and step functions are intentionally noisy or undefined and constitute deliberate failure cases.",
+  "rai:personalSensitiveInformation": "None. The benchmark contains no personal data, no protected attributes, no biometric or health information, and no human-subject content. All data is either deterministically synthetic, derived from published scientific datasets (rMD17, PDEBench), or aggregated public market data (SPY end-of-day option chains, CC0).",
+  "rai:dataSocialImpact": "DML-Bench is a methodology benchmark on synthetic data and public scientific datasets. Direct social impact is small: no people, no protected attributes, no biometrics, no health data. Indirect impact: by clarifying when derivative supervision helps, the benchmark can reduce wasted compute and energy in training-recipe search across scientific machine-learning communities. Estimated full-grid energy: approximately 150 kWh on 2x NVIDIA A6000 GPUs (carbon estimate documented in paper Section 8). Misuse risk: the SPY price-prediction component is a research benchmark, not a production trading signal; deployment without rigorous out-of-sample evaluation could lead to financial loss for the deployer.",
+  "rai:dataLifeCycle": "Code and synthetic generators are versioned in git (anonymous mirror at https://anonymous.4open.science/r/dmlbench-XXXX). Result JSONs are append-only; each cell is identified by (family/dataset, dim, n_train, noise, seed, method) and is reproducible from the runner script. The repository includes requirements-lock.txt and environment.yml for environment pinning. After camera-ready, the repository will be moved to a non-anonymous host (HuggingFace or Dataverse, decision pending) and a DOI will be minted. No deletion or expiry policy applies; superseded result files are archived under results/_archive_pre_publish_2026-05-03 with their original timestamps.",
+  "rai:responsibleUse": "Users should: (a) cite the original sources of redistributed data (rMD17: Christensen and von Lilienfeld 2020; PDEBench: Takamoto et al. 2022; SPY: Kaggle CC0 dump); (b) not use SPY supervised-learning results as a trading signal without independent forward-test validation; (c) not use rMD17-derived models as a substitute for ab initio simulation in safety-critical chemistry applications; (d) report seeds, method, dimension, n_train, and noise level when citing individual cells, since headline numbers depend strongly on these axes; (e) preserve the noise-level and function-family axes when reporting headline DML gains, since the benchmark documents regimes where DML hurts (heston, step, sigma > sigma_star).",
+  "rai:hasSyntheticData": true,
+  "rai:syntheticData": "The synthetic pillar (~17,000 result cells under results/tier3_benchmark and results/tier4_benchmark) is generated by deterministic, seeded function families. The rMD17, PDEBench, and SPY pillars are not synthetic.",
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "Action",
+      "name": "experiments/run_full_benchmark.py",
+      "description": "Synthetic Tier 3-4 grid runner."
+    },
+    {
+      "@type": "Action",
+      "name": "experiments/molecular/run_painn.py",
+      "description": "rMD17 PaiNN runner."
+    },
+    {
+      "@type": "Action",
+      "name": "experiments/molecular/run_mlp.py",
+      "description": "rMD17 MLP runner."
+    },
+    {
+      "@type": "Action",
+      "name": "experiments/molecular/run_gatv2.py",
+      "description": "rMD17 GATv2 runner."
+    },
+    {
+      "@type": "Action",
+      "name": "scripts/run_burgers.py",
+      "description": "Burgers PDE runner (bare and ic regimes)."
+    },
+    {
+      "@type": "Action",
+      "name": "scripts/run_darcy.py",
+      "description": "Darcy PDE runner (bare and ic regimes)."
+    },
+    {
+      "@type": "Action",
+      "name": "experiments/real_data_spy/run_spy_experiment.py",
+      "description": "SPY temporal split runner (BS and SVI supervisors)."
+    },
+    {
+      "@type": "Action",
+      "name": "experiments/real_data_spy/run_spy_purged_cv.py",
+      "description": "SPY purged 5-fold walk-forward CV runner (BS and SVI supervisors)."
+    }
+  ],
+  "prov:wasDerivedFrom": [
+    {
+      "@type": "Dataset",
+      "name": "rMD17",
+      "url": "https://figshare.com/articles/dataset/rMD17/12672038",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "Dataset",
+      "name": "PDEBench",
+      "url": "https://github.com/pdebench/PDEBench",
+      "license": "https://spdx.org/licenses/Apache-2.0.html"
+    },
+    {
+      "@type": "Dataset",
+      "name": "SPY end-of-day options (Kaggle CC0)",
+      "description": "Public Kaggle dump of SPY end-of-day option chains 2020-2022.",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "anonymous-repo",
+      "name": "DML-Bench Anonymous Repository",
+      "description": "Full benchmark code, data generators, experiment runners, and result JSONs (zip archive of the full repository tree, with internal notes and .git removed).",
+      "contentUrl": "https://anonymous.4open.science/r/dmlbench-XXXX",
+      "encodingFormat": "application/zip",
+      "md5": "98879d6181b8516b9189acf518adb978",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "code-library",
+      "name": "DML benchmark library (dml_benchmark/)",
+      "description": "Core Python library: function generators, training loops, loss balancers, metrics, I/O.",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "text/x-python",
+      "includes": "dml_benchmark/**/*.py",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "code-experiments",
+      "name": "Per-pillar experiment runners (experiments/)",
+      "description": "Pillar-specific runner scripts: synthetic grid, molecular (PaiNN/MLP/GATv2), and SPY temporal/purged-CV.",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "text/x-python",
+      "includes": "experiments/**/*.py",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "code-scripts",
+      "name": "Orchestration scripts (scripts/)",
+      "description": "Top-level orchestration and PDEBench (Burgers, Darcy) runners.",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "text/x-python",
+      "includes": "scripts/**/*.py",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "paper-source",
+      "name": "Paper LaTeX source (paper/)",
+      "description": "LaTeX source for the accompanying paper (anonymous version).",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/x-tex",
+      "includes": "paper/**/*",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "tier3-results",
+      "name": "Tier 3 synthetic benchmark results",
+      "description": "Approximately 11,000 cells: 6 function families x 7 dimensions x 6 sample sizes x 5 noise levels x 5 seeds x methods (vanilla, dml_fixed, dml_fixed_half, dml_gradnorm, dml_relobralo, dml_warmup). One JSON per cell.",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/tier3_benchmark/*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "tier4-results",
+      "name": "Tier 4 synthetic benchmark results",
+      "description": "Approximately 1,100 cells extending Tier 3 with additional dimensions and sample sizes.",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/tier4_benchmark/*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "molecular-painn-results",
+      "name": "rMD17 PaiNN backbone results",
+      "description": "rMD17 cells with PaiNN backbone: 10 molecules x 5 splits x 7 methods.",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/molecular_painn/*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "molecular-mlp-results",
+      "name": "rMD17 MLP backbone results",
+      "description": "rMD17 cells with MLP backbone: 10 molecules x 5 splits x 7 methods.",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/molecular_mlp/*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "molecular-gatv2-results",
+      "name": "rMD17 GATv2 backbone results",
+      "description": "rMD17 cells with GATv2 backbone: 10 molecules x 5 splits x 7 methods.",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/molecular_gatv2/*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "burgers-bare-results",
+      "name": "PDEBench Burgers results (bare regime)",
+      "description": "Burgers 1+1D cells trained without IC supervision (bare).",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/burgers/bare/*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "burgers-ic-results",
+      "name": "PDEBench Burgers results (ic regime)",
+      "description": "Burgers 1+1D cells trained with initial-condition supervision (ic).",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/burgers/ic/*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "darcy-bare-results",
+      "name": "PDEBench Darcy results (bare regime)",
+      "description": "Darcy 2D steady-state cells trained without IC supervision (bare).",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/darcy/bare/*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "darcy-ic-results",
+      "name": "PDEBench Darcy results (ic regime)",
+      "description": "Darcy 2D steady-state cells trained with IC supervision (ic).",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/darcy/ic/*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "spy-temporal-bs-results",
+      "name": "SPY options results (temporal split, Black-Scholes supervisor)",
+      "description": "SPY options cells with temporal train/test split (train <= 2021-06, test >= 2021-07, 5-day embargo) and BS-derived Greeks as supervisor. Default n_train = 10,000 with 5 seeds and 5 methods.",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/spy_options_temporal/spy_n*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "spy-temporal-svi-A-results",
+      "name": "SPY options results (temporal split, SVI supervisor option A)",
+      "description": "Temporal-split SPY cells using SVI-implied Greeks (option A).",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/spy_options_temporal_optionA/spy_n*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "spy-temporal-svi-C-results",
+      "name": "SPY options results (temporal split, SVI supervisor option C)",
+      "description": "Temporal-split SPY cells using SVI-implied Greeks (option C).",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/spy_options_temporal_optionC/spy_n*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "spy-purged-bs-results",
+      "name": "SPY options results (purged walk-forward CV, Black-Scholes supervisor)",
+      "description": "Purged 5-fold walk-forward SPY cells with embargo (BS supervisor). Cell name pattern spy_cv_n{N}_s{seed}_f{fold}_{method}.json.",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/spy_options_purged_cv/spy_cv_*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "spy-purged-svi-A-results",
+      "name": "SPY options results (purged walk-forward CV, SVI supervisor option A)",
+      "description": "Purged 5-fold walk-forward SPY cells with SVI-implied supervisor (option A).",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/spy_options_purged_cv_optionA/spy_cv_*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "spy-purged-svi-C-results",
+      "name": "SPY options results (purged walk-forward CV, SVI supervisor option C)",
+      "description": "Purged 5-fold walk-forward SPY cells with SVI-implied supervisor (option C).",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "results/spy_options_purged_cv_optionC/spy_cv_*.json",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "spy-processed-data",
+      "name": "SPY options processed feature panel",
+      "description": "Preprocessed SPY end-of-day options panel (2020-2022): contracts with features [moneyness, T, r, iv, log_volume], Black-Scholes prices, and trading dates.",
+      "contentUrl": "data/spy_options/spy_processed.npz",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/x-numpy",
+      "md5": "30c36a993df86475174c94ed19b41b7c",
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "high-fidelity-refs",
+      "name": "High-fidelity gradient references",
+      "description": "Analytical and high-k MC gradient references for the synthetic discontinuous-payoff subset (barrier_bs reflection principle, heston_digital COS method, basket_d7 LRM at k=100,000).",
+      "containedIn": {
+        "@id": "anonymous-repo"
+      },
+      "encodingFormat": "application/x-numpy",
+      "includes": "data/high_fidelity_references/*.npz",
+      "license": "https://spdx.org/licenses/MIT.html"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "synthetic-results",
+      "name": "Synthetic benchmark results",
+      "description": "One record per synthetic experiment cell: function family x dimension x n_train x noise x seed x method.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/method",
+          "name": "method",
+          "description": "Training method (vanilla, dml_fixed, dml_fixed_half, dml_gradnorm, dml_relobralo, dml_warmup, etc.).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.method"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/func_type",
+          "name": "func_type",
+          "description": "Function family (poly_trig, trig, step, heston, bachelier, barrier_bs).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.func_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/dim",
+          "name": "dim",
+          "description": "Input dimensionality (1, 2, 5, 10, 20, 50).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.dim"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/n_samples",
+          "name": "n_samples",
+          "description": "Number of training samples (256, 1024, 4096, 8192, 16384, 32768).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.n_samples"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/noise_level",
+          "name": "noise_level",
+          "description": "Gradient noise standard deviation sigma.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.noise_level"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/seed",
+          "name": "seed",
+          "description": "Random seed (one of 5 fixed integers per cell).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.seed"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/lambda",
+          "name": "lambda",
+          "description": "Derivative-loss weight lambda.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.lambda"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/test_value_mse",
+          "name": "test_value_mse",
+          "description": "Test MSE of predicted function values.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.test_value_mse"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/test_grad_mse",
+          "name": "test_grad_mse",
+          "description": "Test MSE of predicted gradients (autograd) against high-fidelity references.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.test_grad_mse"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/best_epoch",
+          "name": "best_epoch",
+          "description": "Epoch at which best validation loss was achieved.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.best_epoch"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/time_s",
+          "name": "time_s",
+          "description": "Total training wall-clock time in seconds.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.time_s"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic-results/n_epochs_actual",
+          "name": "n_epochs_actual",
+          "description": "Number of training epochs actually executed (with early stopping).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "tier3-results"
+            },
+            "extract": {
+              "jsonPath": "$.n_epochs_actual"
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "synthetic-results/method": "dml_fixed",
+          "synthetic-results/func_type": "bachelier",
+          "synthetic-results/dim": 10,
+          "synthetic-results/n_samples": 1024,
+          "synthetic-results/noise_level": 0.05,
+          "synthetic-results/seed": 1000,
+          "synthetic-results/lambda": 1.0,
+          "synthetic-results/test_value_mse": 6.69e-08,
+          "synthetic-results/test_grad_mse": 4.51e-07,
+          "synthetic-results/best_epoch": 496,
+          "synthetic-results/time_s": 16.49,
+          "synthetic-results/n_epochs_actual": 500
+        }
+      ],
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "molecular-results",
+      "name": "rMD17 molecular benchmark results",
+      "description": "One record per molecular cell: backbone x molecule x split x method. Backbone is implicit per FileSet (PaiNN, MLP, GATv2).",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "molecular-results/key",
+          "name": "key",
+          "description": "Unique cell identifier (e.g., painn_md17_aspirin_split1_dml_fixed).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "molecular-painn-results"
+            },
+            "extract": {
+              "jsonPath": "$.key"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "molecular-results/method",
+          "name": "method",
+          "description": "Training method.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "molecular-painn-results"
+            },
+            "extract": {
+              "jsonPath": "$.method"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "molecular-results/model",
+          "name": "model",
+          "description": "Backbone identifier (e.g., PaiNN_schnetpack_v2.2.0, MLP, GATv2).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "molecular-painn-results"
+            },
+            "extract": {
+              "jsonPath": "$.model"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "molecular-results/molecule",
+          "name": "molecule",
+          "description": "Molecule name (one of 10 rMD17 molecules: aspirin, azobenzene, benzene, ethanol, malonaldehyde, naphthalene, paracetamol, salicylic_acid, toluene, uracil).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "molecular-painn-results"
+            },
+            "extract": {
+              "jsonPath": "$.molecule"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "molecular-results/split_id",
+          "name": "split_id",
+          "description": "rMD17 split index (1..5).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "molecular-painn-results"
+            },
+            "extract": {
+              "jsonPath": "$.split_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "molecular-results/test_value_mse",
+          "name": "test_value_mse",
+          "description": "Test MSE of predicted total energies.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "molecular-painn-results"
+            },
+            "extract": {
+              "jsonPath": "$.test_value_mse"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "molecular-results/test_grad_mse",
+          "name": "test_grad_mse",
+          "description": "Test MSE of predicted per-atom forces.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "molecular-painn-results"
+            },
+            "extract": {
+              "jsonPath": "$.test_grad_mse"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "molecular-results/test_energy_mae_kcal",
+          "name": "test_energy_mae_kcal",
+          "description": "Test energy MAE in kcal/mol.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "molecular-painn-results"
+            },
+            "extract": {
+              "jsonPath": "$.test_energy_mae_kcal"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "molecular-results/test_force_mae_kcal",
+          "name": "test_force_mae_kcal",
+          "description": "Test force MAE in kcal/mol/angstrom.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "molecular-painn-results"
+            },
+            "extract": {
+              "jsonPath": "$.test_force_mae_kcal"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "molecular-results/time_s",
+          "name": "time_s",
+          "description": "Training wall-clock time in seconds.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "molecular-painn-results"
+            },
+            "extract": {
+              "jsonPath": "$.time_s"
+            }
+          }
+        }
+      ],
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "pde-results",
+      "name": "PDEBench (Burgers and Darcy) benchmark results",
+      "description": "One record per PDE cell: equation x label-regime x method x seed.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "pde-results/method",
+          "name": "method",
+          "description": "Training method.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "burgers-bare-results"
+            },
+            "extract": {
+              "jsonPath": "$.method"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pde-results/equation",
+          "name": "equation",
+          "description": "PDE name (burgers or darcy).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "burgers-bare-results"
+            },
+            "extract": {
+              "jsonPath": "$.equation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pde-results/regime",
+          "name": "regime",
+          "description": "Label regime (bare or ic).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "burgers-bare-results"
+            },
+            "extract": {
+              "jsonPath": "$.regime"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pde-results/seed",
+          "name": "seed",
+          "description": "Random seed.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "burgers-bare-results"
+            },
+            "extract": {
+              "jsonPath": "$.seed"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pde-results/test_value_mse",
+          "name": "test_value_mse",
+          "description": "Test MSE of predicted PDE solution field.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "burgers-bare-results"
+            },
+            "extract": {
+              "jsonPath": "$.test_value_mse"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pde-results/test_grad_mse",
+          "name": "test_grad_mse",
+          "description": "Test MSE of PDE-residual gradients.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "burgers-bare-results"
+            },
+            "extract": {
+              "jsonPath": "$.test_grad_mse"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pde-results/time_s",
+          "name": "time_s",
+          "description": "Training wall-clock time in seconds.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "burgers-bare-results"
+            },
+            "extract": {
+              "jsonPath": "$.time_s"
+            }
+          }
+        }
+      ],
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "spy-results",
+      "name": "SPY options benchmark results",
+      "description": "One record per SPY options cell: split-mode x supervisor (BS or SVI) x method x n_train x seed x (fold for purged CV).",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "spy-results/method",
+          "name": "method",
+          "description": "Training method.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "spy-temporal-bs-results"
+            },
+            "extract": {
+              "jsonPath": "$.method"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spy-results/seed",
+          "name": "seed",
+          "description": "Random seed.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "spy-temporal-bs-results"
+            },
+            "extract": {
+              "jsonPath": "$.seed"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spy-results/n_train",
+          "name": "n_train",
+          "description": "Number of training samples (e.g., 10000).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "spy-temporal-bs-results"
+            },
+            "extract": {
+              "jsonPath": "$.n_train"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spy-results/split_mode",
+          "name": "split_mode",
+          "description": "Split mode (temporal or purged_walkforward).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "spy-temporal-bs-results"
+            },
+            "extract": {
+              "jsonPath": "$.split_mode"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spy-results/supervisor",
+          "name": "supervisor",
+          "description": "Greeks supervisor (bs, svi_optionA, svi_optionC).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "spy-temporal-bs-results"
+            },
+            "extract": {
+              "jsonPath": "$.supervisor"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spy-results/fold",
+          "name": "fold",
+          "description": "CV fold index (0..4 for purged_walkforward; absent for temporal). The same field schema applies to spy-purged-bs-results, spy-purged-svi-A-results, spy-purged-svi-C-results, spy-temporal-svi-A-results, and spy-temporal-svi-C-results FileSets.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "spy-temporal-bs-results"
+            },
+            "extract": {
+              "jsonPath": "$.fold"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spy-results/test_value_mse",
+          "name": "test_value_mse",
+          "description": "Test MSE for option price prediction.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "spy-temporal-bs-results"
+            },
+            "extract": {
+              "jsonPath": "$.test_value_mse"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spy-results/test_grad_mse",
+          "name": "test_grad_mse",
+          "description": "Test MSE for predicted Greeks (delta, gamma, vega, theta) against the BS or SVI supervisor.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileSet": {
+              "@id": "spy-temporal-bs-results"
+            },
+            "extract": {
+              "jsonPath": "$.test_grad_mse"
+            }
+          }
+        }
+      ],
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "benchmark-methods",
+      "name": "Benchmark methods enumeration",
+      "description": "Closed enumeration of training methods evaluated across pillars.",
+      "dataType": "sc:Enumeration",
+      "key": {
+        "@id": "benchmark-methods/name"
+      },
+      "field": [
+        {
+          "@id": "benchmark-methods/name",
+          "@type": "cr:Field",
+          "name": "name",
+          "dataType": "sc:Text"
+        },
+        {
+          "@id": "benchmark-methods/description",
+          "@type": "cr:Field",
+          "name": "description",
+          "dataType": "sc:Text"
+        }
+      ],
+      "data": [
+        {
+          "benchmark-methods/name": "vanilla",
+          "benchmark-methods/description": "Standard MSE training without derivative supervision."
+        },
+        {
+          "benchmark-methods/name": "dml_fixed",
+          "benchmark-methods/description": "DML with fixed lambda=1 weighting (Huge and Savine 2020)."
+        },
+        {
+          "benchmark-methods/name": "dml_fixed_half",
+          "benchmark-methods/description": "DML with fixed lambda=0.5 (equal-weight value/derivative)."
+        },
+        {
+          "benchmark-methods/name": "dml_gradnorm",
+          "benchmark-methods/description": "DML with GradNorm adaptive loss balancing (Chen et al. 2018)."
+        },
+        {
+          "benchmark-methods/name": "dml_relobralo",
+          "benchmark-methods/description": "DML with ReLoBRaLo balancing (Bischof and Kraus 2021)."
+        },
+        {
+          "benchmark-methods/name": "dml_warmup",
+          "benchmark-methods/description": "Vanilla pre-training phase followed by DML fine-tuning."
+        },
+        {
+          "benchmark-methods/name": "dml_softmax_balance",
+          "benchmark-methods/description": "Softmax-temperature balancer between value and derivative losses."
+        }
+      ],
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "function-families",
+      "name": "Synthetic function families enumeration",
+      "description": "Closed enumeration of the six synthetic-pillar function families.",
+      "dataType": "sc:Enumeration",
+      "key": {
+        "@id": "function-families/name"
+      },
+      "field": [
+        {
+          "@id": "function-families/name",
+          "@type": "cr:Field",
+          "name": "name",
+          "dataType": "sc:Text"
+        },
+        {
+          "@id": "function-families/description",
+          "@type": "cr:Field",
+          "name": "description",
+          "dataType": "sc:Text"
+        }
+      ],
+      "data": [
+        {
+          "function-families/name": "poly_trig",
+          "function-families/description": "Polynomial-times-trigonometric smooth function family."
+        },
+        {
+          "function-families/name": "trig",
+          "function-families/description": "Sum of high-frequency trigonometric components per dimension."
+        },
+        {
+          "function-families/name": "step",
+          "function-families/description": "Piecewise-constant step function (deliberate failure case for DML)."
+        },
+        {
+          "function-families/name": "heston",
+          "function-families/description": "Heston stochastic-volatility option pricer with noisy MC Greeks (deliberate failure case)."
+        },
+        {
+          "function-families/name": "bachelier",
+          "function-families/description": "Bachelier (normal model) option pricer with analytical Greeks."
+        },
+        {
+          "function-families/name": "barrier_bs",
+          "function-families/description": "Black-Scholes barrier option with reflection-principle Greeks."
+        }
+      ],
+      "license": "https://spdx.org/licenses/MIT.html"
+    }
+  ]
+}

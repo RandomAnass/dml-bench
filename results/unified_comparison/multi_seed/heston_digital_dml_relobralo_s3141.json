@@ -1,0 +1,29 @@
+{
+  "dataset": "heston_digital",
+  "method": "dml_relobralo",
+  "seed": 3141,
+  "dim": 1,
+  "n_train": 820,
+  "n_test": 204,
+  "test_value_mse": 0.027045473978675974,
+  "test_grad_mse": 5.635821893716841e-05,
+  "time_s": 2.35,
+  "best_epoch": 33,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 14.03429327915081,
+  "lrm_var_mean": 0.050540563800290164,
+  "eval_source": "cos_method_semi_analytical",
+  "mode": "multi_seed",
+  "key": "heston_digital_dml_relobralo_s3141",
+  "timestamp": "2026-04-26T07:40:15.940805"
+}

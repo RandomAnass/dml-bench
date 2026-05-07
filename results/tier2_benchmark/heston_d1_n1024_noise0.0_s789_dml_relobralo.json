@@ -1,0 +1,16 @@
+{
+  "method": "dml_relobralo",
+  "func_type": "heston",
+  "dim": 1,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 789,
+  "lambda": 1.0,
+  "test_value_mse": 0.5618388891223332,
+  "test_grad_mse": 394136.2556888564,
+  "best_epoch": 37,
+  "time_s": 2.9769699573516846,
+  "n_epochs_actual": 88,
+  "key": "heston_d1_n1024_noise0.0_s789_dml_relobralo",
+  "timestamp": "2026-04-26T08:18:33.326856"
+}

@@ -1,0 +1,14 @@
+{
+  "method": "baseline_rf",
+  "func_type": "step",
+  "dim": 20,
+  "n_samples": 2048,
+  "noise_level": 0.0,
+  "seed": 42,
+  "lambda": 1.0,
+  "test_value_mse": 0.7356248557528993,
+  "test_grad_mse": 344.0454719995211,
+  "time_s": 7.271574020385742,
+  "key": "step_d20_n2048_noise0.0_s42_baseline_rf",
+  "timestamp": "2026-04-12T18:07:41.185951"
+}

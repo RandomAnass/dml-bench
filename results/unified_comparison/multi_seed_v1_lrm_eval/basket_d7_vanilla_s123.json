@@ -1,0 +1,29 @@
+{
+  "dataset": "basket_d7",
+  "method": "vanilla",
+  "seed": 123,
+  "dim": 7,
+  "n_train": 3277,
+  "n_test": 819,
+  "test_value_mse": 0.023570210098568245,
+  "test_grad_mse": 0.00022527932262762814,
+  "time_s": 6.58,
+  "best_epoch": 1,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 7.724765391123021,
+  "lrm_var_mean": 0.0019414632541244713,
+  "eval_source": "lrm",
+  "mode": "multi_seed",
+  "key": "basket_d7_vanilla_s123",
+  "timestamp": "2026-02-23T15:16:46.837922"
+}

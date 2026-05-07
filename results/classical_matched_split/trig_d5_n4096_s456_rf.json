@@ -1,0 +1,17 @@
+{
+  "method": "baseline_rf",
+  "func_type": "trig",
+  "dim": 5,
+  "n_samples": 4096,
+  "n_train": 2620,
+  "n_val": 656,
+  "n_test": 820,
+  "noise_level": 0.0,
+  "seed": 456,
+  "lambda": null,
+  "split_train_frac": 0.64,
+  "test_value_mse": 1.1986178452080714,
+  "test_grad_mse": 4471.119291247045,
+  "time_s": 1.0924277305603027,
+  "baseline_fit_time_s": null
+}

@@ -1,0 +1,17 @@
+{
+  "method": "baseline_krr",
+  "func_type": "trig",
+  "dim": 20,
+  "n_samples": 4096,
+  "n_train": 2620,
+  "n_val": 656,
+  "n_test": 820,
+  "noise_level": 0.0,
+  "seed": 123,
+  "lambda": null,
+  "split_train_frac": 0.64,
+  "test_value_mse": 14.535601615905762,
+  "test_grad_mse": 7.702041949455519,
+  "time_s": 43.104129791259766,
+  "baseline_fit_time_s": null
+}

@@ -1,0 +1,14 @@
+{
+  "method": "baseline_gp",
+  "func_type": "bachelier",
+  "dim": 20,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 2000,
+  "lambda": 1.0,
+  "test_value_mse": 3.582709911925771e-08,
+  "test_grad_mse": 8.415636225337105e-08,
+  "time_s": 6.217324733734131,
+  "key": "bachelier_d20_n1024_noise0.0_s2000_baseline_gp",
+  "timestamp": "2026-04-14T21:39:39.836290"
+}

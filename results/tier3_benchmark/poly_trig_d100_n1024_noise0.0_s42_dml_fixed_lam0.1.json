@@ -1,0 +1,16 @@
+{
+  "method": "dml_fixed",
+  "func_type": "poly_trig",
+  "dim": 100,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 42,
+  "lambda": 0.1,
+  "test_value_mse": 3.9484822750091553,
+  "test_grad_mse": 0.7249202132225037,
+  "best_epoch": 73,
+  "time_s": 5.446043014526367,
+  "n_epochs_actual": 124,
+  "key": "poly_trig_d100_n1024_noise0.0_s42_dml_fixed_lam0.1",
+  "timestamp": "2026-04-10T19:40:49.943877"
+}

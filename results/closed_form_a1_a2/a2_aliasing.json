@@ -1,0 +1,44 @@
+{
+  "a2_aliasing": {
+    "N": 24,
+    "phi5_phi7_per_N": {
+      "sin5_sin7": -0.5000000000000002,
+      "cos5_cos7": 0.4999999999999998,
+      "sin5_cos7": -5.782411586589357e-17,
+      "cos5_sin7": 1.1564823173178714e-17
+    },
+    "psi5_psi7_per_N": {
+      "dsin5_dsin7": 690.8723080762547,
+      "dcos5_dcos7": -690.8723080762553,
+      "dsin5_dcos7": -2.3684757858670007e-14,
+      "dcos5_dsin7": 8.052817671947803e-14
+    },
+    "expected": {
+      "sin5_sin7_or_cos5_cos7": -0.5,
+      "dsin5_dsin7_or_dcos5_dcos7": 690.8723080762551,
+      "70_pi_sq_value": 690.8723080762551
+    }
+  },
+  "a2_no_aliasing": {
+    "N": 24,
+    "K": 5,
+    "K_prime": 6,
+    "no_alias_condition_holds": true,
+    "phi_in_phi_out_op_norm_per_N": 1.1169888930384522e-15,
+    "psi_in_psi_out_op_norm_per_N": 6.92484842887124e-13
+  },
+  "mc_check": {
+    "K": 5,
+    "N": 500,
+    "sigma_y": 0.1,
+    "x_test": 1.0,
+    "n_trials_per_sigma": 4000,
+    "empirical_sigma_star": 1.1456663262197844,
+    "formula_sigma_star": 1.1827890883530054,
+    "rel_err_pct": -3.1385783398554423
+  },
+  "smoke": {
+    "K=1_sigmaY=0_finite_sigmaStar": 0.0,
+    "K=5_sigmaY=0_finite_sigmaStar": 0.0
+  }
+}

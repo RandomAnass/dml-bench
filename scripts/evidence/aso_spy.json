@@ -1,0 +1,32 @@
+{
+  "n_vanilla": 100,
+  "method_n": {
+    "dml_relobralo": 100,
+    "dml_warmup": 100,
+    "dml_fixed": 100,
+    "vanilla": 100,
+    "dml_gradnorm": 100
+  },
+  "results": {
+    "dml_fixed": {
+      "epsilon_dml_dominates_vanilla": 0.0,
+      "n_dml": 100,
+      "interpretation": "epsilon < 0.5 \u21d2 DML almost-stochastically dominates vanilla on grad MSE; epsilon close to 0 \u21d2 near-complete dominance; epsilon \u2265 0.5 \u21d2 no dominance claim (Dror et al. 2019)."
+    },
+    "dml_gradnorm": {
+      "epsilon_dml_dominates_vanilla": 0.0,
+      "n_dml": 100,
+      "interpretation": "epsilon < 0.5 \u21d2 DML almost-stochastically dominates vanilla on grad MSE; epsilon close to 0 \u21d2 near-complete dominance; epsilon \u2265 0.5 \u21d2 no dominance claim (Dror et al. 2019)."
+    },
+    "dml_relobralo": {
+      "epsilon_dml_dominates_vanilla": 0.0,
+      "n_dml": 100,
+      "interpretation": "epsilon < 0.5 \u21d2 DML almost-stochastically dominates vanilla on grad MSE; epsilon close to 0 \u21d2 near-complete dominance; epsilon \u2265 0.5 \u21d2 no dominance claim (Dror et al. 2019)."
+    },
+    "dml_warmup": {
+      "epsilon_dml_dominates_vanilla": 0.0,
+      "n_dml": 100,
+      "interpretation": "epsilon < 0.5 \u21d2 DML almost-stochastically dominates vanilla on grad MSE; epsilon close to 0 \u21d2 near-complete dominance; epsilon \u2265 0.5 \u21d2 no dominance claim (Dror et al. 2019)."
+    }
+  }
+}

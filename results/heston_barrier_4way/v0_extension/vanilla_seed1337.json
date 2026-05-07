@@ -1,0 +1,45 @@
+{
+  "method": "vanilla",
+  "label_method": "pathwise",
+  "trainer_method": "vanilla",
+  "seed": 1337,
+  "test_value_mse": 3.299119218766361e-05,
+  "test_grad_mse": 0.17869251313023046,
+  "best_epoch": 96,
+  "time_s": 8.22,
+  "data_gen_s": 0.12,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "lambda_": 1.0,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5,
+    "early_stopping_patience": 200
+  },
+  "heston_params": {
+    "strike": 1.0,
+    "barrier": 0.85,
+    "kappa": 1.0,
+    "theta": 0.04,
+    "sigma_v": 0.15,
+    "rho": -0.7,
+    "r": 0.0,
+    "T1": 0.3333333333333333,
+    "T2": 0.6666666666666666,
+    "n_substeps_to_T1": 84,
+    "n_substeps_T1_to_T2": 84
+  },
+  "spot_range": [
+    0.5,
+    1.5
+  ],
+  "v0_range": [
+    0.5,
+    1.5
+  ]
+}

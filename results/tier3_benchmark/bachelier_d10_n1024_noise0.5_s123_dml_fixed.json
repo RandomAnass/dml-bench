@@ -1,0 +1,14 @@
+{
+  "method": "dml_fixed",
+  "func_type": "bachelier",
+  "dim": 10,
+  "n_samples": 1024,
+  "noise_level": 0.5,
+  "seed": 123,
+  "lambda": 1.0,
+  "test_value_mse": 4.962388201538269e-07,
+  "test_grad_mse": 2.4562592436359635e-06,
+  "best_epoch": 103,
+  "time_s": 6.088998556137085,
+  "n_epochs_actual": 154
+}

@@ -1,0 +1,68 @@
+{
+  "config": {
+    "tier": 4,
+    "name": "Statistical Power (10 seeds) + Training Logs"
+  },
+  "n_experiments": 1095,
+  "errors": [],
+  "total_time_s": 16801.229738473892,
+  "timestamp": "2026-04-15T01:57:38.191414",
+  "method_summary": {
+    "baseline_krr": {
+      "mean_value_mse": 1.4664498855533812,
+      "std_value_mse": 3.776974036457553,
+      "mean_grad_mse": 14972.714144322266,
+      "std_grad_mse": 74702.40961794519,
+      "mean_time_s": 0.5927358169555664,
+      "count": 125
+    },
+    "vanilla": {
+      "mean_value_mse": 5.127504407301147,
+      "std_value_mse": 15.364678116321297,
+      "mean_grad_mse": 10413.35343003396,
+      "std_grad_mse": 62729.12015847299,
+      "mean_time_s": 6.560650621520148,
+      "count": 180
+    },
+    "dml_relobralo": {
+      "mean_value_mse": 4.930902288749097,
+      "std_value_mse": 15.532567270315607,
+      "mean_grad_mse": 10512.448844824115,
+      "std_grad_mse": 63417.255663256445,
+      "mean_time_s": 10.1462955488099,
+      "count": 180
+    },
+    "dml_gradnorm": {
+      "mean_value_mse": 6.461013433604416,
+      "std_value_mse": 23.86771697758861,
+      "mean_grad_mse": 10439.663786720766,
+      "std_grad_mse": 62912.23251869828,
+      "mean_time_s": 24.99392827881707,
+      "count": 180
+    },
+    "baseline_gp": {
+      "mean_value_mse": 1.1890809083996454,
+      "std_value_mse": 3.8036669950818385,
+      "mean_grad_mse": 14988.436243651286,
+      "std_grad_mse": 74780.47198433461,
+      "mean_time_s": 52.288700239181516,
+      "count": 125
+    },
+    "dml_fixed": {
+      "mean_value_mse": 4.926114595380327,
+      "std_value_mse": 15.424736159516941,
+      "mean_grad_mse": 10508.080688451864,
+      "std_grad_mse": 63323.01946001432,
+      "mean_time_s": 10.895697661240895,
+      "count": 180
+    },
+    "baseline_rf": {
+      "mean_value_mse": 1.2041664471655626,
+      "std_value_mse": 2.9855523046393335,
+      "mean_grad_mse": 16564.996023095715,
+      "std_grad_mse": 77176.29278867554,
+      "mean_time_s": 3.4287524852752687,
+      "count": 125
+    }
+  }
+}

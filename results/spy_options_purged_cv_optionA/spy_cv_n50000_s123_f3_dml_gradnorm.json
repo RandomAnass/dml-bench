@@ -1,0 +1,74 @@
+{
+  "method": "dml_gradnorm",
+  "seed": 123,
+  "dataset": "spy_options",
+  "n_train": 50000,
+  "n_test": 10000,
+  "dim": 4,
+  "split_mode": "purged_walkforward",
+  "fold_idx": 3,
+  "n_folds": 5,
+  "test_value_mse": 1.7198366587383954e-08,
+  "test_grad_mse": 3.550159521962283e-06,
+  "best_epoch": 92,
+  "time_s": 270.2,
+  "bs_vs_mid_rmse": 0.008253703994580294,
+  "metadata": {
+    "dataset": "spy_options_2020_2022",
+    "source": "Kaggle SPY EOD, CC0 license",
+    "target_mode": "bs_price",
+    "n_total_available": 1576419,
+    "n_train": 50000,
+    "n_test": 10000,
+    "d": 4,
+    "features": [
+      "moneyness",
+      "T",
+      "r",
+      "iv"
+    ],
+    "include_volume": false,
+    "moneyness_range": [
+      0.8500550964187328,
+      1.149972972972973
+    ],
+    "T_range": [
+      0.019274469541409992,
+      3.0006844626967832
+    ],
+    "iv_range": [
+      0.06378,
+      1.18781
+    ],
+    "y_range": [
+      0.00010364914077366436,
+      0.30494984528749147
+    ],
+    "bs_vs_mid_rmse": 0.008253703994580294,
+    "split_mode": "purged_walkforward",
+    "fold_idx": 3,
+    "n_folds": 5,
+    "embargo_days": 5,
+    "train_end_date": "2021-12-28",
+    "test_start_date": "2022-01-05",
+    "test_end_date": "2022-07-04",
+    "train_pool_size": 1071985,
+    "test_pool_size": 263538,
+    "stratify_by_moneyness": true,
+    "seed": 123
+  },
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 512,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "lambda_": 1.0,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "key": "spy_cv_n50000_s123_f3_dml_gradnorm",
+  "timestamp": "2026-05-01T00:19:22.647756"
+}

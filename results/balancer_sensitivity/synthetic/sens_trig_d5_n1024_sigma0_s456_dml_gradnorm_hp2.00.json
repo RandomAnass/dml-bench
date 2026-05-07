@@ -1,0 +1,17 @@
+{
+  "key": "sens_trig_d5_n1024_sigma0_s456_dml_gradnorm_hp2.00",
+  "kind": "synthetic",
+  "func_type": "trig",
+  "dim": 5,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 456,
+  "method": "dml_gradnorm",
+  "hp_name": "alpha",
+  "hp_value": 2.0,
+  "test_value_mse": 5.488242149353027,
+  "test_grad_mse": 11.234543800354004,
+  "best_epoch": 0,
+  "early_stopped": true,
+  "time_s": 14.486668586730957
+}

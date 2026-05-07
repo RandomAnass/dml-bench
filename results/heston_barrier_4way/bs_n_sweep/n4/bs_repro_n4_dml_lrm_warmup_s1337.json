@@ -1,0 +1,10 @@
+{
+  "method": "dml_lrm_warmup",
+  "seed": 1337,
+  "n_monitor": 4,
+  "test_value_mse": 0.08454759445637365,
+  "test_grad_mse": 0.0013688355787588216,
+  "best_epoch": 290,
+  "time_s": 13.95,
+  "data_gen_s": 0.0
+}

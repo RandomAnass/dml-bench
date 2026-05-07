@@ -1,0 +1,16 @@
+{
+  "method": "vanilla",
+  "func_type": "trig",
+  "dim": 50,
+  "n_samples": 4096,
+  "noise_level": 0.05,
+  "seed": 456,
+  "lambda": 1.0,
+  "test_value_mse": 38.116764068603516,
+  "test_grad_mse": 8.097672462463379,
+  "best_epoch": 10,
+  "time_s": 5.606605052947998,
+  "n_epochs_actual": 61,
+  "key": "trig_d50_n4096_noise0.05_s456_vanilla",
+  "timestamp": "2026-04-07T13:51:14.773357"
+}

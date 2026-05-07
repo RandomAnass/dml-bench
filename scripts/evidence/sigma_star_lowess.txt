@@ -1,0 +1,6 @@
+σ* (noise crossover, LOWESS on log10(MSE_dml / MSE_vanilla))
+  LOWESS frac: 0.4    bootstrap n: 1000
+
+  poly_trig    σ* = 0.1949      95% CI [0.1631, 0.2585]  status=observed
+  trig         σ* = 0.0978      95% CI [0.0749, 0.1369]  status=observed
+  bachelier    σ* = 0.3838      95% CI [0.3386, 0.4326]  status=observed

@@ -1,0 +1,16 @@
+{
+  "key": "p6_trig_d5_mixed_sev0.05_dml_fixed_s789",
+  "method": "dml_fixed",
+  "dataset": "trig",
+  "corruption_type": "mixed",
+  "severity": 0.05,
+  "dim": 5,
+  "seed": 789,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.3979683816432953,
+  "test_grad_mse": 0.8178358674049377,
+  "best_epoch": 299,
+  "time_s": 20.079837799072266,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

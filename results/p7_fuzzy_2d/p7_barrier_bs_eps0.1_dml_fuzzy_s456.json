@@ -1,0 +1,13 @@
+{
+  "key": "p7_barrier_bs_eps0.1_dml_fuzzy_s456",
+  "method": "dml_fuzzy",
+  "trainer_method": "dml_fixed",
+  "dataset": "barrier_bs",
+  "eps_mult": 0.1,
+  "seed": 456,
+  "test_value_mse": 28.50374668918351,
+  "test_grad_mse": 0.0475339379648539,
+  "best_epoch": 46,
+  "time_s": 6.990898132324219,
+  "git_hash": "41cedc03021540ab25b276db02c8c42f697c423f"
+}

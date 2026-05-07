@@ -1,0 +1,18 @@
+{
+  "method": "dml_fixed",
+  "func_type": "poly_trig",
+  "dim": 20,
+  "n_samples": 256,
+  "n_train": 163,
+  "n_val": 41,
+  "n_test": 52,
+  "noise_level": 0.0,
+  "seed": 456,
+  "lambda": 1.0,
+  "split_train_frac": 0.64,
+  "test_value_mse": 0.10164521634578705,
+  "test_grad_mse": 0.11912165582180023,
+  "time_s": 5.5068359375,
+  "best_epoch": 325,
+  "early_stopped": true
+}

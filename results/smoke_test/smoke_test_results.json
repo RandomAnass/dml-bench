@@ -1,0 +1,93 @@
+{
+  "config": {
+    "dimensions": [
+      2
+    ],
+    "sample_sizes": [
+      256
+    ],
+    "lambda_values": [
+      0,
+      1
+    ],
+    "derivative_noise": [
+      0.0
+    ],
+    "seeds": [
+      42
+    ],
+    "n_epochs": 30,
+    "batch_size": 64,
+    "n_layers": 2,
+    "hidden_size": 64,
+    "activation": "softplus",
+    "lr": 0.005,
+    "function_types": [
+      "trig"
+    ],
+    "methods": [
+      "vanilla",
+      "dml_fixed",
+      "dml_gradnorm",
+      "dml_relobralo"
+    ]
+  },
+  "results": {
+    "trig_d2_n256_s42_vanilla": {
+      "method": "vanilla",
+      "test_value_mse": 0.8510040640830994,
+      "test_grad_mse": 5.4512858390808105,
+      "time_s": 1.9111733436584473,
+      "best_epoch": 28,
+      "first_train_loss": 3.4592902660369873,
+      "last_train_loss": 0.9513640999794006
+    },
+    "trig_d2_n256_s42_dml_fixed": {
+      "method": "dml_fixed",
+      "test_value_mse": 1.032674789428711,
+      "test_grad_mse": 5.690018653869629,
+      "time_s": 1.2264010906219482,
+      "best_epoch": 5,
+      "first_train_loss": 18.32226053873698,
+      "last_train_loss": 17.065017700195312
+    },
+    "trig_d2_n256_s42_dml_gradnorm": {
+      "method": "dml_gradnorm",
+      "test_value_mse": 1.1663012504577637,
+      "test_grad_mse": 5.570506572723389,
+      "time_s": 2.183473825454712,
+      "best_epoch": 1,
+      "first_train_loss": 29.759771982828777,
+      "last_train_loss": 46.10556666056315
+    },
+    "trig_d2_n256_s42_dml_relobralo": {
+      "method": "dml_relobralo",
+      "test_value_mse": 0.9271494150161743,
+      "test_grad_mse": 5.646580219268799,
+      "time_s": 1.3689653873443604,
+      "best_epoch": 5,
+      "first_train_loss": 29.209166208902996,
+      "last_train_loss": 26.272570927937824
+    },
+    "trig_d2_n256_s42_baseline_gp": {
+      "method": "baseline_gp",
+      "test_value_mse": 0.9845196345183956,
+      "test_grad_mse": 5.6124566808715555,
+      "time_s": 3.909024953842163
+    },
+    "trig_d2_n256_s42_baseline_krr": {
+      "method": "baseline_krr",
+      "test_value_mse": 0.8039891123771667,
+      "test_grad_mse": 5.16695149700952,
+      "time_s": 0.030298233032226562
+    },
+    "trig_d2_n256_s42_baseline_rf": {
+      "method": "baseline_rf",
+      "test_value_mse": 0.30253003243164084,
+      "test_grad_mse": 5.612456680874204,
+      "time_s": 0.3413882255554199
+    }
+  },
+  "errors": [],
+  "total_time_s": 11.64225149154663
+}

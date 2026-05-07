@@ -1,0 +1,14 @@
+{
+  "method": "dml_warmup",
+  "sigma": 1.0,
+  "seed": 456,
+  "test_value_mse": 1.1007109509411266e-05,
+  "test_grad_mse": 0.0009742559086771214,
+  "best_epoch": 308,
+  "time_s": 13.19,
+  "data_gen_s": 0.09,
+  "spot_range": [
+    0.5,
+    1.5
+  ]
+}

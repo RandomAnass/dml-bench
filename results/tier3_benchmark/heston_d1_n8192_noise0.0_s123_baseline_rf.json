@@ -1,0 +1,14 @@
+{
+  "method": "baseline_rf",
+  "func_type": "heston",
+  "dim": 1,
+  "n_samples": 8192,
+  "noise_level": 0.0,
+  "seed": 123,
+  "lambda": 1.0,
+  "test_value_mse": 0.19079212690823882,
+  "test_grad_mse": 405518.7647031427,
+  "time_s": 1.966059684753418,
+  "key": "heston_d1_n8192_noise0.0_s123_baseline_rf",
+  "timestamp": "2026-04-08T11:41:59.006438"
+}

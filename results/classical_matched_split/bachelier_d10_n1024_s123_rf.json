@@ -1,0 +1,17 @@
+{
+  "method": "baseline_rf",
+  "func_type": "bachelier",
+  "dim": 10,
+  "n_samples": 1024,
+  "n_train": 655,
+  "n_val": 164,
+  "n_test": 205,
+  "noise_level": 0.0,
+  "seed": 123,
+  "lambda": null,
+  "split_train_frac": 0.64,
+  "test_value_mse": 0.0006264575112886658,
+  "test_grad_mse": 0.2214065862806482,
+  "time_s": 0.9845149517059326,
+  "baseline_fit_time_s": null
+}

@@ -1,0 +1,35 @@
+{
+  "method": "vanilla",
+  "trainer_method": "vanilla",
+  "seed": 1337,
+  "payoff": "barrier_doc_call",
+  "model": "black_scholes",
+  "n_samples": 1024,
+  "k_paths": 10,
+  "test_value_mse": 1.7738171945912533,
+  "test_grad_mse": 0.022268289362916045,
+  "best_epoch": 67,
+  "time_s": 2.59,
+  "data_gen_s": 0.0,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "lambda_": 1.0,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "bs_params": {
+    "strike": 100.0,
+    "barrier": 85.0,
+    "vol": 0.2,
+    "r": 0.0,
+    "T": 1.0
+  },
+  "key": "bs_barrier_doc_vanilla_s1337",
+  "timestamp": "2026-05-04T20:18:28.793527"
+}

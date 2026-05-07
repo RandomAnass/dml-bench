@@ -1,0 +1,29 @@
+{
+  "dataset": "barrier_bs",
+  "method": "dml_lrm",
+  "seed": 42,
+  "dim": 1,
+  "n_train": 1639,
+  "n_test": 409,
+  "test_value_mse": 73.10066911773507,
+  "test_grad_mse": 35.16578405543248,
+  "time_s": 4.66,
+  "best_epoch": 4,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 16.893529797251794,
+  "lrm_var_mean": 292.6996145661078,
+  "eval_source": "lrm",
+  "mode": "single_seed",
+  "key": "barrier_bs_dml_lrm_s42",
+  "timestamp": "2026-02-23T14:08:52.739907"
+}

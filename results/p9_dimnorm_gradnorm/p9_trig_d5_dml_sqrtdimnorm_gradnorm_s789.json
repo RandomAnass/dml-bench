@@ -1,0 +1,12 @@
+{
+  "key": "p9_trig_d5_dml_sqrtdimnorm_gradnorm_s789",
+  "method": "dml_sqrtdimnorm_gradnorm",
+  "dataset": "trig",
+  "dim": 5,
+  "seed": 789,
+  "test_value_mse": 1.31132173538208,
+  "test_grad_mse": 1.8903334140777588,
+  "best_epoch": 1,
+  "time_s": 6.781942844390869,
+  "git_hash": "41cedc03021540ab25b276db02c8c42f697c423f"
+}

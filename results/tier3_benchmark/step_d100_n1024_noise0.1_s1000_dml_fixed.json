@@ -1,0 +1,16 @@
+{
+  "method": "dml_fixed",
+  "func_type": "step",
+  "dim": 100,
+  "n_samples": 1024,
+  "noise_level": 0.1,
+  "seed": 1000,
+  "lambda": 1.0,
+  "test_value_mse": 6.090202433986673,
+  "test_grad_mse": 0.05146304701381007,
+  "best_epoch": 48,
+  "time_s": 3.0829644203186035,
+  "n_epochs_actual": 99,
+  "key": "step_d100_n1024_noise0.1_s1000_dml_fixed",
+  "timestamp": "2026-04-13T02:37:46.766312"
+}

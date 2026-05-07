@@ -1,0 +1,16 @@
+{
+  "method": "dml_gradnorm",
+  "func_type": "step",
+  "dim": 1,
+  "n_samples": 256,
+  "noise_level": 0.5,
+  "seed": 1000,
+  "lambda": 1.0,
+  "test_value_mse": 0.02470740611931934,
+  "test_grad_mse": 0.024112767746354517,
+  "best_epoch": 7,
+  "time_s": 2.0550625324249268,
+  "n_epochs_actual": 58,
+  "key": "step_d1_n256_noise0.5_s1000_dml_gradnorm",
+  "timestamp": "2026-04-10T21:41:51.770619"
+}

@@ -1,0 +1,587 @@
+{
+  "meta": {
+    "n_boot": 1000,
+    "rng_seed": 42,
+    "eps_floor": 1e-12,
+    "reference_method": "native_EF",
+    "cluster_unit": "molecule"
+  },
+  "painn": {
+    "meta": {
+      "n_seen": 300,
+      "n_skipped": 0,
+      "n_cells_with_ref": 50,
+      "n_pairs": 250
+    },
+    "per_method": {
+      "vanilla": {
+        "log_ratio_value": {
+          "median_log10": 2.089865179769986,
+          "factor": 122.98869115370263,
+          "factor_human": "123\u00d7 (+12198.9% increase vs native_EF)",
+          "cluster_ci_95": [
+            1.8184736409820725,
+            2.5008567936285755
+          ],
+          "n_clusters": 10,
+          "n_pairs": 50
+        },
+        "log_ratio_grad": {
+          "median_log10": 2.7670827696959943,
+          "factor": 584.9015465558414,
+          "factor_human": "585\u00d7 (+58390.2% increase vs native_EF)",
+          "cluster_ci_95": [
+            2.6229798020961077,
+            3.0447368419944425
+          ],
+          "n_clusters": 10,
+          "n_pairs": 50
+        },
+        "per_molecule": {
+          "log_ratio_value": {
+            "toluene": {
+              "median": 1.952566302301169,
+              "n": 5
+            },
+            "salicylic": {
+              "median": 3.1027884424647345,
+              "n": 5
+            },
+            "ethanol": {
+              "median": 1.9715302244170827,
+              "n": 5
+            },
+            "malonaldehyde": {
+              "median": 2.037004938173314,
+              "n": 5
+            },
+            "azobenzene": {
+              "median": 2.4956524088143395,
+              "n": 5
+            },
+            "naphthalene": {
+              "median": 1.4032774311525844,
+              "n": 5
+            },
+            "paracetamol": {
+              "median": 2.7163613159455338,
+              "n": 5
+            },
+            "benzene": {
+              "median": 1.381197161123684,
+              "n": 5
+            },
+            "aspirin": {
+              "median": 2.807622646993604,
+              "n": 5
+            },
+            "uracil": {
+              "median": 2.095884049797289,
+              "n": 5
+            }
+          },
+          "log_ratio_grad": {
+            "toluene": {
+              "median": 2.805527251343168,
+              "n": 5
+            },
+            "salicylic": {
+              "median": 3.459355915268962,
+              "n": 5
+            },
+            "ethanol": {
+              "median": 2.265986591843942,
+              "n": 5
+            },
+            "malonaldehyde": {
+              "median": 2.5283896753850343,
+              "n": 5
+            },
+            "azobenzene": {
+              "median": 2.7372913719464846,
+              "n": 5
+            },
+            "naphthalene": {
+              "median": 2.6332272258985157,
+              "n": 5
+            },
+            "paracetamol": {
+              "median": 3.032416514256437,
+              "n": 5
+            },
+            "benzene": {
+              "median": 2.6605691369763314,
+              "n": 5
+            },
+            "aspirin": {
+              "median": 3.298695136497119,
+              "n": 5
+            },
+            "uracil": {
+              "median": 2.8476789650329994,
+              "n": 5
+            }
+          }
+        }
+      },
+      "dml_fixed": {
+        "log_ratio_value": {
+          "median_log10": 0.045235960001710984,
+          "factor": 1.1097776136260167,
+          "factor_human": "1.11\u00d7 (+11.0% increase vs native_EF)",
+          "cluster_ci_95": [
+            -0.20279525932231465,
+            0.2572693865904708
+          ],
+          "n_clusters": 10,
+          "n_pairs": 50
+        },
+        "log_ratio_grad": {
+          "median_log10": 0.48170301711045893,
+          "factor": 3.031817232512206,
+          "factor_human": "3.03\u00d7 (+203.2% increase vs native_EF)",
+          "cluster_ci_95": [
+            0.2452948963567311,
+            0.5943977929058994
+          ],
+          "n_clusters": 10,
+          "n_pairs": 50
+        },
+        "per_molecule": {
+          "log_ratio_value": {
+            "toluene": {
+              "median": 0.244688336537316,
+              "n": 5
+            },
+            "salicylic": {
+              "median": 0.2614306278498432,
+              "n": 5
+            },
+            "ethanol": {
+              "median": 0.021227705521206095,
+              "n": 5
+            },
+            "malonaldehyde": {
+              "median": -0.20279525932231465,
+              "n": 5
+            },
+            "azobenzene": {
+              "median": 0.4611562343833918,
+              "n": 5
+            },
+            "naphthalene": {
+              "median": 0.009992813382825736,
+              "n": 5
+            },
+            "paracetamol": {
+              "median": 0.07646834530256078,
+              "n": 5
+            },
+            "benzene": {
+              "median": -0.5559098566096767,
+              "n": 5
+            },
+            "aspirin": {
+              "median": 0.3144779062407483,
+              "n": 5
+            },
+            "uracil": {
+              "median": -0.055675926333054716,
+              "n": 5
+            }
+          },
+          "log_ratio_grad": {
+            "toluene": {
+              "median": 0.5484343484995142,
+              "n": 5
+            },
+            "salicylic": {
+              "median": 0.5112481860020144,
+              "n": 5
+            },
+            "ethanol": {
+              "median": 0.20689317268383783,
+              "n": 5
+            },
+            "malonaldehyde": {
+              "median": 0.1486647224920374,
+              "n": 5
+            },
+            "azobenzene": {
+              "median": 0.7101845517059037,
+              "n": 5
+            },
+            "naphthalene": {
+              "median": 0.8483199121929725,
+              "n": 5
+            },
+            "paracetamol": {
+              "median": 0.42261856325519914,
+              "n": 5
+            },
+            "benzene": {
+              "median": 0.5376994270419323,
+              "n": 5
+            },
+            "aspirin": {
+              "median": 0.48863399485740866,
+              "n": 5
+            },
+            "uracil": {
+              "median": 0.19279702623100428,
+              "n": 5
+            }
+          }
+        }
+      },
+      "dml_fixed_half": {
+        "log_ratio_value": {
+          "median_log10": 0.10138390827030565,
+          "factor": 1.2629434598932952,
+          "factor_human": "1.26\u00d7 (+26.3% increase vs native_EF)",
+          "cluster_ci_95": [
+            -0.11188358591141617,
+            0.3085644205298984
+          ],
+          "n_clusters": 10,
+          "n_pairs": 50
+        },
+        "log_ratio_grad": {
+          "median_log10": 0.446099657315141,
+          "factor": 2.793184718259841,
+          "factor_human": "2.79\u00d7 (+179.3% increase vs native_EF)",
+          "cluster_ci_95": [
+            0.26736744049845673,
+            0.6048345279156757
+          ],
+          "n_clusters": 10,
+          "n_pairs": 50
+        },
+        "per_molecule": {
+          "log_ratio_value": {
+            "toluene": {
+              "median": 0.3085644205298984,
+              "n": 5
+            },
+            "salicylic": {
+              "median": 0.13120887252270205,
+              "n": 5
+            },
+            "ethanol": {
+              "median": -0.0549374746274714,
+              "n": 5
+            },
+            "malonaldehyde": {
+              "median": -0.16882969719536095,
+              "n": 5
+            },
+            "azobenzene": {
+              "median": 0.6448496593216746,
+              "n": 5
+            },
+            "naphthalene": {
+              "median": 0.5054953930884185,
+              "n": 5
+            },
+            "paracetamol": {
+              "median": 0.25138382986680985,
+              "n": 5
+            },
+            "benzene": {
+              "median": -0.879610618668774,
+              "n": 5
+            },
+            "aspirin": {
+              "median": 0.2640774816302572,
+              "n": 5
+            },
+            "uracil": {
+              "median": 0.046822579620824346,
+              "n": 5
+            }
+          },
+          "log_ratio_grad": {
+            "toluene": {
+              "median": 0.6682022950189057,
+              "n": 5
+            },
+            "salicylic": {
+              "median": 0.47433652761892076,
+              "n": 5
+            },
+            "ethanol": {
+              "median": 0.21814873830945933,
+              "n": 5
+            },
+            "malonaldehyde": {
+              "median": 0.15819553081052593,
+              "n": 5
+            },
+            "azobenzene": {
+              "median": 0.7006187088209238,
+              "n": 5
+            },
+            "naphthalene": {
+              "median": 1.0513901343383865,
+              "n": 5
+            },
+            "paracetamol": {
+              "median": 0.4189711046641638,
+              "n": 5
+            },
+            "benzene": {
+              "median": 0.45272530755031526,
+              "n": 5
+            },
+            "aspirin": {
+              "median": 0.42521907129871744,
+              "n": 5
+            },
+            "uracil": {
+              "median": 0.2969918915992719,
+              "n": 5
+            }
+          }
+        }
+      },
+      "dml_gradnorm": {
+        "log_ratio_value": {
+          "median_log10": 0.6218328595707889,
+          "factor": 4.18632421305473,
+          "factor_human": "4.19\u00d7 (+318.6% increase vs native_EF)",
+          "cluster_ci_95": [
+            0.44461253507721643,
+            0.851961332553187
+          ],
+          "n_clusters": 10,
+          "n_pairs": 50
+        },
+        "log_ratio_grad": {
+          "median_log10": 0.8345212311804455,
+          "factor": 6.831581144401712,
+          "factor_human": "6.83\u00d7 (+583.2% increase vs native_EF)",
+          "cluster_ci_95": [
+            0.6649289738595846,
+            0.9747127348404402
+          ],
+          "n_clusters": 10,
+          "n_pairs": 50
+        },
+        "per_molecule": {
+          "log_ratio_value": {
+            "toluene": {
+              "median": 0.6715638707496754,
+              "n": 5
+            },
+            "salicylic": {
+              "median": 0.9629726510389366,
+              "n": 5
+            },
+            "ethanol": {
+              "median": 0.33309952000325027,
+              "n": 5
+            },
+            "malonaldehyde": {
+              "median": 0.3628951444920531,
+              "n": 5
+            },
+            "azobenzene": {
+              "median": 0.8884888638404398,
+              "n": 5
+            },
+            "naphthalene": {
+              "median": 0.5897205658132006,
+              "n": 5
+            },
+            "paracetamol": {
+              "median": 0.34036148498405405,
+              "n": 5
+            },
+            "benzene": {
+              "median": 0.44461253507721643,
+              "n": 5
+            },
+            "aspirin": {
+              "median": 1.0014881612048934,
+              "n": 5
+            },
+            "uracil": {
+              "median": 0.7616617671738153,
+              "n": 5
+            }
+          },
+          "log_ratio_grad": {
+            "toluene": {
+              "median": 0.946467672622829,
+              "n": 5
+            },
+            "salicylic": {
+              "median": 0.9536720234992212,
+              "n": 5
+            },
+            "ethanol": {
+              "median": 0.5756109966522978,
+              "n": 5
+            },
+            "malonaldehyde": {
+              "median": 0.5408338953943561,
+              "n": 5
+            },
+            "azobenzene": {
+              "median": 1.0371885194559094,
+              "n": 5
+            },
+            "naphthalene": {
+              "median": 1.1829548232431994,
+              "n": 5
+            },
+            "paracetamol": {
+              "median": 0.8415403281492775,
+              "n": 5
+            },
+            "benzene": {
+              "median": 0.9892680249450553,
+              "n": 5
+            },
+            "aspirin": {
+              "median": 0.7939628720068331,
+              "n": 5
+            },
+            "uracil": {
+              "median": 0.756170938842454,
+              "n": 5
+            }
+          }
+        }
+      },
+      "dml_warmup": {
+        "log_ratio_value": {
+          "median_log10": 2.237804014732401,
+          "factor": 172.90359163295133,
+          "factor_human": "173\u00d7 (+17190.4% increase vs native_EF)",
+          "cluster_ci_95": [
+            1.7742890896515568,
+            2.539283062933889
+          ],
+          "n_clusters": 10,
+          "n_pairs": 50
+        },
+        "log_ratio_grad": {
+          "median_log10": 2.855492777497575,
+          "factor": 716.9564521897519,
+          "factor_human": "717\u00d7 (+71595.6% increase vs native_EF)",
+          "cluster_ci_95": [
+            2.4564182669356494,
+            2.9191251641152327
+          ],
+          "n_clusters": 10,
+          "n_pairs": 50
+        },
+        "per_molecule": {
+          "log_ratio_value": {
+            "toluene": {
+              "median": 2.2694367003717217,
+              "n": 5
+            },
+            "salicylic": {
+              "median": 3.0845241378947983,
+              "n": 5
+            },
+            "ethanol": {
+              "median": 1.938574019088716,
+              "n": 5
+            },
+            "malonaldehyde": {
+              "median": 2.0033784506899703,
+              "n": 5
+            },
+            "azobenzene": {
+              "median": 2.539283062933889,
+              "n": 5
+            },
+            "naphthalene": {
+              "median": 1.5860813281689163,
+              "n": 5
+            },
+            "paracetamol": {
+              "median": 2.563037313234577,
+              "n": 5
+            },
+            "benzene": {
+              "median": 0.6184939296245622,
+              "n": 5
+            },
+            "aspirin": {
+              "median": 2.626171190803387,
+              "n": 5
+            },
+            "uracil": {
+              "median": 2.0301888895364812,
+              "n": 5
+            }
+          },
+          "log_ratio_grad": {
+            "toluene": {
+              "median": 2.879390879827011,
+              "n": 5
+            },
+            "salicylic": {
+              "median": 3.446257402622331,
+              "n": 5
+            },
+            "ethanol": {
+              "median": 2.272975285034713,
+              "n": 5
+            },
+            "malonaldehyde": {
+              "median": 2.3469133294792157,
+              "n": 5
+            },
+            "azobenzene": {
+              "median": 2.9301193031767387,
+              "n": 5
+            },
+            "naphthalene": {
+              "median": 2.753133687109327,
+              "n": 5
+            },
+            "paracetamol": {
+              "median": 2.8933831595344897,
+              "n": 5
+            },
+            "benzene": {
+              "median": 2.744920145424709,
+              "n": 5
+            },
+            "aspirin": {
+              "median": 2.929310872507013,
+              "n": 5
+            },
+            "uracil": {
+              "median": 2.5581554565077935,
+              "n": 5
+            }
+          }
+        }
+      }
+    }
+  },
+  "mlp": {
+    "meta": {
+      "n_seen": 350,
+      "n_skipped": 0,
+      "n_cells_with_ref": 0,
+      "n_pairs": 0
+    },
+    "error": "no paired rows under ./results/molecular_mlp"
+  },
+  "gatv2": {
+    "meta": {
+      "n_seen": 350,
+      "n_skipped": 0,
+      "n_cells_with_ref": 0,
+      "n_pairs": 0
+    },
+    "error": "no paired rows under ./results/molecular_gatv2"
+  }
+}

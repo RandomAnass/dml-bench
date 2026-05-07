@@ -1,0 +1,16 @@
+{
+  "method": "dml_fixed",
+  "func_type": "bachelier",
+  "dim": 2,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 42,
+  "lambda": 1.0,
+  "test_value_mse": 8.8704101569919e-09,
+  "test_grad_mse": 9.133091009864478e-07,
+  "best_epoch": 254,
+  "time_s": 5.5309789180755615,
+  "n_epochs_actual": 305,
+  "key": "bachelier_d2_n512_noise0.0_s42_dml_fixed",
+  "timestamp": "2026-04-07T21:02:11.495000"
+}

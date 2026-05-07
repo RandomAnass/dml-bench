@@ -1,0 +1,10 @@
+{
+  "method": "dml_fixed",
+  "seed": 42,
+  "n_monitor": 2,
+  "test_value_mse": 0.031917311807264835,
+  "test_grad_mse": 0.00016883383655723637,
+  "best_epoch": 97,
+  "time_s": 11.86,
+  "data_gen_s": 0.0
+}

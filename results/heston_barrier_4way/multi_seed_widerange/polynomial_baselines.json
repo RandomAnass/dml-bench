@@ -1,0 +1,30 @@
+{
+  "setup": "wide range [0.5K, 1.5K], G&K v2 §3.4 convention",
+  "n_test_spots": 200,
+  "n_paths_gt": 100000,
+  "seed": 999,
+  "mean_se_price": 3.505e-04,
+  "mean_se_delta": 1.282e-03,
+  "polynomial": {
+    "1": {"price_mse": 3.3933e-03, "delta_mse": 1.5822e-01},
+    "2": {"price_mse": 7.0097e-05, "delta_mse": 1.4714e-02},
+    "3": {"price_mse": 5.6086e-05, "delta_mse": 1.3310e-02},
+    "4": {"price_mse": 5.1012e-06, "delta_mse": 2.8638e-03},
+    "5": {"price_mse": 2.2914e-06, "delta_mse": 1.6665e-03},
+    "6": {"price_mse": 7.7460e-07, "delta_mse": 5.9922e-04}
+  },
+  "dml_methods_at_wide_range": {
+    "dml_fuzzy_warmup":         {"val_mse": 8.8167e-06, "grad_mse": 1.8251e-04, "rel_quintic_p": 3.85, "rel_quintic_d": 0.11, "beats_quintic_d": true},
+    "dml_warmup":               {"val_mse": 9.7925e-06, "grad_mse": 1.9264e-04, "rel_quintic_p": 4.27, "rel_quintic_d": 0.12, "beats_quintic_d": true},
+    "dml_fixed":                {"val_mse": 1.1098e-05, "grad_mse": 1.9686e-04, "rel_quintic_p": 4.84, "rel_quintic_d": 0.12, "beats_quintic_d": true},
+    "dml_gradnorm":             {"val_mse": 1.2039e-05, "grad_mse": 2.2919e-04, "rel_quintic_p": 5.25, "rel_quintic_d": 0.14, "beats_quintic_d": true},
+    "dml_fuzzy_fixed":          {"val_mse": 1.7850e-05, "grad_mse": 1.9166e-04, "rel_quintic_p": 7.79, "rel_quintic_d": 0.12, "beats_quintic_d": true},
+    "dml_relobralo":            {"val_mse": 2.2468e-05, "grad_mse": 3.1601e-04, "rel_quintic_p": 9.81, "rel_quintic_d": 0.19, "beats_quintic_d": true},
+    "dml_lrm_multistep_warmup": {"val_mse": 3.1581e-05, "grad_mse": 3.0101e-03, "rel_quintic_p": 13.78, "rel_quintic_d": 1.81, "beats_quintic_d": false},
+    "vanilla":                  {"val_mse": 3.2230e-05, "grad_mse": 2.4281e-03, "rel_quintic_p": 14.07, "rel_quintic_d": 1.46, "beats_quintic_d": false},
+    "dml_lrm_warmup":           {"val_mse": 7.5555e-05, "grad_mse": 1.8440e-02, "rel_quintic_p": 32.97, "rel_quintic_d": 11.07, "beats_quintic_d": false},
+    "dml_lrm_multistep_fixed":  {"val_mse": 1.3257e-04, "grad_mse": 3.0611e-03, "rel_quintic_p": 57.86, "rel_quintic_d": 1.84, "beats_quintic_d": false},
+    "dml_lrm_fixed":            {"val_mse": 5.3896e-03, "grad_mse": 8.4153e-02, "rel_quintic_p": 2352.12, "rel_quintic_d": 50.50, "beats_quintic_d": false},
+    "dml_lrm_gradnorm":         {"val_mse": 8.9319e-03, "grad_mse": 9.4796e-02, "rel_quintic_p": 3898.09, "rel_quintic_d": 56.88, "beats_quintic_d": false}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "method": "baseline_gp",
+  "func_type": "trig",
+  "dim": 20,
+  "n_samples": 256,
+  "noise_level": 0.5,
+  "seed": 789,
+  "lambda": 1.0,
+  "test_value_mse": 25.507313026286695,
+  "test_grad_mse": 15.078072410572569,
+  "time_s": 0.5177202224731445,
+  "key": "trig_d20_n256_noise0.5_s789_baseline_gp",
+  "timestamp": "2026-04-07T11:59:31.136006"
+}

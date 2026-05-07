@@ -1,0 +1,12 @@
+{
+  "key": "sens_burgers_ic_s789_dml_gradnorm_hp1.00",
+  "kind": "pde",
+  "dataset": "burgers_ic",
+  "seed": 789,
+  "method": "dml_gradnorm",
+  "hp_name": "alpha",
+  "hp_value": 1.0,
+  "test_value_mse": 0.34067970514297485,
+  "test_grad_mse": 0.7996118664741516,
+  "time_s": 6344.945854187012
+}

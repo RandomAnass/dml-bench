@@ -1,0 +1,16 @@
+{
+  "key": "p6_poly_trig_d5_sparse_coord_sev0.3_dml_gradnorm_s456",
+  "method": "dml_gradnorm",
+  "dataset": "poly_trig",
+  "corruption_type": "sparse_coord",
+  "severity": 0.3,
+  "dim": 5,
+  "seed": 456,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.0352693647146225,
+  "test_grad_mse": 0.12350044399499893,
+  "best_epoch": 298,
+  "time_s": 47.74099087715149,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

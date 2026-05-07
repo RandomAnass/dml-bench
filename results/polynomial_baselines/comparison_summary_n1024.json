@@ -1,0 +1,384 @@
+{
+  "poly_trig_d1_n1024": {
+    "domain": "poly_trig",
+    "dim": 1,
+    "n_samples": 1024,
+    "polynomial_best_price": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1000
+      ],
+      "best_degree_per_seed": {
+        "42": 11,
+        "123": 11,
+        "456": 11,
+        "789": 11,
+        "1000": 12
+      },
+      "best_degree_modal": 11,
+      "n_params_modal": 12,
+      "price_mse_mean": 1.994463748962912e-15,
+      "price_mse_std": 8.737685473327399e-16,
+      "grad_mse_mean": 8.373603037911726e-14,
+      "grad_mse_std": 8.032384872781482e-14
+    },
+    "polynomial_best_grad": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1000
+      ],
+      "best_degree_per_seed": {
+        "42": 11,
+        "123": 11,
+        "456": 11,
+        "789": 12,
+        "1000": 11
+      },
+      "best_degree_modal": 11,
+      "n_params_modal": 12,
+      "price_mse_mean": 1.998589295763582e-15,
+      "price_mse_std": 8.733617257384057e-16,
+      "grad_mse_mean": 7.97241062388094e-14,
+      "grad_mse_std": 8.326195315091471e-14
+    },
+    "polynomial_quintic": {
+      "degree": 5,
+      "n_seeds": 5,
+      "n_params": 6,
+      "price_mse_mean": 1.1768293837433871e-08,
+      "price_mse_std": 8.378535516523786e-10,
+      "grad_mse_mean": 4.747027743092909e-06,
+      "grad_mse_std": 1.105026707357006e-06
+    },
+    "best_dml_value_mse": {
+      "method": "dml_softmax_balance",
+      "mean": 2.262205509140358e-07,
+      "std": 2.389229042644163e-07,
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1000
+      ],
+      "values": [
+        6.561745635735861e-07,
+        2.4354602601306397e-07,
+        3.50814133298627e-09,
+        2.267291705493335e-07,
+        1.1448531012092644e-09
+      ]
+    },
+    "best_dml_grad_mse": {
+      "method": "dml_gradnorm",
+      "mean": 8.446929973615624e-06,
+      "std": 1.145861189737222e-05,
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1000
+      ],
+      "values": [
+        2.659110577951651e-06,
+        4.122558493691031e-06,
+        3.1307801691582426e-05,
+        2.52866175287636e-06,
+        1.616517351976654e-06
+      ]
+    }
+  },
+  "trig_d1_n1024": {
+    "domain": "trig",
+    "dim": 1,
+    "n_samples": 1024,
+    "polynomial_best_price": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1000
+      ],
+      "best_degree_per_seed": {
+        "42": 12,
+        "123": 12,
+        "456": 11,
+        "789": 11,
+        "1000": 11
+      },
+      "best_degree_modal": 11,
+      "n_params_modal": 12,
+      "price_mse_mean": 0.06128788055499852,
+      "price_mse_std": 0.10839023472771461,
+      "grad_mse_mean": 7.047048736472016,
+      "grad_mse_std": 11.288384656051214
+    },
+    "polynomial_best_grad": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1000
+      ],
+      "best_degree_per_seed": {
+        "42": 12,
+        "123": 12,
+        "456": 9,
+        "789": 11,
+        "1000": 11
+      },
+      "best_degree_modal": 11,
+      "n_params_modal": 12,
+      "price_mse_mean": 0.08841197023612805,
+      "price_mse_std": 0.1624450260730705,
+      "grad_mse_mean": 2.6741213019941235,
+      "grad_mse_std": 3.268750605931966
+    },
+    "polynomial_quintic": {
+      "degree": 5,
+      "n_seeds": 5,
+      "n_params": 6,
+      "price_mse_mean": 0.2181424196549635,
+      "price_mse_std": 0.20749144912155615,
+      "grad_mse_mean": 4.397025479098753,
+      "grad_mse_std": 4.703578317152017
+    },
+    "best_dml_value_mse": {
+      "method": "dml_relobralo",
+      "mean": 3.1956350774464683e-07,
+      "std": 3.1341386163866504e-07,
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1000
+      ],
+      "values": [
+        4.308532197683235e-09,
+        1.925898551746741e-08,
+        7.632330607520998e-07,
+        6.175898192850582e-07,
+        1.934271409709254e-07
+      ]
+    },
+    "best_dml_grad_mse": {
+      "method": "dml_relobralo",
+      "mean": 3.6581062636287244e-05,
+      "std": 4.070651958570868e-05,
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1000
+      ],
+      "values": [
+        4.4630837692238856e-07,
+        6.920739679117105e-07,
+        0.00010467097308719531,
+        6.14323653280735e-05,
+        1.5663592421333306e-05
+      ]
+    }
+  },
+  "black_scholes_d1_n1024": {
+    "domain": "black_scholes",
+    "dim": 1,
+    "n_samples": 1024,
+    "polynomial_best_price": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1000
+      ],
+      "best_degree_per_seed": {
+        "42": 12,
+        "123": 12,
+        "456": 12,
+        "789": 12,
+        "1000": 12
+      },
+      "best_degree_modal": 12,
+      "n_params_modal": 13,
+      "price_mse_mean": 2.2453038931827386e-09,
+      "price_mse_std": 2.6944461866814926e-10,
+      "grad_mse_mean": 1.4582717124944623e-09,
+      "grad_mse_std": 7.139362999775142e-10
+    },
+    "polynomial_best_grad": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1000
+      ],
+      "best_degree_per_seed": {
+        "42": 12,
+        "123": 12,
+        "456": 12,
+        "789": 12,
+        "1000": 12
+      },
+      "best_degree_modal": 12,
+      "n_params_modal": 13,
+      "price_mse_mean": 2.2453038931827386e-09,
+      "price_mse_std": 2.6944461866814926e-10,
+      "grad_mse_mean": 1.4582717124944623e-09,
+      "grad_mse_std": 7.139362999775142e-10
+    },
+    "polynomial_quintic": {
+      "degree": 5,
+      "n_seeds": 5,
+      "n_params": 6,
+      "price_mse_mean": 0.002678261980696864,
+      "price_mse_std": 0.00043435587976823156,
+      "grad_mse_mean": 0.0003260783380781892,
+      "grad_mse_std": 0.00012823061814290496
+    },
+    "best_dml_value_mse": null,
+    "best_dml_grad_mse": null
+  },
+  "spy_n10000": {
+    "domain": "spy_bs_target",
+    "dim": 4,
+    "n_train": 10000,
+    "polynomial_best_price": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1337
+      ],
+      "best_degree_per_seed": {
+        "42": 6,
+        "123": 6,
+        "456": 6,
+        "789": 6,
+        "1337": 6
+      },
+      "best_degree_modal": 6,
+      "n_params_modal": 210,
+      "price_mse_mean": 6.53300656716844e-07,
+      "price_mse_std": 1.824384487177955e-08,
+      "grad_mse_mean": 0.01820802537950359,
+      "grad_mse_std": 0.0004920994731681784
+    },
+    "polynomial_best_grad": {
+      "n_seeds": 5,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1337
+      ],
+      "best_degree_per_seed": {
+        "42": 6,
+        "123": 6,
+        "456": 6,
+        "789": 6,
+        "1337": 6
+      },
+      "best_degree_modal": 6,
+      "n_params_modal": 210,
+      "price_mse_mean": 6.53300656716844e-07,
+      "price_mse_std": 1.824384487177955e-08,
+      "grad_mse_mean": 0.01820802537950359,
+      "grad_mse_std": 0.0004920994731681784
+    },
+    "polynomial_quintic": {
+      "degree": 5,
+      "n_seeds": 5,
+      "n_params": 126,
+      "price_mse_mean": 1.3088334266101013e-06,
+      "price_mse_std": 2.220269036203392e-08,
+      "grad_mse_mean": 0.018542802232850708,
+      "grad_mse_std": 0.0004845039760500486
+    },
+    "best_dml_value_mse": {
+      "method": "dml_fixed",
+      "mean": 2.959945106932409e-05,
+      "std": 1.7565978608082402e-06,
+      "n_seeds": 10,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1337,
+        2024,
+        3141,
+        5926,
+        8008,
+        9999
+      ],
+      "values": [
+        2.9193266644429972e-05,
+        3.1814764932490346e-05,
+        2.6424674623727073e-05,
+        2.8692850400222113e-05,
+        2.810443929135771e-05,
+        3.1329239880387924e-05,
+        3.0435393870926785e-05,
+        2.814492108815768e-05,
+        3.221465128517906e-05,
+        2.964030867636226e-05
+      ]
+    },
+    "best_dml_grad_mse": {
+      "method": "dml_fixed",
+      "mean": 6.97945735532395e-05,
+      "std": 4.271516118015129e-06,
+      "n_seeds": 10,
+      "seeds": [
+        42,
+        123,
+        456,
+        789,
+        1337,
+        2024,
+        3141,
+        5926,
+        8008,
+        9999
+      ],
+      "values": [
+        6.681436524639164e-05,
+        7.698305753484838e-05,
+        6.672965382119691e-05,
+        6.606379686143462e-05,
+        6.64292731061842e-05,
+        6.698974233497307e-05,
+        7.272090987378199e-05,
+        6.804866540603242e-05,
+        7.800352918606359e-05,
+        6.91627421614882e-05
+      ]
+    }
+  }
+}

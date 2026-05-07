@@ -1,0 +1,40 @@
+{
+  "out_root": "results/extrapolation_M1_DA_smoke",
+  "models": [
+    "siren"
+  ],
+  "n_train": 24,
+  "n_eval": 2400,
+  "train_domain": [
+    -1.0,
+    1.0
+  ],
+  "eval_domain": [
+    -3.0,
+    3.0
+  ],
+  "width": 64,
+  "depth": 3,
+  "fourier_k": 5,
+  "dml_lambda": 1.0,
+  "weight_decay": 1e-07,
+  "grad_clip": 10.0,
+  "lowess_frac": 0.2,
+  "base_lr": {
+    "softplus": 0.001,
+    "fourier_linear": 0.005,
+    "siren": 0.0005,
+    "snake": 0.001
+  },
+  "sigma_grid": [
+    0.0,
+    0.1,
+    1.2
+  ],
+  "n_seeds": 1,
+  "n_steps": 200,
+  "smoke": true,
+  "wide_sigma": false,
+  "device": "cuda",
+  "n_da": 24
+}

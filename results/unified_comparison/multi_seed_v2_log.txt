@@ -1,0 +1,1503 @@
+nohup: ignoring input
+
+================================================================================
+UNIFIED DISCONTINUOUS-PAYOFF COMPARISON — mode: multi_seed
+================================================================================
+Datasets:  ['digital_bs', 'barrier_bs', 'heston_digital', 'basket_d1', 'basket_d7']
+Methods:   ['vanilla', 'dml_fixed', 'dml_gradnorm', 'dml_relobralo', 'dml_warmup', 'dml_lrm', 'dml_gradnorm_lrm', 'dml_warmup_lrm', 'dml_fuzzy', 'dml_gradnorm_fuzzy', 'dml_warmup_fuzzy']
+Seeds:     [42, 123, 456, 789, 1337, 2024, 3141, 5926, 8008, 9999]
+Epochs:    500
+Total:     550 experiments
+================================================================================
+
+
+────────────────────────────────────────────────────────────
+Dataset: digital_bs
+────────────────────────────────────────────────────────────
+
+  Seed 42 (1/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=18.883805177765517, lrm_var=0.0007479451343557244, eval_ref=analytical
+    vanilla                   Early stopping at epoch 134
+val=9.0118e-03  grad=1.2910e-04  t=12.1s
+    dml_fixed                 Early stopping at epoch 169
+val=3.2498e-02  grad=2.7039e-05  t=11.8s
+    dml_gradnorm              Early stopping at epoch 154
+val=4.7917e-02  grad=4.3182e-05  t=27.5s
+    dml_relobralo             Early stopping at epoch 53
+val=3.5918e-02  grad=2.9422e-05  t=4.2s
+    dml_warmup                Early stopping at epoch 112
+val=9.1514e-03  grad=1.7630e-06  t=32.2s
+    dml_lrm                   Early stopping at epoch 61
+val=9.3679e-03  grad=8.4490e-07  t=5.7s
+    dml_gradnorm_lrm          Early stopping at epoch 92
+val=9.4642e-03  grad=1.9349e-06  t=15.3s
+    dml_warmup_lrm            Early stopping at epoch 206
+val=9.1113e-03  grad=4.8674e-07  t=51.3s
+    dml_fuzzy                 Early stopping at epoch 64
+val=9.1533e-03  grad=1.3505e-07  t=7.1s
+    dml_gradnorm_fuzzy        Early stopping at epoch 67
+val=9.2302e-03  grad=4.8365e-07  t=12.3s
+    dml_warmup_fuzzy          Early stopping at epoch 116
+val=9.1160e-03  grad=3.0174e-07  t=34.5s
+
+  Seed 123 (2/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=19.083968295963068, lrm_var=0.0007653439927162099, eval_ref=analytical
+    vanilla                   Early stopping at epoch 58
+val=1.0113e-02  grad=1.3463e-04  t=5.2s
+    dml_fixed                 Early stopping at epoch 113
+val=3.6319e-02  grad=3.1591e-05  t=10.1s
+    dml_gradnorm              Early stopping at epoch 362
+val=9.8472e-02  grad=9.4549e-05  t=74.2s
+    dml_relobralo             Early stopping at epoch 57
+val=4.1501e-02  grad=3.8382e-05  t=5.5s
+    dml_warmup                Early stopping at epoch 56
+val=1.0088e-02  grad=2.8941e-06  t=23.2s
+    dml_lrm                   Early stopping at epoch 104
+val=9.8359e-03  grad=5.3516e-07  t=7.8s
+    dml_gradnorm_lrm          Early stopping at epoch 55
+val=1.0732e-02  grad=2.8458e-06  t=11.1s
+    dml_warmup_lrm            Early stopping at epoch 214
+val=9.7522e-03  grad=3.5565e-07  t=54.6s
+    dml_fuzzy                 Early stopping at epoch 162
+val=9.7740e-03  grad=5.8505e-07  t=12.3s
+    dml_gradnorm_fuzzy        Early stopping at epoch 70
+val=1.0064e-02  grad=1.0510e-06  t=14.1s
+    dml_warmup_fuzzy          Early stopping at epoch 63
+val=9.7531e-03  grad=4.2733e-07  t=26.1s
+
+  Seed 456 (3/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=19.07990217066179, lrm_var=0.000763274982742631, eval_ref=analytical
+    vanilla                   Early stopping at epoch 179
+val=1.0157e-02  grad=1.3336e-04  t=11.1s
+    dml_fixed                 Early stopping at epoch 92
+val=3.5915e-02  grad=2.7591e-05  t=8.6s
+    dml_gradnorm              Early stopping at epoch 416
+val=1.0026e-01  grad=9.4481e-05  t=91.0s
+    dml_relobralo             Early stopping at epoch 53
+val=4.7374e-02  grad=3.9616e-05  t=5.7s
+    dml_warmup                Early stopping at epoch 56
+val=1.0255e-02  grad=3.5479e-06  t=24.6s
+    dml_lrm                   Early stopping at epoch 92
+val=1.1099e-02  grad=1.2587e-06  t=6.5s
+    dml_gradnorm_lrm          Early stopping at epoch 54
+val=1.2428e-02  grad=1.5139e-06  t=9.8s
+    dml_warmup_lrm            Early stopping at epoch 224
+val=9.9039e-03  grad=6.8345e-07  t=56.7s
+    dml_fuzzy                 Early stopping at epoch 256
+val=9.9934e-03  grad=3.9612e-07  t=19.3s
+    dml_gradnorm_fuzzy        Early stopping at epoch 63
+val=1.0061e-02  grad=2.3849e-07  t=11.3s
+    dml_warmup_fuzzy          Early stopping at epoch 80
+val=9.9123e-03  grad=6.5514e-07  t=31.0s
+
+  Seed 789 (4/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=18.777142368926253, lrm_var=0.0007752176401962347, eval_ref=analytical
+    vanilla                   Early stopping at epoch 92
+val=1.1181e-02  grad=1.3796e-04  t=7.3s
+    dml_fixed                 Early stopping at epoch 150
+val=3.6426e-02  grad=3.3244e-05  t=11.8s
+    dml_gradnorm              Early stopping at epoch 183
+val=8.1704e-02  grad=8.1707e-05  t=38.4s
+    dml_relobralo             Early stopping at epoch 54
+val=3.6866e-02  grad=3.2720e-05  t=5.8s
+    dml_warmup                Early stopping at epoch 76
+val=1.1156e-02  grad=1.2227e-06  t=28.1s
+    dml_lrm                   Early stopping at epoch 119
+val=1.1079e-02  grad=5.0314e-07  t=9.3s
+    dml_gradnorm_lrm          Early stopping at epoch 63
+val=1.1095e-02  grad=2.3089e-07  t=11.5s
+    dml_warmup_lrm            Early stopping at epoch 110
+val=1.0863e-02  grad=1.7106e-07  t=39.6s
+    dml_fuzzy                 Early stopping at epoch 111
+val=1.0958e-02  grad=2.0429e-07  t=8.9s
+    dml_gradnorm_fuzzy        Early stopping at epoch 58
+val=1.1055e-02  grad=1.5482e-07  t=11.8s
+    dml_warmup_fuzzy          Early stopping at epoch 206
+val=1.0886e-02  grad=6.9322e-07  t=50.6s
+
+  Seed 1337 (5/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=18.601233638175472, lrm_var=0.0007618324914496964, eval_ref=analytical
+    vanilla                   Early stopping at epoch 115
+val=9.5652e-03  grad=1.4044e-04  t=8.1s
+    dml_fixed                 Early stopping at epoch 128
+val=3.2083e-02  grad=3.1548e-05  t=11.4s
+    dml_gradnorm              Early stopping at epoch 128
+val=4.9154e-02  grad=5.1839e-05  t=21.3s
+    dml_relobralo             Early stopping at epoch 61
+val=3.1662e-02  grad=3.1824e-05  t=6.2s
+    dml_warmup                Early stopping at epoch 87
+val=9.4455e-03  grad=4.2863e-07  t=32.3s
+    dml_lrm                   Early stopping at epoch 89
+val=1.0715e-02  grad=8.2833e-07  t=7.8s
+    dml_gradnorm_lrm          Early stopping at epoch 56
+val=1.0073e-02  grad=2.5756e-06  t=10.3s
+    dml_warmup_lrm            Early stopping at epoch 74
+val=9.5901e-03  grad=3.2294e-07  t=28.1s
+    dml_fuzzy                 Early stopping at epoch 72
+val=9.7392e-03  grad=6.5248e-07  t=7.9s
+    dml_gradnorm_fuzzy        Early stopping at epoch 86
+val=9.8165e-03  grad=8.1269e-07  t=15.4s
+    dml_warmup_fuzzy          Early stopping at epoch 146
+val=9.3917e-03  grad=3.4313e-07  t=42.8s
+
+  Seed 2024 (6/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=18.806833357950115, lrm_var=0.0007755506672504869, eval_ref=analytical
+    vanilla                   Early stopping at epoch 99
+val=1.0415e-02  grad=1.4328e-04  t=7.5s
+    dml_fixed                 Early stopping at epoch 115
+val=3.6074e-02  grad=3.5269e-05  t=10.8s
+    dml_gradnorm              Early stopping at epoch 249
+val=7.8940e-02  grad=8.2746e-05  t=45.2s
+    dml_relobralo             Early stopping at epoch 54
+val=3.6730e-02  grad=3.6319e-05  t=6.3s
+    dml_warmup                Early stopping at epoch 119
+val=1.0311e-02  grad=3.1813e-07  t=33.9s
+    dml_lrm                   Early stopping at epoch 89
+val=1.0556e-02  grad=5.0512e-07  t=7.1s
+    dml_gradnorm_lrm          Early stopping at epoch 65
+val=1.0413e-02  grad=1.0620e-06  t=11.2s
+    dml_warmup_lrm            val=1.0275e-02  grad=2.1090e-07  t=56.6s
+    dml_fuzzy                 Early stopping at epoch 76
+val=1.0504e-02  grad=4.1888e-07  t=6.9s
+    dml_gradnorm_fuzzy        Early stopping at epoch 87
+val=1.0348e-02  grad=4.5207e-07  t=16.4s
+    dml_warmup_fuzzy          Early stopping at epoch 99
+val=1.0467e-02  grad=4.0518e-07  t=31.7s
+
+  Seed 3141 (7/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=18.858656158783955, lrm_var=0.0007549958594539499, eval_ref=analytical
+    vanilla                   Early stopping at epoch 138
+val=9.8500e-03  grad=1.3539e-04  t=9.4s
+    dml_fixed                 Early stopping at epoch 165
+val=3.8933e-02  grad=3.5889e-05  t=11.8s
+    dml_gradnorm              Early stopping at epoch 114
+val=4.0554e-02  grad=3.6181e-05  t=21.4s
+    dml_relobralo             Early stopping at epoch 54
+val=3.5010e-02  grad=2.7885e-05  t=5.5s
+    dml_warmup                Early stopping at epoch 62
+val=9.8902e-03  grad=1.3599e-06  t=26.0s
+    dml_lrm                   Early stopping at epoch 155
+val=9.9924e-03  grad=4.6030e-07  t=10.4s
+    dml_gradnorm_lrm          Early stopping at epoch 81
+val=1.0029e-02  grad=6.2844e-07  t=13.8s
+    dml_warmup_lrm            Early stopping at epoch 119
+val=9.9952e-03  grad=2.9811e-07  t=35.2s
+    dml_fuzzy                 Early stopping at epoch 146
+val=1.0026e-02  grad=7.5059e-07  t=9.7s
+    dml_gradnorm_fuzzy        Early stopping at epoch 65
+val=1.0427e-02  grad=8.0915e-07  t=12.1s
+    dml_warmup_fuzzy          Early stopping at epoch 91
+val=9.8260e-03  grad=2.4469e-07  t=29.9s
+
+  Seed 5926 (8/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=18.902009110942178, lrm_var=0.0007521042272007851, eval_ref=analytical
+    vanilla                   Early stopping at epoch 191
+val=9.4579e-03  grad=1.2441e-04  t=13.2s
+    dml_fixed                 Early stopping at epoch 82
+val=3.4132e-02  grad=2.7666e-05  t=8.0s
+    dml_gradnorm              Early stopping at epoch 390
+val=7.7272e-02  grad=6.7118e-05  t=72.6s
+    dml_relobralo             Early stopping at epoch 53
+val=3.5743e-02  grad=2.7279e-05  t=4.0s
+    dml_warmup                Early stopping at epoch 63
+val=9.4835e-03  grad=6.6801e-07  t=23.1s
+    dml_lrm                   Early stopping at epoch 113
+val=9.4475e-03  grad=2.7754e-07  t=8.8s
+    dml_gradnorm_lrm          Early stopping at epoch 60
+val=9.6493e-03  grad=7.7514e-07  t=11.0s
+    dml_warmup_lrm            Early stopping at epoch 172
+val=9.4289e-03  grad=3.4476e-07  t=43.2s
+    dml_fuzzy                 Early stopping at epoch 59
+val=1.0219e-02  grad=1.4942e-06  t=5.6s
+    dml_gradnorm_fuzzy        Early stopping at epoch 69
+val=9.8432e-03  grad=5.8147e-07  t=12.6s
+    dml_warmup_fuzzy          Early stopping at epoch 175
+val=9.5322e-03  grad=3.1037e-07  t=42.9s
+
+  Seed 8008 (9/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=18.815583622799693, lrm_var=0.0007543192553269905, eval_ref=analytical
+    vanilla                   Early stopping at epoch 93
+val=1.0275e-02  grad=1.3568e-04  t=6.9s
+    dml_fixed                 Early stopping at epoch 119
+val=3.5499e-02  grad=3.0029e-05  t=9.7s
+    dml_gradnorm              Early stopping at epoch 366
+val=7.6847e-02  grad=7.3863e-05  t=67.6s
+    dml_relobralo             Early stopping at epoch 52
+val=2.7399e-02  grad=2.0698e-05  t=5.1s
+    dml_warmup                Early stopping at epoch 86
+val=1.0543e-02  grad=6.0468e-07  t=26.1s
+    dml_lrm                   Early stopping at epoch 134
+val=1.0422e-02  grad=2.5315e-07  t=10.8s
+    dml_gradnorm_lrm          Early stopping at epoch 64
+val=1.0574e-02  grad=1.4913e-06  t=10.4s
+    dml_warmup_lrm            Early stopping at epoch 127
+val=1.0621e-02  grad=4.5019e-07  t=34.5s
+    dml_fuzzy                 Early stopping at epoch 123
+val=1.0352e-02  grad=2.4132e-07  t=10.2s
+    dml_gradnorm_fuzzy        Early stopping at epoch 66
+val=1.0566e-02  grad=9.5039e-07  t=11.3s
+    dml_warmup_fuzzy          Early stopping at epoch 83
+val=1.0340e-02  grad=1.4733e-07  t=28.9s
+
+  Seed 9999 (10/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=18.479712990557907, lrm_var=0.0007489984997078988, eval_ref=analytical
+    vanilla                   Early stopping at epoch 167
+val=1.0368e-02  grad=1.4925e-04  t=10.4s
+    dml_fixed                 Early stopping at epoch 91
+val=3.6472e-02  grad=3.3578e-05  t=9.8s
+    dml_gradnorm              Early stopping at epoch 119
+val=1.3320e-02  grad=4.6461e-06  t=21.8s
+    dml_relobralo             Early stopping at epoch 58
+val=4.3037e-02  grad=4.0627e-05  t=5.1s
+    dml_warmup                Early stopping at epoch 56
+val=1.0528e-02  grad=7.2399e-07  t=22.2s
+    dml_lrm                   Early stopping at epoch 112
+val=1.0627e-02  grad=4.2010e-07  t=9.0s
+    dml_gradnorm_lrm          Early stopping at epoch 69
+val=1.0381e-02  grad=2.1056e-07  t=12.4s
+    dml_warmup_lrm            Early stopping at epoch 54
+val=1.0450e-02  grad=1.2638e-07  t=25.0s
+    dml_fuzzy                 Early stopping at epoch 137
+val=1.0856e-02  grad=5.7701e-07  t=11.3s
+    dml_gradnorm_fuzzy        Early stopping at epoch 74
+val=1.0688e-02  grad=5.3001e-07  t=13.4s
+    dml_warmup_fuzzy          Early stopping at epoch 133
+val=1.0552e-02  grad=4.3748e-07  t=36.2s
+
+────────────────────────────────────────────────────────────
+Dataset: barrier_bs
+────────────────────────────────────────────────────────────
+
+  Seed 42 (1/10)
+    Generating data ... done (1.8s)
+    n_train=1639, n_test=409, dim=1, eps=16.893529797251794, lrm_var=292.6996145661078, eval_ref=analytical_reflection_principle
+    vanilla                   Early stopping at epoch 133
+val=3.4010e+01  grad=4.7138e-01  t=8.9s
+    dml_fixed                 Early stopping at epoch 101
+val=1.1911e+02  grad=1.9886e-01  t=8.4s
+    dml_gradnorm              Early stopping at epoch 162
+val=1.4229e+02  grad=2.3310e-01  t=28.4s
+    dml_relobralo             Early stopping at epoch 57
+val=1.1977e+02  grad=1.7615e-01  t=5.0s
+    dml_warmup                Early stopping at epoch 57
+val=3.6191e+01  grad=1.3319e-02  t=21.9s
+    dml_lrm                   Early stopping at epoch 54
+val=7.3101e+01  grad=3.7835e-02  t=5.1s
+    dml_gradnorm_lrm          Early stopping at epoch 53
+val=4.2030e+01  grad=1.7598e-02  t=10.9s
+    dml_warmup_lrm            Early stopping at epoch 180
+val=3.4347e+01  grad=3.5100e-01  t=43.5s
+    dml_fuzzy                 Early stopping at epoch 193
+val=3.4146e+01  grad=8.8529e-03  t=14.7s
+    dml_gradnorm_fuzzy        Early stopping at epoch 102
+val=3.4274e+01  grad=8.6738e-03  t=16.8s
+    dml_warmup_fuzzy          Early stopping at epoch 107
+val=3.3914e+01  grad=6.6133e-03  t=30.4s
+
+  Seed 123 (2/10)
+    Generating data ... done (1.6s)
+    n_train=1639, n_test=409, dim=1, eps=16.478362354284407, lrm_var=321.2400977635215, eval_ref=analytical_reflection_principle
+    vanilla                   Early stopping at epoch 69
+val=2.5382e+01  grad=4.1685e-01  t=5.8s
+    dml_fixed                 Early stopping at epoch 63
+val=9.9195e+01  grad=1.7591e-01  t=6.1s
+    dml_gradnorm              Early stopping at epoch 398
+val=2.3202e+02  grad=3.1758e-01  t=75.4s
+    dml_relobralo             Early stopping at epoch 57
+val=1.1034e+02  grad=1.8302e-01  t=6.0s
+    dml_warmup                Early stopping at epoch 127
+val=2.5626e+01  grad=1.3417e-02  t=34.5s
+    dml_lrm                   Early stopping at epoch 103
+val=5.1397e+01  grad=4.0006e-01  t=9.5s
+    dml_gradnorm_lrm          Early stopping at epoch 51
+val=8.4838e+01  grad=9.4440e-02  t=10.8s
+    dml_warmup_lrm            Early stopping at epoch 113
+val=2.7997e+01  grad=1.3240e-01  t=32.3s
+    dml_fuzzy                 Early stopping at epoch 111
+val=2.6059e+01  grad=1.4029e-02  t=9.0s
+    dml_gradnorm_fuzzy        Early stopping at epoch 157
+val=2.6158e+01  grad=1.1765e-02  t=28.6s
+    dml_warmup_fuzzy          Early stopping at epoch 67
+val=2.5852e+01  grad=1.1439e-02  t=23.0s
+
+  Seed 456 (3/10)
+    Generating data ... done (1.7s)
+    n_train=1639, n_test=409, dim=1, eps=16.843639814985824, lrm_var=304.1469340625292, eval_ref=analytical_reflection_principle
+    vanilla                   Early stopping at epoch 112
+val=2.8453e+01  grad=4.6402e-01  t=9.1s
+    dml_fixed                 Early stopping at epoch 95
+val=1.1670e+02  grad=2.1691e-01  t=7.5s
+    dml_gradnorm              Early stopping at epoch 416
+val=2.6602e+02  grad=3.6350e-01  t=80.8s
+    dml_relobralo             Early stopping at epoch 58
+val=1.1719e+02  grad=1.8944e-01  t=5.7s
+    dml_warmup                Early stopping at epoch 57
+val=2.9350e+01  grad=2.9363e-02  t=21.7s
+    dml_lrm                   Early stopping at epoch 72
+val=3.4187e+01  grad=8.8042e-02  t=6.2s
+    dml_gradnorm_lrm          Early stopping at epoch 53
+val=1.2211e+02  grad=1.5023e-01  t=9.9s
+    dml_warmup_lrm            Early stopping at epoch 191
+val=2.9611e+01  grad=1.5100e-02  t=43.8s
+    dml_fuzzy                 Early stopping at epoch 176
+val=2.8536e+01  grad=1.1652e-02  t=13.1s
+    dml_gradnorm_fuzzy        Early stopping at epoch 134
+val=2.8588e+01  grad=9.8701e-03  t=22.5s
+    dml_warmup_fuzzy          Early stopping at epoch 137
+val=2.8585e+01  grad=8.5701e-03  t=32.4s
+
+  Seed 789 (4/10)
+    Generating data ... done (1.2s)
+    n_train=1639, n_test=409, dim=1, eps=16.199892841870845, lrm_var=311.4740198499409, eval_ref=analytical_reflection_principle
+    vanilla                   Early stopping at epoch 131
+val=2.9313e+01  grad=4.6723e-01  t=8.6s
+    dml_fixed                 Early stopping at epoch 86
+val=1.0922e+02  grad=1.9855e-01  t=7.9s
+    dml_gradnorm              Early stopping at epoch 217
+val=2.0244e+02  grad=3.1895e-01  t=42.0s
+    dml_relobralo             Early stopping at epoch 58
+val=1.0796e+02  grad=2.0649e-01  t=5.3s
+    dml_warmup                Early stopping at epoch 116
+val=3.0236e+01  grad=3.4540e-02  t=30.8s
+    dml_lrm                   Early stopping at epoch 134
+val=4.4493e+01  grad=2.0864e-01  t=11.9s
+    dml_gradnorm_lrm          Early stopping at epoch 53
+val=8.6960e+01  grad=1.9191e-01  t=9.0s
+    dml_warmup_lrm            Early stopping at epoch 142
+val=3.0125e+01  grad=4.1554e-02  t=37.4s
+    dml_fuzzy                 Early stopping at epoch 59
+val=3.0212e+01  grad=5.8366e-03  t=5.4s
+    dml_gradnorm_fuzzy        Early stopping at epoch 85
+val=3.0445e+01  grad=8.9037e-03  t=16.3s
+    dml_warmup_fuzzy          Early stopping at epoch 87
+val=2.9581e+01  grad=6.3096e-03  t=27.1s
+
+  Seed 1337 (5/10)
+    Generating data ... done (1.5s)
+    n_train=1639, n_test=409, dim=1, eps=16.49408315051324, lrm_var=306.46349979508545, eval_ref=analytical_reflection_principle
+    vanilla                   Early stopping at epoch 81
+val=3.3230e+01  grad=4.5642e-01  t=6.3s
+    dml_fixed                 Early stopping at epoch 61
+val=1.0217e+02  grad=1.8348e-01  t=5.2s
+    dml_gradnorm              Early stopping at epoch 63
+val=1.4549e+02  grad=2.4325e-01  t=10.2s
+    dml_relobralo             Early stopping at epoch 57
+val=1.1269e+02  grad=1.8533e-01  t=4.9s
+    dml_warmup                Early stopping at epoch 98
+val=3.2205e+01  grad=8.8199e-03  t=27.7s
+    dml_lrm                   Early stopping at epoch 68
+val=1.1779e+02  grad=2.4919e-01  t=5.3s
+    dml_gradnorm_lrm          Early stopping at epoch 52
+val=1.4281e+02  grad=1.6052e-01  t=8.2s
+    dml_warmup_lrm            Early stopping at epoch 80
+val=3.1179e+01  grad=8.3530e-03  t=24.8s
+    dml_fuzzy                 Early stopping at epoch 93
+val=3.2950e+01  grad=1.3000e-02  t=7.2s
+    dml_gradnorm_fuzzy        Early stopping at epoch 144
+val=3.2683e+01  grad=1.1997e-02  t=20.4s
+    dml_warmup_fuzzy          Early stopping at epoch 80
+val=3.2704e+01  grad=9.4015e-03  t=22.8s
+
+  Seed 2024 (6/10)
+    Generating data ... done (1.4s)
+    n_train=1639, n_test=409, dim=1, eps=16.766638115922483, lrm_var=300.11206461681434, eval_ref=analytical_reflection_principle
+    vanilla                   Early stopping at epoch 69
+val=2.5099e+01  grad=4.3502e-01  t=5.1s
+    dml_fixed                 Early stopping at epoch 122
+val=9.8736e+01  grad=1.7855e-01  t=8.4s
+    dml_gradnorm              Early stopping at epoch 324
+val=1.9355e+02  grad=2.9306e-01  t=54.3s
+    dml_relobralo             Early stopping at epoch 54
+val=1.0298e+02  grad=1.7883e-01  t=5.0s
+    dml_warmup                Early stopping at epoch 64
+val=2.5201e+01  grad=3.2591e-02  t=22.4s
+    dml_lrm                   Early stopping at epoch 109
+val=7.8673e+01  grad=9.5348e-01  t=7.3s
+    dml_gradnorm_lrm          Early stopping at epoch 55
+val=1.4171e+02  grad=7.4682e-01  t=9.1s
+    dml_warmup_lrm            Early stopping at epoch 86
+val=2.7033e+01  grad=1.0867e-01  t=24.4s
+    dml_fuzzy                 Early stopping at epoch 117
+val=2.5474e+01  grad=1.2531e-02  t=7.9s
+    dml_gradnorm_fuzzy        Early stopping at epoch 102
+val=2.6382e+01  grad=1.3325e-02  t=15.5s
+    dml_warmup_fuzzy          Early stopping at epoch 71
+val=2.6113e+01  grad=1.0777e-02  t=21.2s
+
+  Seed 3141 (7/10)
+    Generating data ... done (1.0s)
+    n_train=1639, n_test=409, dim=1, eps=15.98950242386765, lrm_var=304.7315878014764, eval_ref=analytical_reflection_principle
+    vanilla                   Early stopping at epoch 124
+val=3.3676e+01  grad=4.7940e-01  t=6.9s
+    dml_fixed                 Early stopping at epoch 172
+val=1.1996e+02  grad=2.1797e-01  t=12.7s
+    dml_gradnorm              Early stopping at epoch 178
+val=1.1305e+02  grad=2.1892e-01  t=24.6s
+    dml_relobralo             Early stopping at epoch 52
+val=1.4847e+02  grad=2.5699e-01  t=4.6s
+    dml_warmup                Early stopping at epoch 107
+val=3.4460e+01  grad=2.4961e-02  t=28.0s
+    dml_lrm                   Early stopping at epoch 57
+val=1.4319e+02  grad=1.0167e-01  t=4.6s
+    dml_gradnorm_lrm          Early stopping at epoch 53
+val=5.4373e+01  grad=1.1942e-01  t=8.8s
+    dml_warmup_lrm            Early stopping at epoch 98
+val=3.3531e+01  grad=1.1347e-02  t=25.6s
+    dml_fuzzy                 Early stopping at epoch 144
+val=3.5452e+01  grad=1.2505e-02  t=10.6s
+    dml_gradnorm_fuzzy        val=3.4532e+01  grad=1.1418e-02  t=73.9s
+    dml_warmup_fuzzy          Early stopping at epoch 57
+val=3.4989e+01  grad=9.0602e-03  t=19.5s
+
+  Seed 5926 (8/10)
+    Generating data ... done (1.0s)
+    n_train=1639, n_test=409, dim=1, eps=16.453115387905243, lrm_var=306.3938909804552, eval_ref=analytical_reflection_principle
+    vanilla                   Early stopping at epoch 148
+val=3.1229e+01  grad=4.5104e-01  t=9.1s
+    dml_fixed                 Early stopping at epoch 170
+val=1.0508e+02  grad=1.9771e-01  t=10.6s
+    dml_gradnorm              Early stopping at epoch 239
+val=1.9938e+02  grad=3.0977e-01  t=42.4s
+    dml_relobralo             Early stopping at epoch 53
+val=1.1063e+02  grad=1.8937e-01  t=3.9s
+    dml_warmup                Early stopping at epoch 57
+val=3.2366e+01  grad=2.3197e-02  t=20.4s
+    dml_lrm                   Early stopping at epoch 93
+val=6.7013e+01  grad=8.4223e-02  t=6.3s
+    dml_gradnorm_lrm          Early stopping at epoch 52
+val=1.2169e+02  grad=7.4619e-02  t=8.4s
+    dml_warmup_lrm            Early stopping at epoch 99
+val=3.1561e+01  grad=1.6681e-02  t=28.0s
+    dml_fuzzy                 Early stopping at epoch 183
+val=3.0989e+01  grad=1.2597e-02  t=12.0s
+    dml_gradnorm_fuzzy        Early stopping at epoch 430
+val=3.0679e+01  grad=1.2928e-02  t=62.8s
+    dml_warmup_fuzzy          Early stopping at epoch 68
+val=3.1468e+01  grad=9.0154e-03  t=22.6s
+
+  Seed 8008 (9/10)
+    Generating data ... done (1.0s)
+    n_train=1639, n_test=409, dim=1, eps=16.244352872309335, lrm_var=295.84335836338875, eval_ref=analytical_reflection_principle
+    vanilla                   Early stopping at epoch 96
+val=3.1180e+01  grad=4.6733e-01  t=6.2s
+    dml_fixed                 Early stopping at epoch 115
+val=1.0493e+02  grad=2.0112e-01  t=8.7s
+    dml_gradnorm              Early stopping at epoch 241
+val=1.9141e+02  grad=3.0913e-01  t=42.3s
+    dml_relobralo             Early stopping at epoch 54
+val=1.1502e+02  grad=2.1781e-01  t=4.6s
+    dml_warmup                Early stopping at epoch 125
+val=3.2254e+01  grad=2.7927e-02  t=28.5s
+    dml_lrm                   Early stopping at epoch 71
+val=3.6062e+01  grad=5.4746e-02  t=5.1s
+    dml_gradnorm_lrm          Early stopping at epoch 52
+val=1.0024e+02  grad=9.0896e-02  t=7.6s
+    dml_warmup_lrm            Early stopping at epoch 97
+val=3.1680e+01  grad=1.8232e-02  t=25.5s
+    dml_fuzzy                 Early stopping at epoch 92
+val=3.1156e+01  grad=1.2301e-02  t=5.9s
+    dml_gradnorm_fuzzy        Early stopping at epoch 128
+val=3.1516e+01  grad=1.5010e-02  t=17.2s
+    dml_warmup_fuzzy          Early stopping at epoch 70
+val=3.1219e+01  grad=1.0451e-02  t=22.5s
+
+  Seed 9999 (10/10)
+    Generating data ... done (0.8s)
+    n_train=1639, n_test=409, dim=1, eps=17.030797004274405, lrm_var=292.0253540693253, eval_ref=analytical_reflection_principle
+    vanilla                   Early stopping at epoch 108
+val=3.0939e+01  grad=4.5647e-01  t=6.5s
+    dml_fixed                 Early stopping at epoch 125
+val=1.0243e+02  grad=1.9100e-01  t=7.2s
+    dml_gradnorm              Early stopping at epoch 119
+val=4.6564e+01  grad=7.3105e-02  t=19.5s
+    dml_relobralo             Early stopping at epoch 53
+val=1.0806e+02  grad=2.1539e-01  t=4.5s
+    dml_warmup                Early stopping at epoch 57
+val=3.2490e+01  grad=2.7375e-02  t=20.7s
+    dml_lrm                   Early stopping at epoch 57
+val=1.1089e+02  grad=1.2283e-01  t=4.4s
+    dml_gradnorm_lrm          Early stopping at epoch 57
+val=3.3892e+01  grad=4.1269e-02  t=10.7s
+    dml_warmup_lrm            Early stopping at epoch 67
+val=3.2224e+01  grad=4.2425e-02  t=23.1s
+    dml_fuzzy                 Early stopping at epoch 185
+val=3.1357e+01  grad=9.2105e-03  t=12.8s
+    dml_gradnorm_fuzzy        Early stopping at epoch 186
+val=3.1140e+01  grad=1.0437e-02  t=24.8s
+    dml_warmup_fuzzy          Early stopping at epoch 141
+val=3.0926e+01  grad=9.2315e-03  t=31.0s
+
+────────────────────────────────────────────────────────────
+Dataset: heston_digital
+────────────────────────────────────────────────────────────
+
+  Seed 42 (1/10)
+    Generating data ... done (0.5s)
+    n_train=820, n_test=204, dim=1, eps=13.696700300584396, lrm_var=0.04850979979842391, eval_ref=cos_method_semi_analytical
+    vanilla                   Early stopping at epoch 93
+val=1.3150e-02  grad=2.3328e-04  t=4.1s
+    dml_fixed                 Early stopping at epoch 71
+val=2.9385e-02  grad=6.5189e-05  t=4.0s
+    dml_gradnorm              Early stopping at epoch 184
+val=1.4276e-02  grad=1.1367e-05  t=19.7s
+    dml_relobralo             Early stopping at epoch 63
+val=3.0996e-02  grad=6.2510e-05  t=3.9s
+    dml_warmup                Early stopping at epoch 111
+val=1.2902e-02  grad=1.8644e-06  t=19.4s
+    dml_lrm                   Early stopping at epoch 61
+val=1.7289e-02  grad=1.0625e-05  t=3.4s
+    dml_gradnorm_lrm          Early stopping at epoch 64
+val=1.5946e-02  grad=1.5957e-05  t=6.6s
+    dml_warmup_lrm            Early stopping at epoch 115
+val=1.3554e-02  grad=1.2899e-05  t=18.9s
+    dml_fuzzy                 Early stopping at epoch 149
+val=1.3141e-02  grad=9.4511e-07  t=7.8s
+    dml_gradnorm_fuzzy        Early stopping at epoch 119
+val=1.3269e-02  grad=4.5860e-07  t=11.2s
+    dml_warmup_fuzzy          Early stopping at epoch 81
+val=1.3293e-02  grad=8.0193e-07  t=17.7s
+
+  Seed 123 (2/10)
+    Generating data ... done (0.5s)
+    n_train=820, n_test=204, dim=1, eps=13.755815498547781, lrm_var=0.048376361377984074, eval_ref=cos_method_semi_analytical
+    vanilla                   Early stopping at epoch 64
+val=1.6981e-02  grad=2.5178e-04  t=4.6s
+    dml_fixed                 Early stopping at epoch 56
+val=3.1282e-02  grad=6.1834e-05  t=3.4s
+    dml_gradnorm              Early stopping at epoch 306
+val=6.2291e-02  grad=1.5295e-04  t=36.3s
+    dml_relobralo             Early stopping at epoch 56
+val=3.1431e-02  grad=6.2437e-05  t=3.3s
+    dml_warmup                Early stopping at epoch 63
+val=1.6571e-02  grad=4.4585e-06  t=14.0s
+    dml_lrm                   Early stopping at epoch 84
+val=1.8786e-02  grad=7.8809e-05  t=3.9s
+    dml_gradnorm_lrm          Early stopping at epoch 60
+val=2.3245e-02  grad=4.7740e-05  t=6.6s
+    dml_warmup_lrm            Early stopping at epoch 135
+val=1.6585e-02  grad=3.1044e-05  t=22.3s
+    dml_fuzzy                 Early stopping at epoch 62
+val=1.7182e-02  grad=1.6873e-06  t=3.9s
+    dml_gradnorm_fuzzy        Early stopping at epoch 68
+val=1.6604e-02  grad=1.0138e-06  t=6.8s
+    dml_warmup_fuzzy          Early stopping at epoch 121
+val=1.6685e-02  grad=8.1650e-07  t=20.8s
+
+  Seed 456 (3/10)
+    Generating data ... done (0.6s)
+    n_train=820, n_test=204, dim=1, eps=13.354830568114558, lrm_var=0.04716828921541019, eval_ref=cos_method_semi_analytical
+    vanilla                   Early stopping at epoch 62
+val=1.4368e-02  grad=2.5202e-04  t=3.4s
+    dml_fixed                 Early stopping at epoch 133
+val=2.8688e-02  grad=6.6219e-05  t=6.6s
+    dml_gradnorm              Early stopping at epoch 281
+val=5.0909e-02  grad=1.4111e-04  t=32.7s
+    dml_relobralo             Early stopping at epoch 56
+val=3.3282e-02  grad=7.6081e-05  t=3.6s
+    dml_warmup                Early stopping at epoch 64
+val=1.4067e-02  grad=2.8431e-06  t=13.5s
+    dml_lrm                   Early stopping at epoch 66
+val=1.5978e-02  grad=1.1559e-05  t=5.0s
+    dml_gradnorm_lrm          Early stopping at epoch 57
+val=1.5772e-02  grad=7.2675e-06  t=5.7s
+    dml_warmup_lrm            Early stopping at epoch 176
+val=1.4103e-02  grad=5.9145e-06  t=25.2s
+    dml_fuzzy                 Early stopping at epoch 79
+val=1.4080e-02  grad=2.4720e-06  t=5.7s
+    dml_gradnorm_fuzzy        Early stopping at epoch 79
+val=1.4175e-02  grad=3.6231e-06  t=7.8s
+    dml_warmup_fuzzy          Early stopping at epoch 72
+val=1.3844e-02  grad=1.5869e-06  t=12.8s
+
+  Seed 789 (4/10)
+    Generating data ... done (0.5s)
+    n_train=820, n_test=204, dim=1, eps=12.483904051328713, lrm_var=0.04989359617828089, eval_ref=cos_method_semi_analytical
+    vanilla                   Early stopping at epoch 91
+val=1.5663e-02  grad=2.3601e-04  t=5.3s
+    dml_fixed                 Early stopping at epoch 92
+val=3.3542e-02  grad=5.6294e-05  t=5.4s
+    dml_gradnorm              Early stopping at epoch 99
+val=2.9000e-02  grad=4.2656e-05  t=9.6s
+    dml_relobralo             Early stopping at epoch 63
+val=3.4620e-02  grad=6.0321e-05  t=4.3s
+    dml_warmup                Early stopping at epoch 64
+val=1.5373e-02  grad=3.4841e-06  t=14.7s
+    dml_lrm                   Early stopping at epoch 128
+val=1.4384e-02  grad=4.0747e-05  t=5.4s
+    dml_gradnorm_lrm          Early stopping at epoch 60
+val=1.4790e-02  grad=2.9600e-05  t=7.4s
+    dml_warmup_lrm            Early stopping at epoch 147
+val=1.4801e-02  grad=2.5153e-05  t=23.8s
+    dml_fuzzy                 Early stopping at epoch 114
+val=1.5678e-02  grad=1.4914e-06  t=7.7s
+    dml_gradnorm_fuzzy        Early stopping at epoch 96
+val=1.5805e-02  grad=1.1080e-06  t=10.2s
+    dml_warmup_fuzzy          Early stopping at epoch 71
+val=1.5263e-02  grad=3.6504e-07  t=13.7s
+
+  Seed 1337 (5/10)
+    Generating data ... done (0.4s)
+    n_train=820, n_test=204, dim=1, eps=13.963930664124238, lrm_var=0.047968270861733914, eval_ref=cos_method_semi_analytical
+    vanilla                   Early stopping at epoch 83
+val=1.2812e-02  grad=2.4124e-04  t=4.9s
+    dml_fixed                 Early stopping at epoch 63
+val=3.6834e-02  grad=8.5288e-05  t=3.9s
+    dml_gradnorm              Early stopping at epoch 153
+val=4.4812e-02  grad=1.0529e-04  t=15.8s
+    dml_relobralo             Early stopping at epoch 58
+val=2.9062e-02  grad=5.9934e-05  t=4.8s
+    dml_warmup                Early stopping at epoch 68
+val=1.2808e-02  grad=4.1599e-06  t=20.3s
+    dml_lrm                   Early stopping at epoch 90
+val=1.3143e-02  grad=1.3417e-05  t=6.5s
+    dml_gradnorm_lrm          Early stopping at epoch 60
+val=1.4286e-02  grad=1.8781e-05  t=6.8s
+    dml_warmup_lrm            Early stopping at epoch 217
+val=1.2406e-02  grad=4.9375e-06  t=34.1s
+    dml_fuzzy                 Early stopping at epoch 86
+val=1.2564e-02  grad=1.7107e-06  t=6.2s
+    dml_gradnorm_fuzzy        Early stopping at epoch 112
+val=1.2679e-02  grad=1.8110e-06  t=12.4s
+    dml_warmup_fuzzy          Early stopping at epoch 117
+val=1.2690e-02  grad=6.4496e-07  t=25.5s
+
+  Seed 2024 (6/10)
+    Generating data ... done (0.4s)
+    n_train=820, n_test=204, dim=1, eps=13.604102591620764, lrm_var=0.04952820399136289, eval_ref=cos_method_semi_analytical
+    vanilla                   Early stopping at epoch 61
+val=1.5793e-02  grad=2.5125e-04  t=4.9s
+    dml_fixed                 Early stopping at epoch 92
+val=3.5765e-02  grad=7.8637e-05  t=5.7s
+    dml_gradnorm              Early stopping at epoch 281
+val=5.8710e-02  grad=1.4871e-04  t=33.0s
+    dml_relobralo             Early stopping at epoch 55
+val=3.6617e-02  grad=8.9004e-05  t=4.2s
+    dml_warmup                Early stopping at epoch 64
+val=1.5995e-02  grad=2.8310e-06  t=13.9s
+    dml_lrm                   Early stopping at epoch 72
+val=1.9841e-02  grad=1.2607e-05  t=4.7s
+    dml_gradnorm_lrm          Early stopping at epoch 56
+val=2.4618e-02  grad=2.7470e-05  t=5.3s
+    dml_warmup_lrm            Early stopping at epoch 67
+val=1.6605e-02  grad=6.6790e-06  t=17.0s
+    dml_fuzzy                 Early stopping at epoch 79
+val=1.6485e-02  grad=2.2857e-06  t=5.4s
+    dml_gradnorm_fuzzy        Early stopping at epoch 78
+val=1.6873e-02  grad=1.7379e-06  t=8.1s
+    dml_warmup_fuzzy          Early stopping at epoch 99
+val=1.6215e-02  grad=2.9731e-07  t=18.0s
+
+  Seed 3141 (7/10)
+    Generating data ... done (0.4s)
+    n_train=820, n_test=204, dim=1, eps=14.03429327915081, lrm_var=0.050540563800290164, eval_ref=cos_method_semi_analytical
+    vanilla                   Early stopping at epoch 90
+val=1.3581e-02  grad=2.4409e-04  t=5.0s
+    dml_fixed                 Early stopping at epoch 75
+val=2.8311e-02  grad=5.4803e-05  t=6.2s
+    dml_gradnorm              Early stopping at epoch 485
+val=6.1727e-02  grad=1.5875e-04  t=62.9s
+    dml_relobralo             Early stopping at epoch 61
+val=3.1515e-02  grad=6.9395e-05  t=4.4s
+    dml_warmup                Early stopping at epoch 63
+val=1.3396e-02  grad=6.7612e-06  t=15.8s
+    dml_lrm                   Early stopping at epoch 97
+val=1.3474e-02  grad=9.3479e-06  t=5.7s
+    dml_gradnorm_lrm          Early stopping at epoch 67
+val=1.7909e-02  grad=1.7038e-05  t=8.2s
+    dml_warmup_lrm            Early stopping at epoch 65
+val=1.3832e-02  grad=5.9018e-06  t=17.3s
+    dml_fuzzy                 Early stopping at epoch 162
+val=1.3494e-02  grad=1.0905e-06  t=9.3s
+    dml_gradnorm_fuzzy        Early stopping at epoch 192
+val=1.3817e-02  grad=2.1227e-06  t=21.1s
+    dml_warmup_fuzzy          Early stopping at epoch 191
+val=1.3664e-02  grad=4.2241e-07  t=30.0s
+
+  Seed 5926 (8/10)
+    Generating data ... done (0.6s)
+    n_train=820, n_test=204, dim=1, eps=13.601936861303804, lrm_var=0.048226063233149485, eval_ref=cos_method_semi_analytical
+    vanilla                   Early stopping at epoch 110
+val=1.6388e-02  grad=2.3012e-04  t=8.4s
+    dml_fixed                 Early stopping at epoch 104
+val=3.6627e-02  grad=6.2066e-05  t=7.3s
+    dml_gradnorm              Early stopping at epoch 206
+val=6.0397e-02  grad=1.2380e-04  t=27.9s
+    dml_relobralo             Early stopping at epoch 56
+val=4.0919e-02  grad=6.3936e-05  t=4.2s
+    dml_warmup                Early stopping at epoch 64
+val=1.6688e-02  grad=1.5366e-06  t=23.4s
+    dml_lrm                   Early stopping at epoch 61
+val=2.1043e-02  grad=3.7445e-05  t=4.7s
+    dml_gradnorm_lrm          Early stopping at epoch 59
+val=1.9441e-02  grad=1.3908e-05  t=7.4s
+    dml_warmup_lrm            Early stopping at epoch 66
+val=1.6433e-02  grad=1.5917e-05  t=23.4s
+    dml_fuzzy                 Early stopping at epoch 75
+val=1.6824e-02  grad=1.3488e-06  t=6.8s
+    dml_gradnorm_fuzzy        Early stopping at epoch 74
+val=1.7073e-02  grad=1.2734e-06  t=8.0s
+    dml_warmup_fuzzy          Early stopping at epoch 145
+val=1.6793e-02  grad=8.5163e-07  t=32.6s
+
+  Seed 8008 (9/10)
+    Generating data ... done (0.7s)
+    n_train=820, n_test=204, dim=1, eps=13.72152878737436, lrm_var=0.05023810278088131, eval_ref=cos_method_semi_analytical
+    vanilla                   Early stopping at epoch 167
+val=1.4424e-02  grad=2.3872e-04  t=9.9s
+    dml_fixed                 Early stopping at epoch 58
+val=2.7848e-02  grad=6.4699e-05  t=4.7s
+    dml_gradnorm              Early stopping at epoch 245
+val=4.9161e-02  grad=1.3319e-04  t=32.9s
+    dml_relobralo             Early stopping at epoch 62
+val=2.4481e-02  grad=4.9747e-05  t=5.8s
+    dml_warmup                Early stopping at epoch 63
+val=1.3995e-02  grad=3.7858e-06  t=22.5s
+    dml_lrm                   Early stopping at epoch 52
+val=3.3336e-02  grad=1.6804e-05  t=5.0s
+    dml_gradnorm_lrm          Early stopping at epoch 66
+val=2.6344e-02  grad=6.1304e-05  t=8.6s
+    dml_warmup_lrm            Early stopping at epoch 67
+val=1.3909e-02  grad=1.0628e-05  t=21.0s
+    dml_fuzzy                 Early stopping at epoch 71
+val=1.3914e-02  grad=1.0504e-06  t=8.0s
+    dml_gradnorm_fuzzy        Early stopping at epoch 103
+val=1.4156e-02  grad=6.1372e-07  t=13.1s
+    dml_warmup_fuzzy          Early stopping at epoch 138
+val=1.4084e-02  grad=6.6131e-07  t=28.7s
+
+  Seed 9999 (10/10)
+    Generating data ... done (0.4s)
+    n_train=820, n_test=204, dim=1, eps=14.396220265403729, lrm_var=0.04925317991981941, eval_ref=cos_method_semi_analytical
+    vanilla                   Early stopping at epoch 160
+val=1.0824e-02  grad=2.5120e-04  t=11.1s
+    dml_fixed                 Early stopping at epoch 58
+val=2.4804e-02  grad=5.7591e-05  t=4.4s
+    dml_gradnorm              Early stopping at epoch 282
+val=5.8112e-02  grad=1.6733e-04  t=41.8s
+    dml_relobralo             Early stopping at epoch 58
+val=2.6306e-02  grad=5.8439e-05  t=5.2s
+    dml_warmup                Early stopping at epoch 63
+val=1.0602e-02  grad=3.3708e-06  t=22.4s
+    dml_lrm                   Early stopping at epoch 83
+val=1.3618e-02  grad=1.9743e-05  t=7.6s
+    dml_gradnorm_lrm          Early stopping at epoch 60
+val=1.5428e-02  grad=3.9502e-05  t=6.9s
+    dml_warmup_lrm            Early stopping at epoch 114
+val=1.0821e-02  grad=3.7018e-05  t=27.3s
+    dml_fuzzy                 Early stopping at epoch 90
+val=1.0454e-02  grad=3.7401e-07  t=9.4s
+    dml_gradnorm_fuzzy        Early stopping at epoch 93
+val=1.0214e-02  grad=2.6019e-06  t=10.7s
+    dml_warmup_fuzzy          Early stopping at epoch 109
+val=1.0381e-02  grad=3.0185e-07  t=24.7s
+
+────────────────────────────────────────────────────────────
+Dataset: basket_d1
+────────────────────────────────────────────────────────────
+
+  Seed 42 (1/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=10.125744554594734, lrm_var=0.0010190391760709482, eval_ref=analytical
+    vanilla                   Early stopping at epoch 115
+val=2.3091e-02  grad=3.7908e-04  t=11.0s
+    dml_fixed                 Early stopping at epoch 109
+val=3.4103e-02  grad=1.1680e-04  t=11.3s
+    dml_gradnorm              Early stopping at epoch 61
+val=3.4644e-02  grad=1.1676e-04  t=13.1s
+    dml_relobralo             Early stopping at epoch 52
+val=3.1280e-02  grad=9.3113e-05  t=6.5s
+    dml_warmup                Early stopping at epoch 50
+val=3.3181e-02  grad=1.1497e-04  t=29.2s
+    dml_lrm                   Early stopping at epoch 105
+val=2.2822e-02  grad=1.2784e-06  t=12.3s
+    dml_gradnorm_lrm          val=2.2860e-02  grad=1.8081e-06  t=103.8s
+    dml_warmup_lrm            Early stopping at epoch 70
+val=2.2773e-02  grad=6.8820e-07  t=42.1s
+    dml_fuzzy                 Early stopping at epoch 90
+val=2.3092e-02  grad=8.2165e-07  t=11.3s
+    dml_gradnorm_fuzzy        val=2.2908e-02  grad=1.5186e-06  t=102.7s
+    dml_warmup_fuzzy          Early stopping at epoch 64
+val=2.3025e-02  grad=6.0191e-07  t=38.2s
+
+  Seed 123 (2/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=11.387762529595566, lrm_var=0.0007670225051350872, eval_ref=analytical
+    vanilla                   Early stopping at epoch 89
+val=2.4595e-02  grad=3.0114e-04  t=12.1s
+    dml_fixed                 Early stopping at epoch 62
+val=3.0907e-02  grad=8.5191e-05  t=8.0s
+    dml_gradnorm              Early stopping at epoch 174
+val=4.0486e-02  grad=1.9279e-04  t=43.0s
+    dml_relobralo             Early stopping at epoch 56
+val=2.9071e-02  grad=6.2363e-05  t=8.2s
+    dml_warmup                Early stopping at epoch 50
+val=3.2581e-02  grad=1.1312e-04  t=37.3s
+    dml_lrm                   Early stopping at epoch 117
+val=2.4205e-02  grad=4.8779e-07  t=15.6s
+    dml_gradnorm_lrm          val=2.3764e-02  grad=4.7684e-07  t=108.6s
+    dml_warmup_lrm            Early stopping at epoch 57
+val=2.3735e-02  grad=7.3353e-07  t=41.6s
+    dml_fuzzy                 Early stopping at epoch 63
+val=2.4347e-02  grad=1.3632e-06  t=8.5s
+    dml_gradnorm_fuzzy        val=2.3958e-02  grad=1.8636e-06  t=106.2s
+    dml_warmup_fuzzy          Early stopping at epoch 55
+val=2.3841e-02  grad=1.3225e-06  t=36.7s
+
+  Seed 456 (3/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=11.047365314619732, lrm_var=0.0008463969565628237, eval_ref=analytical
+    vanilla                   Early stopping at epoch 74
+val=2.4324e-02  grad=3.2745e-04  t=11.3s
+    dml_fixed                 Early stopping at epoch 88
+val=3.1538e-02  grad=8.0384e-05  t=10.4s
+    dml_gradnorm              Early stopping at epoch 238
+val=4.4023e-02  grad=2.1229e-04  t=62.5s
+    dml_relobralo             Early stopping at epoch 55
+val=3.2610e-02  grad=9.3085e-05  t=8.4s
+    dml_warmup                Early stopping at epoch 50
+val=3.3675e-02  grad=1.0747e-04  t=38.1s
+    dml_lrm                   Early stopping at epoch 91
+val=2.4339e-02  grad=8.0347e-07  t=10.8s
+    dml_gradnorm_lrm          val=2.4385e-02  grad=1.8455e-06  t=105.1s
+    dml_warmup_lrm            Early stopping at epoch 73
+val=2.4340e-02  grad=8.9955e-07  t=40.4s
+    dml_fuzzy                 Early stopping at epoch 117
+val=2.4345e-02  grad=1.0779e-06  t=14.1s
+    dml_gradnorm_fuzzy        val=2.4442e-02  grad=1.8175e-06  t=94.2s
+    dml_warmup_fuzzy          Early stopping at epoch 70
+val=2.4290e-02  grad=1.0192e-06  t=33.7s
+
+  Seed 789 (4/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=9.456388067346063, lrm_var=0.0013073992540655493, eval_ref=analytical
+    vanilla                   Early stopping at epoch 108
+val=1.8172e-02  grad=4.5362e-04  t=9.9s
+    dml_fixed                 Early stopping at epoch 78
+val=2.9118e-02  grad=1.2556e-04  t=9.1s
+    dml_gradnorm              Early stopping at epoch 149
+val=4.1952e-02  grad=2.5747e-04  t=34.4s
+    dml_relobralo             Early stopping at epoch 60
+val=2.9163e-02  grad=1.2741e-04  t=8.4s
+    dml_warmup                Early stopping at epoch 113
+val=1.8186e-02  grad=8.9127e-06  t=44.5s
+    dml_lrm                   Early stopping at epoch 100
+val=1.8362e-02  grad=3.7552e-06  t=12.1s
+    dml_gradnorm_lrm          Early stopping at epoch 458
+val=1.8399e-02  grad=4.1412e-06  t=84.0s
+    dml_warmup_lrm            Early stopping at epoch 90
+val=1.8111e-02  grad=2.3198e-06  t=37.8s
+    dml_fuzzy                 Early stopping at epoch 110
+val=1.8011e-02  grad=1.7051e-06  t=11.9s
+    dml_gradnorm_fuzzy        Early stopping at epoch 97
+val=1.8086e-02  grad=1.1016e-06  t=18.0s
+    dml_warmup_fuzzy          Early stopping at epoch 51
+val=1.7953e-02  grad=2.1131e-06  t=23.5s
+
+  Seed 1337 (5/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=11.636564746040328, lrm_var=0.0007324247274991448, eval_ref=analytical
+    vanilla                   Early stopping at epoch 56
+val=2.3838e-02  grad=3.0089e-04  t=6.6s
+    dml_fixed                 Early stopping at epoch 100
+val=3.1596e-02  grad=7.6718e-05  t=8.1s
+    dml_gradnorm              Early stopping at epoch 57
+val=3.5889e-02  grad=1.1133e-04  t=11.4s
+    dml_relobralo             Early stopping at epoch 54
+val=3.4617e-02  grad=1.0655e-04  t=7.3s
+    dml_warmup                Early stopping at epoch 50
+val=3.4906e-02  grad=1.0206e-04  t=30.7s
+    dml_lrm                   Early stopping at epoch 135
+val=2.3863e-02  grad=6.2775e-07  t=17.0s
+    dml_gradnorm_lrm          Early stopping at epoch 68
+val=2.3827e-02  grad=1.4376e-06  t=14.2s
+    dml_warmup_lrm            Early stopping at epoch 69
+val=2.3422e-02  grad=6.2093e-07  t=35.0s
+    dml_fuzzy                 Early stopping at epoch 163
+val=2.3948e-02  grad=1.2908e-06  t=20.1s
+    dml_gradnorm_fuzzy        Early stopping at epoch 111
+val=2.3988e-02  grad=9.8129e-07  t=19.7s
+    dml_warmup_fuzzy          Early stopping at epoch 101
+val=2.3547e-02  grad=3.9733e-07  t=47.0s
+
+  Seed 2024 (6/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=10.211058060461227, lrm_var=0.001035240496445936, eval_ref=analytical
+    vanilla                   Early stopping at epoch 86
+val=2.0718e-02  grad=3.7501e-04  t=9.4s
+    dml_fixed                 Early stopping at epoch 121
+val=3.1558e-02  grad=1.0229e-04  t=14.5s
+    dml_gradnorm              Early stopping at epoch 215
+val=4.1241e-02  grad=1.8940e-04  t=46.2s
+    dml_relobralo             Early stopping at epoch 54
+val=3.3197e-02  grad=1.1678e-04  t=8.8s
+    dml_warmup                Early stopping at epoch 50
+val=3.4224e-02  grad=1.2680e-04  t=33.9s
+    dml_lrm                   Early stopping at epoch 177
+val=2.0569e-02  grad=1.1054e-06  t=20.0s
+    dml_gradnorm_lrm          Early stopping at epoch 177
+val=2.0579e-02  grad=1.1841e-06  t=35.4s
+    dml_warmup_lrm            Early stopping at epoch 56
+val=2.0777e-02  grad=1.2710e-06  t=28.8s
+    dml_fuzzy                 Early stopping at epoch 127
+val=2.0552e-02  grad=2.4898e-06  t=13.0s
+    dml_gradnorm_fuzzy        Early stopping at epoch 171
+val=2.0500e-02  grad=1.4885e-06  t=30.9s
+    dml_warmup_fuzzy          Early stopping at epoch 74
+val=2.0547e-02  grad=1.9153e-06  t=31.1s
+
+  Seed 3141 (7/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=11.47141796298681, lrm_var=0.0007199039948603022, eval_ref=analytical
+    vanilla                   Early stopping at epoch 66
+val=2.2437e-02  grad=2.8935e-04  t=7.5s
+    dml_fixed                 Early stopping at epoch 58
+val=2.9139e-02  grad=6.8557e-05  t=7.3s
+    dml_gradnorm              Early stopping at epoch 53
+val=2.8788e-02  grad=6.7207e-05  t=10.4s
+    dml_relobralo             Early stopping at epoch 55
+val=3.1666e-02  grad=9.5719e-05  t=6.6s
+    dml_warmup                Early stopping at epoch 56
+val=2.2217e-02  grad=1.8445e-06  t=31.9s
+    dml_lrm                   Early stopping at epoch 66
+val=2.2385e-02  grad=5.3382e-07  t=9.3s
+    dml_gradnorm_lrm          Early stopping at epoch 100
+val=2.2421e-02  grad=1.6947e-06  t=19.5s
+    dml_warmup_lrm            Early stopping at epoch 83
+val=2.1971e-02  grad=3.9652e-07  t=38.5s
+    dml_fuzzy                 Early stopping at epoch 60
+val=2.2269e-02  grad=5.6009e-07  t=8.3s
+    dml_gradnorm_fuzzy        Early stopping at epoch 130
+val=2.2353e-02  grad=1.1602e-06  t=26.1s
+    dml_warmup_fuzzy          Early stopping at epoch 53
+val=2.1987e-02  grad=9.1378e-07  t=33.5s
+
+  Seed 5926 (8/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=10.45826602864114, lrm_var=0.0009816318783330258, eval_ref=analytical
+    vanilla                   Early stopping at epoch 73
+val=2.3786e-02  grad=3.7398e-04  t=8.3s
+    dml_fixed                 Early stopping at epoch 79
+val=3.2412e-02  grad=8.7497e-05  t=10.7s
+    dml_gradnorm              Early stopping at epoch 139
+val=4.0243e-02  grad=1.7052e-04  t=27.5s
+    dml_relobralo             Early stopping at epoch 53
+val=3.0308e-02  grad=6.5327e-05  t=6.1s
+    dml_warmup                Early stopping at epoch 56
+val=2.3801e-02  grad=2.9013e-06  t=29.5s
+    dml_lrm                   Early stopping at epoch 73
+val=2.3485e-02  grad=6.6035e-07  t=9.4s
+    dml_gradnorm_lrm          val=2.3626e-02  grad=7.6320e-07  t=102.8s
+    dml_warmup_lrm            Early stopping at epoch 79
+val=2.3482e-02  grad=1.6586e-07  t=35.2s
+    dml_fuzzy                 Early stopping at epoch 152
+val=2.3579e-02  grad=1.0076e-06  t=15.7s
+    dml_gradnorm_fuzzy        Early stopping at epoch 408
+val=2.3576e-02  grad=1.0841e-06  t=75.7s
+    dml_warmup_fuzzy          Early stopping at epoch 80
+val=2.3778e-02  grad=1.0080e-06  t=36.4s
+
+  Seed 8008 (9/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=10.131581995410569, lrm_var=0.001073974669901565, eval_ref=analytical
+    vanilla                   Early stopping at epoch 138
+val=1.8355e-02  grad=4.0353e-04  t=11.9s
+    dml_fixed                 Early stopping at epoch 149
+val=2.6437e-02  grad=1.0283e-04  t=16.0s
+    dml_gradnorm              Early stopping at epoch 149
+val=3.5928e-02  grad=2.1122e-04  t=31.4s
+    dml_relobralo             Early stopping at epoch 53
+val=2.4019e-02  grad=6.9920e-05  t=6.8s
+    dml_warmup                Early stopping at epoch 50
+val=2.5506e-02  grad=1.0876e-04  t=32.3s
+    dml_lrm                   Early stopping at epoch 78
+val=1.8377e-02  grad=1.4020e-06  t=10.2s
+    dml_gradnorm_lrm          Early stopping at epoch 470
+val=1.8153e-02  grad=1.3265e-06  t=88.4s
+    dml_warmup_lrm            Early stopping at epoch 62
+val=1.8120e-02  grad=2.2370e-06  t=30.2s
+    dml_fuzzy                 Early stopping at epoch 74
+val=1.8334e-02  grad=2.8403e-06  t=9.3s
+    dml_gradnorm_fuzzy        val=1.8206e-02  grad=1.1803e-06  t=83.5s
+    dml_warmup_fuzzy          Early stopping at epoch 81
+val=1.8172e-02  grad=2.0099e-06  t=26.4s
+
+  Seed 9999 (10/10)
+    Generating data ... done (0.0s)
+    n_train=1639, n_test=409, dim=1, eps=10.874419818841128, lrm_var=0.0008921554311760824, eval_ref=analytical
+    vanilla                   Early stopping at epoch 57
+val=2.3225e-02  grad=3.3764e-04  t=7.8s
+    dml_fixed                 Early stopping at epoch 84
+val=3.0483e-02  grad=7.3355e-05  t=11.0s
+    dml_gradnorm              Early stopping at epoch 51
+val=2.8147e-02  grad=7.1312e-05  t=8.8s
+    dml_relobralo             Early stopping at epoch 57
+val=2.8513e-02  grad=5.1967e-05  t=8.2s
+    dml_warmup                Early stopping at epoch 66
+val=2.3032e-02  grad=1.9820e-06  t=34.4s
+    dml_lrm                   Early stopping at epoch 167
+val=2.2440e-02  grad=7.6904e-07  t=16.9s
+    dml_gradnorm_lrm          Early stopping at epoch 65
+val=2.2473e-02  grad=6.8865e-07  t=13.7s
+    dml_warmup_lrm            Early stopping at epoch 103
+val=2.2501e-02  grad=6.1265e-07  t=36.9s
+    dml_fuzzy                 Early stopping at epoch 106
+val=2.2675e-02  grad=2.7678e-06  t=15.0s
+    dml_gradnorm_fuzzy        Early stopping at epoch 94
+val=2.2639e-02  grad=8.7496e-07  t=16.6s
+    dml_warmup_fuzzy          Early stopping at epoch 58
+val=2.2675e-02  grad=1.1878e-06  t=32.1s
+
+────────────────────────────────────────────────────────────
+Dataset: basket_d7
+────────────────────────────────────────────────────────────
+
+  Seed 42 (1/10)
+    Generating data ... done (137.9s)
+    n_train=3277, n_test=819, dim=7, eps=7.904139772737539, lrm_var=0.0019981052312668234, eval_ref=high_k_mc_lrm_100k
+    vanilla                   Early stopping at epoch 62
+val=2.5975e-02  grad=1.4151e-05  t=10.8s
+    dml_fixed                 Early stopping at epoch 52
+val=2.8197e-02  grad=4.1842e-06  t=8.9s
+    dml_gradnorm              Early stopping at epoch 147
+val=2.8131e-02  grad=1.5259e-05  t=55.9s
+    dml_relobralo             Early stopping at epoch 51
+val=2.7422e-02  grad=8.0699e-07  t=10.1s
+    dml_warmup                Early stopping at epoch 164
+val=2.8321e-02  grad=1.8437e-05  t=87.3s
+    dml_lrm                   Early stopping at epoch 55
+val=2.5898e-02  grad=3.7894e-07  t=11.2s
+    dml_gradnorm_lrm          Early stopping at epoch 70
+val=2.6033e-02  grad=1.4767e-06  t=22.8s
+    dml_warmup_lrm            Early stopping at epoch 60
+val=2.6013e-02  grad=8.3095e-07  t=53.0s
+    dml_fuzzy                 Early stopping at epoch 54
+val=2.5614e-02  grad=1.8514e-07  t=10.8s
+    dml_gradnorm_fuzzy        Early stopping at epoch 145
+val=2.5901e-02  grad=1.4162e-05  t=52.6s
+    dml_warmup_fuzzy          Early stopping at epoch 76
+val=2.6511e-02  grad=1.6596e-07  t=57.0s
+
+  Seed 123 (2/10)
+    Generating data ... done (157.6s)
+    n_train=3277, n_test=819, dim=7, eps=7.724765391123021, lrm_var=0.0019414632541244713, eval_ref=high_k_mc_lrm_100k
+    vanilla                   Early stopping at epoch 51
+val=2.3570e-02  grad=1.2226e-05  t=8.7s
+    dml_fixed                 Early stopping at epoch 57
+val=2.5299e-02  grad=3.3795e-06  t=10.9s
+    dml_gradnorm              Early stopping at epoch 184
+val=2.6585e-02  grad=9.1360e-06  t=69.5s
+    dml_relobralo             Early stopping at epoch 51
+val=2.3889e-02  grad=6.6682e-07  t=10.9s
+    dml_warmup                Early stopping at epoch 81
+val=2.4548e-02  grad=3.5671e-06  t=58.2s
+    dml_lrm                   Early stopping at epoch 56
+val=2.3170e-02  grad=3.4683e-07  t=10.4s
+    dml_gradnorm_lrm          Early stopping at epoch 58
+val=2.3322e-02  grad=5.6989e-07  t=21.4s
+    dml_warmup_lrm            Early stopping at epoch 54
+val=2.3152e-02  grad=2.1936e-07  t=49.8s
+    dml_fuzzy                 Early stopping at epoch 57
+val=2.3202e-02  grad=1.5392e-07  t=8.9s
+    dml_gradnorm_fuzzy        Early stopping at epoch 166
+val=2.3959e-02  grad=8.6256e-06  t=42.5s
+    dml_warmup_fuzzy          Early stopping at epoch 76
+val=2.3222e-02  grad=1.6429e-07  t=61.6s
+
+  Seed 456 (3/10)
+    Generating data ... done (102.9s)
+    n_train=3277, n_test=819, dim=7, eps=7.2274371956153685, lrm_var=0.0024751017285539606, eval_ref=high_k_mc_lrm_100k
+    vanilla                   Early stopping at epoch 67
+val=2.1264e-02  grad=1.2495e-05  t=12.2s
+    dml_fixed                 Early stopping at epoch 70
+val=2.4683e-02  grad=3.5663e-06  t=15.8s
+    dml_gradnorm              Early stopping at epoch 206
+val=2.7086e-02  grad=8.3706e-06  t=75.2s
+    dml_relobralo             Early stopping at epoch 51
+val=2.1315e-02  grad=6.4473e-07  t=11.7s
+    dml_warmup                Early stopping at epoch 165
+val=2.4053e-02  grad=6.5942e-06  t=84.5s
+    dml_lrm                   Early stopping at epoch 53
+val=2.1275e-02  grad=5.4378e-07  t=11.9s
+    dml_gradnorm_lrm          Early stopping at epoch 57
+val=2.1387e-02  grad=7.8728e-07  t=17.8s
+    dml_warmup_lrm            Early stopping at epoch 50
+val=2.1106e-02  grad=1.5373e-06  t=50.6s
+    dml_fuzzy                 Early stopping at epoch 71
+val=2.0576e-02  grad=2.3336e-07  t=11.9s
+    dml_gradnorm_fuzzy        Early stopping at epoch 166
+val=2.0935e-02  grad=4.8969e-06  t=64.1s
+    dml_warmup_fuzzy          Early stopping at epoch 94
+val=2.0519e-02  grad=4.4530e-07  t=63.6s
+
+  Seed 789 (4/10)
+    Generating data ... done (112.9s)
+    n_train=3277, n_test=819, dim=7, eps=7.704285548547932, lrm_var=0.00204405499905909, eval_ref=high_k_mc_lrm_100k
+    vanilla                   Early stopping at epoch 60
+val=2.7843e-02  grad=1.2760e-05  t=9.3s
+    dml_fixed                 Early stopping at epoch 61
+val=2.9816e-02  grad=3.9435e-06  t=10.5s
+    dml_gradnorm              Early stopping at epoch 152
+val=2.9829e-02  grad=8.2050e-06  t=57.0s
+    dml_relobralo             Early stopping at epoch 51
+val=2.7559e-02  grad=6.4749e-07  t=10.7s
+    dml_warmup                Early stopping at epoch 185
+val=3.0491e-02  grad=1.3550e-05  t=96.0s
+    dml_lrm                   Early stopping at epoch 52
+val=2.7063e-02  grad=2.9512e-07  t=8.2s
+    dml_gradnorm_lrm          Early stopping at epoch 71
+val=2.7826e-02  grad=2.1391e-06  t=26.7s
+    dml_warmup_lrm            Early stopping at epoch 54
+val=2.7408e-02  grad=7.9760e-07  t=53.7s
+    dml_fuzzy                 Early stopping at epoch 57
+val=2.6982e-02  grad=1.5283e-07  t=12.2s
+    dml_gradnorm_fuzzy        Early stopping at epoch 147
+val=2.7712e-02  grad=9.2938e-06  t=52.8s
+    dml_warmup_fuzzy          Early stopping at epoch 54
+val=2.7203e-02  grad=6.4793e-07  t=40.9s
+
+  Seed 1337 (5/10)
+    Generating data ... done (161.1s)
+    n_train=3277, n_test=819, dim=7, eps=7.454460009144751, lrm_var=0.002254435137905098, eval_ref=high_k_mc_lrm_100k
+    vanilla                   Early stopping at epoch 60
+val=2.3470e-02  grad=1.3405e-05  t=8.7s
+    dml_fixed                 Early stopping at epoch 64
+val=2.5327e-02  grad=3.7071e-06  t=12.3s
+    dml_gradnorm              Early stopping at epoch 166
+val=2.7748e-02  grad=9.0523e-06  t=63.1s
+    dml_relobralo             Early stopping at epoch 52
+val=2.3279e-02  grad=5.8236e-07  t=12.2s
+    dml_warmup                Early stopping at epoch 172
+val=2.5669e-02  grad=1.7383e-05  t=86.4s
+    dml_lrm                   Early stopping at epoch 55
+val=2.3383e-02  grad=4.6023e-07  t=12.1s
+    dml_gradnorm_lrm          Early stopping at epoch 60
+val=2.3328e-02  grad=8.2496e-07  t=19.5s
+    dml_warmup_lrm            Early stopping at epoch 50
+val=2.3480e-02  grad=7.7978e-07  t=48.5s
+    dml_fuzzy                 Early stopping at epoch 73
+val=2.3209e-02  grad=3.6386e-07  t=13.3s
+    dml_gradnorm_fuzzy        Early stopping at epoch 159
+val=2.3559e-02  grad=4.1222e-06  t=59.8s
+    dml_warmup_fuzzy          Early stopping at epoch 72
+val=2.3251e-02  grad=2.1990e-07  t=59.8s
+
+  Seed 2024 (6/10)
+    Generating data ... done (129.2s)
+    n_train=3277, n_test=819, dim=7, eps=7.45276571339751, lrm_var=0.0020887294697592576, eval_ref=high_k_mc_lrm_100k
+    vanilla                   Early stopping at epoch 56
+val=2.3886e-02  grad=1.3659e-05  t=9.7s
+    dml_fixed                 Early stopping at epoch 56
+val=2.6888e-02  grad=3.8970e-06  t=12.5s
+    dml_gradnorm              Early stopping at epoch 176
+val=2.8540e-02  grad=9.3439e-06  t=68.0s
+    dml_relobralo             Early stopping at epoch 53
+val=2.4553e-02  grad=1.1465e-06  t=12.8s
+    dml_warmup                Early stopping at epoch 158
+val=2.7102e-02  grad=9.0900e-06  t=87.4s
+    dml_lrm                   Early stopping at epoch 55
+val=2.3714e-02  grad=4.1855e-07  t=10.2s
+    dml_gradnorm_lrm          Early stopping at epoch 55
+val=2.3818e-02  grad=6.1553e-07  t=17.9s
+    dml_warmup_lrm            Early stopping at epoch 57
+val=2.3935e-02  grad=5.1432e-07  t=51.8s
+    dml_fuzzy                 Early stopping at epoch 55
+val=2.3525e-02  grad=1.8994e-07  t=11.3s
+    dml_gradnorm_fuzzy        Early stopping at epoch 168
+val=2.4290e-02  grad=6.8317e-06  t=64.9s
+    dml_warmup_fuzzy          Early stopping at epoch 81
+val=2.4207e-02  grad=1.8251e-07  t=70.0s
+
+  Seed 3141 (7/10)
+    Generating data ... done (130.3s)
+    n_train=3277, n_test=819, dim=7, eps=8.10894748539829, lrm_var=0.0017494851417497088, eval_ref=high_k_mc_lrm_100k
+    vanilla                   Early stopping at epoch 57
+val=2.5806e-02  grad=1.3038e-05  t=11.3s
+    dml_fixed                 Early stopping at epoch 55
+val=2.7872e-02  grad=3.7675e-06  t=9.8s
+    dml_gradnorm              Early stopping at epoch 195
+val=2.9997e-02  grad=9.8194e-06  t=70.5s
+    dml_relobralo             Early stopping at epoch 52
+val=2.6611e-02  grad=6.7957e-07  t=11.2s
+    dml_warmup                Early stopping at epoch 149
+val=2.7752e-02  grad=1.1716e-05  t=80.1s
+    dml_lrm                   Early stopping at epoch 53
+val=2.5419e-02  grad=2.8950e-07  t=11.7s
+    dml_gradnorm_lrm          Early stopping at epoch 85
+val=2.5781e-02  grad=2.6028e-06  t=30.1s
+    dml_warmup_lrm            Early stopping at epoch 54
+val=2.5488e-02  grad=3.9871e-07  t=52.6s
+    dml_fuzzy                 Early stopping at epoch 62
+val=2.5594e-02  grad=2.1962e-07  t=11.4s
+    dml_gradnorm_fuzzy        Early stopping at epoch 163
+val=2.5654e-02  grad=3.0077e-06  t=63.9s
+    dml_warmup_fuzzy          Early stopping at epoch 69
+val=2.5518e-02  grad=1.9236e-07  t=55.2s
+
+  Seed 5926 (8/10)
+    Generating data ... done (113.5s)
+    n_train=3277, n_test=819, dim=7, eps=7.394860748285635, lrm_var=0.0022018403403127806, eval_ref=high_k_mc_lrm_100k
+    vanilla                   Early stopping at epoch 55
+val=2.4764e-02  grad=1.3981e-05  t=9.0s
+    dml_fixed                 Early stopping at epoch 56
+val=2.7769e-02  grad=4.1783e-06  t=10.3s
+    dml_gradnorm              Early stopping at epoch 140
+val=2.6757e-02  grad=1.5685e-05  t=53.8s
+    dml_relobralo             Early stopping at epoch 54
+val=2.5190e-02  grad=7.4170e-07  t=12.5s
+    dml_warmup                Early stopping at epoch 122
+val=2.7482e-02  grad=7.9485e-06  t=73.0s
+    dml_lrm                   Early stopping at epoch 56
+val=2.4827e-02  grad=2.4065e-07  t=11.2s
+    dml_gradnorm_lrm          Early stopping at epoch 65
+val=2.4966e-02  grad=1.1900e-06  t=22.9s
+    dml_warmup_lrm            Early stopping at epoch 51
+val=2.5096e-02  grad=5.2321e-07  t=55.1s
+    dml_fuzzy                 Early stopping at epoch 58
+val=2.4583e-02  grad=1.8989e-07  t=11.3s
+    dml_gradnorm_fuzzy        Early stopping at epoch 136
+val=2.5347e-02  grad=8.9780e-06  t=55.8s
+    dml_warmup_fuzzy          Early stopping at epoch 78
+val=2.4737e-02  grad=2.2560e-07  t=58.6s
+
+  Seed 8008 (9/10)
+    Generating data ... done (127.4s)
+    n_train=3277, n_test=819, dim=7, eps=7.874433052471893, lrm_var=0.00206294064211365, eval_ref=high_k_mc_lrm_100k
+    vanilla                   Early stopping at epoch 67
+val=2.4241e-02  grad=1.3395e-05  t=10.0s
+    dml_fixed                 Early stopping at epoch 56
+val=2.5901e-02  grad=3.1422e-06  t=10.7s
+    dml_gradnorm              Early stopping at epoch 196
+val=2.8506e-02  grad=9.4095e-06  t=68.5s
+    dml_relobralo             Early stopping at epoch 56
+val=2.4122e-02  grad=7.9102e-07  t=14.0s
+    dml_warmup                Early stopping at epoch 201
+val=2.6525e-02  grad=2.0054e-05  t=101.2s
+    dml_lrm                   Early stopping at epoch 52
+val=2.4138e-02  grad=3.4199e-07  t=10.2s
+    dml_gradnorm_lrm          Early stopping at epoch 67
+val=2.4159e-02  grad=1.3627e-06  t=23.3s
+    dml_warmup_lrm            Early stopping at epoch 51
+val=2.4123e-02  grad=1.7588e-06  t=49.4s
+    dml_fuzzy                 Early stopping at epoch 62
+val=2.3969e-02  grad=2.3647e-07  t=13.4s
+    dml_gradnorm_fuzzy        Early stopping at epoch 165
+val=2.4051e-02  grad=3.7604e-06  t=63.9s
+    dml_warmup_fuzzy          Early stopping at epoch 69
+val=2.4142e-02  grad=1.1621e-07  t=60.7s
+
+  Seed 9999 (10/10)
+    Generating data ... done (162.3s)
+    n_train=3277, n_test=819, dim=7, eps=7.944882216792873, lrm_var=0.002167765166557073, eval_ref=high_k_mc_lrm_100k
+    vanilla                   Early stopping at epoch 65
+val=2.3047e-02  grad=1.2865e-05  t=11.6s
+    dml_fixed                 Early stopping at epoch 55
+val=2.5181e-02  grad=3.6832e-06  t=10.2s
+    dml_gradnorm              Early stopping at epoch 184
+val=2.7514e-02  grad=7.9832e-06  t=62.7s
+    dml_relobralo             Early stopping at epoch 53
+val=2.3406e-02  grad=1.2206e-06  t=12.8s
+    dml_warmup                Early stopping at epoch 184
+val=2.4803e-02  grad=2.1849e-05  t=96.0s
+    dml_lrm                   Early stopping at epoch 55
+val=2.2823e-02  grad=4.2106e-07  t=10.2s
+    dml_gradnorm_lrm          Early stopping at epoch 63
+val=2.2815e-02  grad=8.1021e-07  t=20.5s
+    dml_warmup_lrm            Early stopping at epoch 50
+val=2.3190e-02  grad=2.1163e-06  t=53.5s
+    dml_fuzzy                 Early stopping at epoch 71
+val=2.2618e-02  grad=2.2287e-07  t=13.0s
+    dml_gradnorm_fuzzy        Early stopping at epoch 166
+val=2.2940e-02  grad=3.7693e-06  t=64.7s
+    dml_warmup_fuzzy          Early stopping at epoch 70
+val=2.2675e-02  grad=1.5300e-07  t=56.5s
+
+================================================================================
+Completed: 550/550 (0 skipped)
+Results in: results/unified_comparison/multi_seed
+================================================================================
+
+================================================================================
+UNIFIED COMPARISON RESULTS — mode: multi_seed (550 experiments)
+================================================================================
+
+──────────────────────────────────────────────────────────────────────
+Dataset: barrier_bs (dim=1)
+──────────────────────────────────────────────────────────────────────
+
+  Method                      Mean Val MSE          Std  Mean Grad MSE          Std    N
+  ------------------------- -------------- ------------ -------------- ------------ ----
+  vanilla                     3.025110e+01 3.023119e+00   4.565170e-01 1.760113e-02   10
+  dml_fixed                   1.077534e+02 7.676550e+00   1.960046e-01 1.361420e-02   10
+  dml_gradnorm                1.732210e+02 5.978213e+01   2.680378e-01 7.775831e-02   10
+  dml_relobralo               1.153104e+02 1.198155e+01   1.998816e-01 2.364214e-02   10
+  dml_warmup                  3.103791e+01 3.344045e+00   2.355089e-02 8.345804e-03   10
+  dml_lrm                     7.567929e+01 3.537571e+01   2.300715e-01 2.627111e-01   10
+  dml_gradnorm_lrm            9.306619e+01 3.776819e+01   1.687718e-01 1.992718e-01   10
+  dml_warmup_lrm              3.092874e+01 2.175203e+00   7.457672e-02 1.007418e-01   10
+  dml_fuzzy                   3.063305e+01 3.065486e+00   1.125147e-02 2.372606e-03   10
+  dml_gradnorm_fuzzy          3.063962e+01 2.757089e+00   1.143279e-02 1.910073e-03   10
+  dml_warmup_fuzzy            3.053498e+01 2.892257e+00   9.086889e-03 1.564446e-03   10
+
+  Relative to vanilla:
+  Method                       Val Penalty   Grad Improvement
+  ------------------------- -------------- ------------------
+  dml_fixed                        +256.2%               2.3x
+  dml_gradnorm                     +472.6%               1.7x
+  dml_relobralo                    +281.2%               2.3x
+  dml_warmup                         +2.6%              19.4x
+  dml_lrm                          +150.2%               2.0x
+  dml_gradnorm_lrm                 +207.6%               2.7x
+  dml_warmup_lrm                     +2.2%               6.1x
+  dml_fuzzy                          +1.3%              40.6x
+  dml_gradnorm_fuzzy                 +1.3%              39.9x
+  dml_warmup_fuzzy                   +0.9%              50.2x
+
+──────────────────────────────────────────────────────────────────────
+Dataset: basket_d1 (dim=1)
+──────────────────────────────────────────────────────────────────────
+
+  Method                      Mean Val MSE          Std  Mean Grad MSE          Std    N
+  ------------------------- -------------- ------------ -------------- ------------ ----
+  vanilla                     2.225414e-02 2.247691e-03   3.541680e-04 4.961278e-05   10
+  dml_fixed                   3.072910e-02 1.998654e-03   9.191809e-05 1.815724e-05   10
+  dml_gradnorm                3.713408e-02 5.177645e-03   1.600294e-04 6.133689e-05   10
+  dml_relobralo               3.044445e-02 2.835963e-03   8.822295e-05 2.373412e-05   10
+  dml_warmup                  2.813082e-02 5.870194e-03   6.888340e-05 5.341934e-05   10
+  dml_lrm                     2.208486e-02 2.129891e-03   1.142318e-06 9.200190e-07   10
+  dml_gradnorm_lrm            2.204884e-02 2.137267e-03   1.536626e-06 9.796080e-07   10
+  dml_warmup_lrm              2.192324e-02 2.125371e-03   9.944998e-07 6.983684e-07   10
+  dml_fuzzy                   2.211522e-02 2.243464e-03   1.592416e-06 7.852930e-07   10
+  dml_gradnorm_fuzzy          2.206547e-02 2.225034e-03   1.307054e-06 3.271550e-07   10
+  dml_warmup_fuzzy            2.198138e-02 2.209851e-03   1.248876e-06 5.608986e-07   10
+
+  Relative to vanilla:
+  Method                       Val Penalty   Grad Improvement
+  ------------------------- -------------- ------------------
+  dml_fixed                         +38.1%               3.9x
+  dml_gradnorm                      +66.9%               2.2x
+  dml_relobralo                     +36.8%               4.0x
+  dml_warmup                        +26.4%               5.1x
+  dml_lrm                            -0.8%             310.0x
+  dml_gradnorm_lrm                   -0.9%             230.5x
+  dml_warmup_lrm                     -1.5%             356.1x
+  dml_fuzzy                          -0.6%             222.4x
+  dml_gradnorm_fuzzy                 -0.8%             271.0x
+  dml_warmup_fuzzy                   -1.2%             283.6x
+
+──────────────────────────────────────────────────────────────────────
+Dataset: basket_d7 (dim=7)
+──────────────────────────────────────────────────────────────────────
+
+  Method                      Mean Val MSE          Std  Mean Grad MSE          Std    N
+  ------------------------- -------------- ------------ -------------- ------------ ----
+  vanilla                     2.438662e-02 1.730468e-03   1.319744e-05 5.985387e-07   10
+  dml_fixed                   2.669346e-02 1.592685e-03   3.744881e-06 3.127025e-07   10
+  dml_gradnorm                2.806928e-02 1.119421e-03   1.022641e-05 2.680776e-06   10
+  dml_relobralo               2.473464e-02 1.887457e-03   7.927824e-07 2.066328e-07   10
+  dml_warmup                  2.667454e-02 1.876215e-03   1.301886e-05 5.912641e-06   10
+  dml_lrm                     2.417096e-02 1.592692e-03   3.736638e-07 8.566812e-08   10
+  dml_gradnorm_lrm            2.434357e-02 1.757796e-03   1.237912e-06 6.434353e-07   10
+  dml_warmup_lrm              2.429903e-02 1.680164e-03   9.476348e-07 6.029494e-07   10
+  dml_fuzzy                   2.398719e-02 1.717565e-03   2.147895e-07 5.725932e-08   10
+  dml_gradnorm_fuzzy          2.443489e-02 1.756634e-03   6.744747e-06 3.347549e-06   10
+  dml_warmup_fuzzy            2.419849e-02 1.847217e-03   2.513055e-07 1.573446e-07   10
+
+  Relative to vanilla:
+  Method                       Val Penalty   Grad Improvement
+  ------------------------- -------------- ------------------
+  dml_fixed                          +9.5%               3.5x
+  dml_gradnorm                      +15.1%               1.3x
+  dml_relobralo                      +1.4%              16.6x
+  dml_warmup                         +9.4%               1.0x
+  dml_lrm                            -0.9%              35.3x
+  dml_gradnorm_lrm                   -0.2%              10.7x
+  dml_warmup_lrm                     -0.4%              13.9x
+  dml_fuzzy                          -1.6%              61.4x
+  dml_gradnorm_fuzzy                 +0.2%               2.0x
+  dml_warmup_fuzzy                   -0.8%              52.5x
+
+──────────────────────────────────────────────────────────────────────
+Dataset: digital_bs (dim=1)
+──────────────────────────────────────────────────────────────────────
+
+  Method                      Mean Val MSE          Std  Mean Grad MSE          Std    N
+  ------------------------- -------------- ------------ -------------- ------------ ----
+  vanilla                     1.003944e-02 5.729803e-04   1.363503e-04 6.648150e-06   10
+  dml_fixed                   3.543516e-02 1.930823e-03   3.134453e-05 3.043638e-06   10
+  dml_gradnorm                6.644375e-02 2.630241e-02   6.303137e-05 2.739153e-05   10
+  dml_relobralo               3.712410e-02 5.400349e-03   3.247724e-05 6.030588e-06   10
+  dml_warmup                  1.008518e-02 5.756169e-04   1.353104e-06 1.035756e-06   10
+  dml_lrm                     1.031427e-02 5.923732e-04   5.886448e-07 2.904272e-07   10
+  dml_gradnorm_lrm            1.048381e-02 7.967634e-04   1.326849e-06 8.722321e-07   10
+  dml_warmup_lrm              9.999014e-03 5.256182e-04   3.450162e-07 1.563759e-07   10
+  dml_fuzzy                   1.015757e-02 5.162963e-04   5.455034e-07 3.703958e-07   10
+  dml_gradnorm_fuzzy          1.020983e-02 4.927002e-04   6.063704e-07 2.800441e-07   10
+  dml_warmup_fuzzy            9.977579e-03 5.372774e-04   3.965624e-07 1.618707e-07   10
+
+  Relative to vanilla:
+  Method                       Val Penalty   Grad Improvement
+  ------------------------- -------------- ------------------
+  dml_fixed                        +253.0%               4.4x
+  dml_gradnorm                     +561.8%               2.2x
+  dml_relobralo                    +269.8%               4.2x
+  dml_warmup                         +0.5%             100.8x
+  dml_lrm                            +2.7%             231.6x
+  dml_gradnorm_lrm                   +4.4%             102.8x
+  dml_warmup_lrm                     -0.4%             395.2x
+  dml_fuzzy                          +1.2%             250.0x
+  dml_gradnorm_fuzzy                 +1.7%             224.9x
+  dml_warmup_fuzzy                   -0.6%             343.8x
+
+──────────────────────────────────────────────────────────────────────
+Dataset: heston_digital (dim=1)
+──────────────────────────────────────────────────────────────────────
+
+  Method                      Mean Val MSE          Std  Mean Grad MSE          Std    N
+  ------------------------- -------------- ------------ -------------- ------------ ----
+  vanilla                     1.439834e-02 1.780405e-03   2.429714e-04 7.909965e-06   10
+  dml_fixed                   3.130863e-02 3.968697e-03   6.526216e-05 9.229125e-06   10
+  dml_gradnorm                4.893957e-02 1.507573e-02   1.185147e-04 4.925781e-05   10
+  dml_relobralo               3.192296e-02 4.565749e-03   6.518062e-05 1.027196e-05   10
+  dml_warmup                  1.423974e-02 1.834815e-03   3.509551e-06 1.396294e-06   10
+  dml_lrm                     1.808911e-02 5.738838e-03   2.511056e-05 2.076774e-05   10
+  dml_gradnorm_lrm            1.877802e-02 4.205388e-03   2.785675e-05 1.616267e-05   10
+  dml_warmup_lrm              1.430495e-02 1.788637e-03   1.560920e-05 1.096256e-05   10
+  dml_fuzzy                   1.438154e-02 2.031608e-03   1.445609e-06 5.983700e-07   10
+  dml_gradnorm_fuzzy          1.446650e-02 2.055859e-03   1.636414e-06 9.158742e-07   10
+  dml_warmup_fuzzy            1.429129e-02 1.900641e-03   6.749816e-07 3.662905e-07   10
+
+  Relative to vanilla:
+  Method                       Val Penalty   Grad Improvement
+  ------------------------- -------------- ------------------
+  dml_fixed                        +117.4%               3.7x
+  dml_gradnorm                     +239.9%               2.1x
+  dml_relobralo                    +121.7%               3.7x
+  dml_warmup                         -1.1%              69.2x
+  dml_lrm                           +25.6%               9.7x
+  dml_gradnorm_lrm                  +30.4%               8.7x
+  dml_warmup_lrm                     -0.6%              15.6x
+  dml_fuzzy                          -0.1%             168.1x
+  dml_gradnorm_fuzzy                 +0.5%             148.5x
+  dml_warmup_fuzzy                   -0.7%             360.0x
+
+================================================================================
+BEST METHOD PER DATASET (lowest gradient MSE with ≤10% value penalty)
+================================================================================
+  barrier_bs           → dml_warmup_fuzzy          grad_mse=9.0869e-03 val_penalty=+0.9% grad_imp=50.2x
+  basket_d1            → dml_warmup_lrm            grad_mse=9.9450e-07 val_penalty=-1.5% grad_imp=356.1x
+  basket_d7            → dml_fuzzy                 grad_mse=2.1479e-07 val_penalty=-1.6% grad_imp=61.4x
+  digital_bs           → dml_warmup_lrm            grad_mse=3.4502e-07 val_penalty=-0.4% grad_imp=395.2x
+  heston_digital       → dml_warmup_fuzzy          grad_mse=6.7498e-07 val_penalty=-0.7% grad_imp=360.0x
+
+Done!
+

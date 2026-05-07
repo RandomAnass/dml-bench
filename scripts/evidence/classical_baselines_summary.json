@@ -1,0 +1,30 @@
+{
+  "comparisons": {
+    "baseline_gp": {
+      "n_paired": 90,
+      "wins": 45,
+      "ties": 0,
+      "losses": 45,
+      "winrate": 0.5,
+      "median_margin": -1.278226358097684e-09
+    },
+    "baseline_krr": {
+      "n_paired": 225,
+      "wins": 188,
+      "ties": 0,
+      "losses": 37,
+      "winrate": 0.8355555555555556,
+      "median_margin": 0.013292688118326623
+    },
+    "baseline_rf": {
+      "n_paired": 225,
+      "wins": 168,
+      "ties": 0,
+      "losses": 57,
+      "winrate": 0.7466666666666667,
+      "median_margin": 0.0005783189721987595
+    }
+  },
+  "n_classical_methods_present": 3,
+  "target": "dml_fixed"
+}

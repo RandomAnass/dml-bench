@@ -1,0 +1,14 @@
+{
+  "method": "baseline_krr",
+  "func_type": "black_scholes",
+  "dim": 1,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 5000,
+  "lambda": 1.0,
+  "test_value_mse": 3.776424240178099,
+  "test_grad_mse": 1.5007304256619325,
+  "time_s": 0.040671348571777344,
+  "key": "black_scholes_d1_n1024_noise0.0_s5000_baseline_krr",
+  "timestamp": "2026-04-14T21:53:21.416355"
+}

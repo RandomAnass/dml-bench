@@ -1,0 +1,43 @@
+{
+  "method": "dml_warmup",
+  "trainer_method": "dml_warmup",
+  "seed": 42,
+  "payoff": "barrier_doc_call",
+  "model": "heston_full_truncation_euler",
+  "n_samples": 1024,
+  "k_paths": 10,
+  "test_value_mse": 8.572638183475886e-07,
+  "test_grad_mse": 9.850110564572596e-05,
+  "best_epoch": 343,
+  "time_s": 18.68,
+  "data_gen_s": 0.09,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "lambda_": 1.0,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5,
+    "early_stopping_patience": 200
+  },
+  "heston_params": {
+    "strike": 1.0,
+    "barrier": 0.85,
+    "v0": 0.04,
+    "kappa": 1.0,
+    "theta": 0.04,
+    "sigma_v": 0.15,
+    "rho": -0.7,
+    "r": 0.0,
+    "T1": 0.3333333333333333,
+    "T2": 0.6666666666666666,
+    "n_substeps_to_T1": 84,
+    "n_substeps_T1_to_T2": 84
+  },
+  "key": "heston_barrier_doc_dml_warmup_s42",
+  "timestamp": "2026-05-04T23:53:33.651392"
+}

@@ -1,0 +1,16 @@
+{
+  "key": "p6_trig_d5_gaussian_additive_sev0.05_dml_gradnorm_s456",
+  "method": "dml_gradnorm",
+  "dataset": "trig",
+  "corruption_type": "gaussian_additive",
+  "severity": 0.05,
+  "dim": 5,
+  "seed": 456,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.15128172934055328,
+  "test_grad_mse": 0.23034782707691193,
+  "best_epoch": 285,
+  "time_s": 40.31204104423523,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

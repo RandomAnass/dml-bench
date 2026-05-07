@@ -1,0 +1,12 @@
+{
+  "method": "baseline_rf",
+  "func_type": "trig",
+  "dim": 100,
+  "n_samples": 4096,
+  "noise_level": 0.0,
+  "seed": 789,
+  "lambda": 1.0,
+  "test_value_mse": 93.64644391843953,
+  "test_grad_mse": 345.36467879865694,
+  "time_s": 47.54165482521057
+}

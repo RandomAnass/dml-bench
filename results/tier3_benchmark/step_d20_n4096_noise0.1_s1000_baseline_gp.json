@@ -1,0 +1,14 @@
+{
+  "method": "baseline_gp",
+  "func_type": "step",
+  "dim": 20,
+  "n_samples": 4096,
+  "noise_level": 0.1,
+  "seed": 1000,
+  "lambda": 1.0,
+  "test_value_mse": 1.9239582313779613,
+  "test_grad_mse": 1.2265825050692559e-23,
+  "time_s": 135.25192785263062,
+  "key": "step_d20_n4096_noise0.1_s1000_baseline_gp",
+  "timestamp": "2026-04-12T18:51:36.828747"
+}

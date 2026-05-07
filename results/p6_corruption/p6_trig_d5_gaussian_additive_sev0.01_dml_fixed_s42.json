@@ -1,0 +1,16 @@
+{
+  "key": "p6_trig_d5_gaussian_additive_sev0.01_dml_fixed_s42",
+  "method": "dml_fixed",
+  "dataset": "trig",
+  "corruption_type": "gaussian_additive",
+  "severity": 0.01,
+  "dim": 5,
+  "seed": 42,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.006660887505859137,
+  "test_grad_mse": 0.015297392383217812,
+  "best_epoch": 297,
+  "time_s": 20.297697067260742,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

@@ -1,0 +1,16 @@
+{
+  "method": "dml_relobralo",
+  "func_type": "bachelier",
+  "dim": 50,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 123,
+  "lambda": 1.0,
+  "test_value_mse": 2.075177446289771e-06,
+  "test_grad_mse": 1.3290085265243211e-06,
+  "best_epoch": 302,
+  "time_s": 6.706106424331665,
+  "n_epochs_actual": 353,
+  "key": "bachelier_d50_n512_noise0.0_s123_dml_relobralo",
+  "timestamp": "2026-04-26T08:26:49.791935"
+}

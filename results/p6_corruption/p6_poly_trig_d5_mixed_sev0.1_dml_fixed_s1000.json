@@ -1,0 +1,16 @@
+{
+  "key": "p6_poly_trig_d5_mixed_sev0.1_dml_fixed_s1000",
+  "method": "dml_fixed",
+  "dataset": "poly_trig",
+  "corruption_type": "mixed",
+  "severity": 0.1,
+  "dim": 5,
+  "seed": 1000,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.002250280696898699,
+  "test_grad_mse": 0.007962707430124283,
+  "best_epoch": 80,
+  "time_s": 9.285546064376831,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

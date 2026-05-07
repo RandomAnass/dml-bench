@@ -1,0 +1,53 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+*.env
+
+# Pytest
+.pytest_cache/
+
+# Data — large rmd17 files excluded (>100 MB GitHub limit)
+# fred_yields.csv is tracked (324 KB)
+data/rmd17/rmd17.tar.bz2
+data/rmd17/rmd17/
+
+# SchNetPack-generated ASE .db files (regenerable from data/rmd17/.npz via
+# experiments/molecular/_build_painn_db.py). 1.5 GB total.
+data/schnetpack_rmd17/
+
+# Large raw PDE benchmark data (7.7 GB)
+data/pdebench/
+
+# Logs
+logs/
+results/*.log
+
+# Vendor code (reference only, not part of this project)
+repos/
+
+# Legacy archive
+df_ml_final.zip
+papers/independent_writer_*/

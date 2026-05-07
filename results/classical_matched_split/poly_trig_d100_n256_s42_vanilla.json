@@ -1,0 +1,18 @@
+{
+  "method": "vanilla",
+  "func_type": "poly_trig",
+  "dim": 100,
+  "n_samples": 256,
+  "n_train": 163,
+  "n_val": 41,
+  "n_test": 52,
+  "noise_level": 0.0,
+  "seed": 42,
+  "lambda": null,
+  "split_train_frac": 0.64,
+  "test_value_mse": 9.348112106323242,
+  "test_grad_mse": 0.882226824760437,
+  "time_s": 10.276068925857544,
+  "best_epoch": 52,
+  "early_stopped": true
+}

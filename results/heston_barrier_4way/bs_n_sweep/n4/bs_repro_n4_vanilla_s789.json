@@ -1,0 +1,10 @@
+{
+  "method": "vanilla",
+  "seed": 789,
+  "n_monitor": 4,
+  "test_value_mse": 0.9171779974901796,
+  "test_grad_mse": 0.013032607214347632,
+  "best_epoch": 69,
+  "time_s": 8.24,
+  "data_gen_s": 0.0
+}

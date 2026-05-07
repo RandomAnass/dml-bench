@@ -1,0 +1,16 @@
+{
+  "method": "dml_gradnorm",
+  "func_type": "heston",
+  "dim": 1,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 789,
+  "lambda": 1.0,
+  "test_value_mse": 1.8359060404741505,
+  "test_grad_mse": 423352.87878878484,
+  "best_epoch": 32,
+  "time_s": 3.2179598808288574,
+  "n_epochs_actual": 83,
+  "key": "heston_d1_n512_noise0.0_s789_dml_gradnorm",
+  "timestamp": "2026-04-08T10:20:58.234163"
+}

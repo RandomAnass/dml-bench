@@ -1,0 +1,121 @@
+number_id,number_value,unit,context,source_json_path,producing_script,verified
+N001,21555,count,total experiments claimed in abstract,results/manifest_aggregate,run_full_benchmark.py + others,pending
+N002,1081,count,Tier 1 experiments,results/tier1_benchmark/,run_full_benchmark.py --tier 1,manual
+N003,6376,count,Tier 2 experiments,results/tier2_benchmark/,run_full_benchmark.py --tier 2,manual
+N004,9566,count,Tier 3 target experiments,results/tier3_benchmark/,run_full_benchmark.py --tier 3,manual
+N005,550,count,Unified comparison Study 1 experiments,results/unified_comparison/multi_seed/,experiments/unified_comparison/run_unified_experiment.py --mode multi_seed,manual
+N006,11,count,number of methods in unified comparison,papers/latex/neurips_2026_dml_bench.tex tab:methods,n/a (paper claim),manual
+N007,5,count,number of datasets in unified comparison,results/unified_comparison/multi_seed/,n/a,manual
+N008,10,count,number of seeds in unified comparison,results/unified_comparison/multi_seed/,n/a,manual
+N009,500,count,SPY purged CV experiments,results/spy_options_purged_cv/,experiments/real_data_spy/run_spy_purged_cv.py,manual
+N010,100,count,SPY temporal experiments,results/spy_options_temporal/,experiments/real_data_spy/run_spy_temporal.py,manual
+N011,176,count,compute-matched controls,results/compute_matched_controls/,scripts/run_revision_experiments.py,manual
+N012,51,count,lambda_j ablation runs,results/lambda_j_ablation/,scripts/run_revision_experiments.py,manual
+N013,4,count,SPY input dimension d=4 (moneyness/T/r/iv),results/spy_options_temporal/*.json metadata,run_spy_temporal.py,manual
+N014,72,percent,DML win rate (any method) on smooth functions,?,scripts/compute_win_rates.py,pending
+N015,125,count,winning configs out of 174 in win-rate computation,?,scripts/compute_win_rates.py,pending
+N016,174,count,total configs in win-rate computation,?,scripts/compute_win_rates.py,pending
+N017,97.6,percent,trig win rate at appropriate dim,?,scripts/compute_win_rates.py,pending
+N018,100,percent,poly_trig win rate at d>=10,?,scripts/compute_win_rates.py,pending
+N019,0,percent,step win rate at low dim,?,scripts/compute_win_rates.py,pending
+N020,4,layers,MLP architecture (4 layers x 256 hidden),dml_benchmark/models.py,n/a (architecture),manual
+N021,256,units,hidden units per layer (most experiments),dml_benchmark/models.py,n/a (architecture),manual
+N022,512,units,hidden units per layer (rMD17 only),dml_benchmark/models.py,n/a (architecture),manual
+N023,500,epochs,default epoch budget,dml_benchmark/trainer.py,n/a (training config),manual
+N024,1000,epochs,extended epoch budget (Tier 3 specific),dml_benchmark/trainer.py + tier 3 launcher,n/a,manual
+N025,50,patience,early stopping patience,dml_benchmark/trainer.py,n/a (training config),manual
+N026,20,patience,ReduceLROnPlateau patience,dml_benchmark/trainer.py,n/a (training config),manual
+N027,0.5,factor,ReduceLROnPlateau factor,dml_benchmark/trainer.py,n/a,manual
+N028,1e-6,float,ReduceLROnPlateau min_lr,dml_benchmark/trainer.py,n/a,manual
+N029,0.005,float,Adam learning rate,dml_benchmark/trainer.py,n/a,manual
+N030,9.19e-06,grad_mse,bachelier vanilla autodiff Tier 2 mean grad MSE,results/tier2_benchmark/bachelier_*_vanilla.json,run_full_benchmark.py --tier 2,manual
+N031,4.24e-07,grad_mse,bachelier dml_fixed Tier 2 mean grad MSE,results/tier2_benchmark/bachelier_*_dml_fixed.json,run_full_benchmark.py --tier 2,manual
+N032,22,ratio,bachelier DML fixed vs vanilla gradient improvement (Tier 2),computed from above,n/a,manual
+N033,3.51e-05,grad_mse,black_scholes vanilla autodiff Tier 2 mean grad MSE,results/tier2_benchmark/black_scholes_*_vanilla.json,run_full_benchmark.py --tier 2,manual
+N034,4.24e-07,grad_mse,black_scholes dml_gradnorm Tier 2 mean grad MSE,results/tier2_benchmark/black_scholes_*_dml_gradnorm.json,run_full_benchmark.py --tier 2,manual
+N035,83,ratio,black_scholes DML gradnorm vs vanilla gradient improvement (Tier 2),computed from above,n/a,manual
+N036,1.81e-02,grad_mse,SPY temporal vanilla mean grad MSE,results/spy_options_temporal/,run_spy_temporal.py,manual
+N037,6.82e-05,grad_mse,SPY temporal dml_fixed mean grad MSE,results/spy_options_temporal/,run_spy_temporal.py,manual
+N038,266,ratio,SPY DML fixed vs vanilla gradient improvement,computed from above,n/a,manual
+N039,21,percent,SPY value MSE improvement (DML fixed vs vanilla temporal),results/spy_options_temporal/,run_spy_temporal.py,manual
+N040,0.085,float,mean noise level σ* across functions,papers/latex/neurips_2026_dml_bench.tex,n/a (paper claim),manual
+N041,0.03,float,minimum σ* range,papers/latex/neurips_2026_dml_bench.tex,n/a,manual
+N042,0.21,float,maximum σ* range,papers/latex/neurips_2026_dml_bench.tex,n/a,manual
+N043,4.29,grad_mse,step vanilla autodiff Tier 2 mean grad MSE,results/tier2_benchmark/step_*_vanilla.json,run_full_benchmark.py --tier 2,manual
+N044,9.58e-02,grad_mse,step dml_fixed Tier 2 mean grad MSE,results/tier2_benchmark/step_*_dml_fixed.json,run_full_benchmark.py --tier 2,manual
+N045,45,ratio,step DML fixed vs vanilla gradient improvement (Tier 2),computed from above,manual,manual
+N046,3.55e+05,grad_mse,heston vanilla autodiff Tier 2 mean grad MSE,results/tier2_benchmark/heston_*_vanilla.json,run_full_benchmark.py --tier 2,manual
+N047,1.0,ratio,heston DML vs vanilla (DML hurts here),computed from tier2,n/a,manual
+N048,8658,ratio,bachelier old/new vanilla grad MSE inflation (zeros bug),pre/post comparison,scripts/create_export_figures.py:fig_autodiff_impact,manual
+N049,12314,ratio,black_scholes old/new vanilla grad MSE inflation,pre/post comparison,scripts/create_export_figures.py,manual
+N050,5,folds,SPY purged CV folds,results/spy_options_purged_cv/,run_spy_purged_cv.py,manual
+N051,10000,n_train,SPY n_train value 1,results/spy_options_*/,run_spy_*.py,manual
+N052,50000,n_train,SPY n_train value 2,results/spy_options_*/,run_spy_*.py,manual
+N053,7,count,number of dimensions tested,results/tier1+2_benchmark/,n/a,manual
+N054,5,count,number of noise levels (0, 0.05, 0.1, 0.2, 0.5),results/tier2_benchmark/,n/a,manual
+N055,6,count,number of synthetic function families,results/tier1+2_benchmark/,n/a,manual
+N056,17000,count,synthetic corpus runs (revised abstract+intro 2026-05-06; was 21366 pre-revision),results/tier1_benchmark/+results/tier2_benchmark/+results/tier3_benchmark/+results/tier4_benchmark/,run_full_benchmark.py,pending
+N057,2500,count,real-world domain runs (revised intro 2026-05-06; aggregate of SPY+rMD17+PDE+ERA5+Heston),results/spy_options_*+results/molecular_*+results/burgers/+results/darcy/+results/era5/+results/heston_barrier_4way/,various,pending
+N058,19500,count,total corpus runs ~19500 (revised: ~17000 synthetic + ~2500 real-world),results/,various,pending
+N059,1030,gpu_h,total compute GPU-hours,n/a,n/a (paper claim),pending
+N060,250,gpu_h,synthetic compute GPU-hours,n/a,n/a (paper claim),pending
+N061,230,gpu_h,rMD17 compute GPU-hours,n/a,n/a (paper claim),pending
+N062,370,gpu_h,PDE compute GPU-hours,n/a,n/a (paper claim),pending
+N063,145,gpu_h,SPY compute GPU-hours,n/a,n/a (paper claim),pending
+N064,35,gpu_h,ERA5+extrap+ablations compute GPU-hours,n/a,n/a (paper claim),pending
+N065,96.8,percent,grad-MSE win rate at sigma=0 across all synthetic families (n=1050),results/tier1_benchmark/+results/tier2_benchmark/+results/tier3_benchmark/+results/tier4_benchmark/,run_full_benchmark.py + winrate_two_metric.py,pending
+N066,66.7,percent,value-MSE win rate at sigma=0 across all synthetic families (n=1050),results/tier1_benchmark/+results/tier2_benchmark/+results/tier3_benchmark/+results/tier4_benchmark/,run_full_benchmark.py + winrate_two_metric.py,pending
+N067,85.7,percent,value-MSE win rate at sigma=0 on smooth families,results/tier3_benchmark/+results/tier4_benchmark/,run_full_benchmark.py + winrate_two_metric.py,pending
+N068,13,multiplier,median value-MSE reduction on smooth zero-noise cells,results/tier3_benchmark/+results/tier4_benchmark/,run_full_benchmark.py + winrate_two_metric.py,pending
+N069,0.195,sigma,sigma_star poly_trig (revised: per-family was global mean 0.085),results/tier3_benchmark/+results/tier4_benchmark/,sigma_star_lowess.py,pending
+N070,0.098,sigma,sigma_star trig (revised: per-family was global mean 0.085),results/tier3_benchmark/+results/tier4_benchmark/,sigma_star_lowess.py,pending
+N071,undef,sigma,sigma_star bachelier undefined (DML wins at every sigma),results/tier3_benchmark/+results/tier4_benchmark/,sigma_star_lowess.py,pending
+N072,1200,count,SPY purged-CV cells (300 per supervisor x 4 = wait wait 300x2 + same other config),results/spy_options_purged_cv_optionA/+results/spy_options_purged_cv_optionC/,experiments/real_data_spy/run_spy_purged_cv.py,manual
+N073,660,count,disc-payoff sub-benchmark runs (tab:headline),results/unified_comparison/multi_seed/,experiments/unified_comparison/run_unified_experiment.py,manual
+N074,120,count,Heston barrier extension runs (tab:headline) (60 narrow + 61 widerange),results/heston_barrier_4way/multi_seed/+results/heston_barrier_4way/multi_seed_widerange/,experiments/heston_barrier_4way/,manual
+N075,250,count,rMD17 250 runs (10 mol x 5 split x 5 methods baseline; tab:headline),results/molecular_painn/+results/molecular_mlp/+results/molecular_gatv2/,experiments/molecular/,manual
+N076,240,count,PDE Burgers/Darcy IC 240 runs (tab:headline),results/burgers/ic/+results/darcy/ic/,scripts/run_burgers_experiment.py + scripts/run_darcy_experiment.py,manual
+N077,60,count,ERA5 60 runs (tab:headline),results/era5/bare/+results/era5/state/,scripts/run_era5_experiment.py,manual
+N078,1500,count,trig extrapolation 1500 runs (tab:headline; M1 + M2 combined),results/extrapolation_M1/+results/extrapolation_M2/,experiments/extrapolation/,manual
+N079,11.83,multiplier,closed-form Fourier-linear sigma_star/sigma_y at K=5 lambda=1,results/closed_form_a1_a2/a1b_K5.csv,experiments/closed_form_solver.py,manual
+N080,6.44,multiplier,closed-form Fourier-linear sigma_star/sigma_y at K=1 lambda=1,results/closed_form_a1_a2/a1a_K1.csv,experiments/closed_form_solver.py,manual
+N081,1.157,sigma,SIREN near-extrap empirical sigma_star (architecture-axis grid),results/extrapolation_M1/sigma_star_summary.csv,experiments/extrapolation/pilot_periodic_extrap.py,manual
+N082,0.518,sigma,Fourier-linear sigma_star (region-invariant) Adam-trained,results/extrapolation_M1/sigma_star_summary.csv,experiments/extrapolation/pilot_periodic_extrap.py,manual
+N083,9.6,multiplier,rMD17 PaiNN tau=0.10 vs tau=0.50 force-MAE quality recovery,results/rmd17_tau_sweep/,experiments/molecular/run_painn.py,manual
+N084,725.3,meV_per_A,rMD17 PaiNN aspirin vanilla force MAE,results/molecular_painn/,experiments/molecular/run_painn.py,manual
+N085,17.9,meV_per_A,rMD17 PaiNN aspirin native_EF best DML configuration force MAE,results/molecular_painn/,experiments/molecular/run_painn.py,manual
+N086,2.10e-5,price_mse,Heston narrow vanilla price MSE,results/heston_barrier_4way/multi_seed/,experiments/heston_barrier_4way/run_multi_seed.py,manual
+N087,0.23e-5,price_mse,Heston narrow dml_fuzzy_warmup price MSE (best DML),results/heston_barrier_4way/multi_seed/,experiments/heston_barrier_4way/run_multi_seed.py,manual
+N088,0.016e-5,price_mse,Heston narrow quintic poly fit price MSE (beats every DML method),results/heston_barrier_4way/v0_extension/polynomial_2d_baselines.json,experiments/heston_barrier_4way/,manual
+N089,2.43e-3,delta_mse,Heston wide vanilla delta MSE,results/heston_barrier_4way/multi_seed_widerange/,experiments/heston_barrier_4way/,manual
+N090,1.67e-3,delta_mse,Heston wide quintic poly delta MSE,results/heston_barrier_4way/v0_extension/polynomial_2d_baselines.json,experiments/heston_barrier_4way/,manual
+N091,4.9e-1,burgers_value_mse,Burgers IC vanilla value MSE,results/burgers/ic/,scripts/run_burgers_experiment.py,manual
+N092,8.2e-2,burgers_value_mse,Burgers IC dml_fixed_half value MSE (6x reduction),results/burgers/ic/,scripts/run_burgers_experiment.py,manual
+N093,1.4e-3,darcy_value_mse,Darcy IC vanilla value MSE,results/darcy/ic/,scripts/run_darcy_experiment.py,manual
+N094,9.4e-4,darcy_value_mse,Darcy IC dml_fixed_half value MSE (~30% reduction),results/darcy/ic/,scripts/run_darcy_experiment.py,manual
+N095,7.2e-5,p_value,Friedman omnibus disc-payoff 12-method,results/unified_comparison/multi_seed/,cd_diagram.py,manual
+N096,1.8,mean_rank,Warmup-fuzzy mean rank on disc-payoff (out of 12),results/unified_comparison/multi_seed/,cd_diagram.py,manual
+N097,4.8e-9,p_value,Friedman p-value rMD17 PaiNN balancer comparison,results/molecular_painn/,cd_diagram.py,manual
+N098,1576419,count,SPY data tuples after cleaning,results/spy_options_temporal_optionA/,experiments/real_data_spy/run_spy_temporal.py,manual
+N099,758,count,SPY trading days,results/spy_options_temporal_optionA/,experiments/real_data_spy/run_spy_temporal.py,manual
+N100,23335,count,SPY SVI calibration accepted slices (out of 23336),results/spy_options_temporal_optionC/,scripts/run_spy_svi.py,manual
+N101,0.016,iv,SPY SVI median IV residual,results/spy_options_temporal_optionC/,scripts/run_spy_svi.py,manual
+N102,2557,count,ERA5 daily snapshots 2014-2020,results/era5/bare/,scripts/run_era5_experiment.py,manual
+N103,990,count,classical matched-split corpus cells,results/classical_matched_split/,scripts/run_classical_matched_split.py,manual
+N104,50.0,percent,DML matched-train win rate vs GP,results/classical_matched_split/,scripts/run_classical_matched_split.py,manual
+N105,83.6,percent,DML matched-train win rate vs KRR,results/classical_matched_split/,scripts/run_classical_matched_split.py,manual
+N106,74.7,percent,DML matched-train win rate vs RF,results/classical_matched_split/,scripts/run_classical_matched_split.py,manual
+N107,5.55,m_per_s,ERA5 bare vanilla geostrophic-wind MAE,results/era5/bare/,scripts/run_era5_experiment.py,manual
+N108,6.67,m_per_s,ERA5 state vanilla geostrophic-wind MAE,results/era5/state/,scripts/run_era5_experiment.py,manual
+N109,2.10,grad_mse,ERA5 bare vanilla grad MSE,results/era5/bare/,scripts/run_era5_experiment.py,manual
+N110,1.89,grad_mse,ERA5 bare DML fixed-lambda grad MSE (-10%),results/era5/bare/,scripts/run_era5_experiment.py,manual
+N111,2.22,grad_mse,ERA5 state vanilla grad MSE,results/era5/state/,scripts/run_era5_experiment.py,manual
+N112,1.58,grad_mse,ERA5 state DML fixed-lambda grad MSE (-30%),results/era5/state/,scripts/run_era5_experiment.py,manual
+N113,11,count,number of method-paradigm pairs in tab:methods (revised: 5 pathwise + 3 LRM + 2 fuzzy + vanilla = 11),paper/sections/04_experimental_setup.tex tab:methods,n/a (paper claim),manual
+N114,21366,count,DEPRECATED prior abstract claim of 21366 experiments; superseded by N056+N057,n/a,n/a (paper claim 2026-04-17),deprecated
+N115,1.7,multiplier,SPY value-MSE cut lower bound (1.7x-2.5x range),results/spy_options_temporal_optionA/+results/spy_options_temporal_optionC/,experiments/real_data_spy/run_spy_temporal.py,manual
+N116,2.5,multiplier,SPY value-MSE cut upper bound (1.7x-2.5x range),results/spy_options_temporal_optionA/+results/spy_options_temporal_optionC/,experiments/real_data_spy/run_spy_temporal.py,manual
+N117,9,multiplier,Heston barrier narrow dml_fuzzy_warmup price MSE reduction over vanilla,results/heston_barrier_4way/multi_seed/,experiments/heston_barrier_4way/run_multi_seed.py,manual
+N118,0.11,multiplier,Heston barrier wide best-DML to quintic delta MSE ratio (0.11x = 9x improvement),results/heston_barrier_4way/multi_seed_widerange/,experiments/heston_barrier_4way/,manual
+N119,360,count,extrapolation M2 geometry-axis cells (2 funcs x 3 dims x 2 ntrains x 2 modes x 3 methods x 5 seeds),results/extrapolation_M2/,experiments/extrapolation/aggregate_m2.py,manual
+N120,15,count,rMD17 tau-sweep PaiNN runs (3 tau values x 5 seeds on aspirin),results/rmd17_tau_sweep/,experiments/molecular/run_painn.py,manual

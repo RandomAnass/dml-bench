@@ -1,0 +1,16 @@
+{
+  "method": "dml_gradnorm",
+  "func_type": "bachelier",
+  "dim": 20,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 456,
+  "lambda": 1.0,
+  "test_value_mse": 2.121922833818177e-07,
+  "test_grad_mse": 4.264046561916722e-07,
+  "best_epoch": 625,
+  "time_s": 27.90526294708252,
+  "n_epochs_actual": 676,
+  "key": "bachelier_d20_n512_noise0.0_s456_dml_gradnorm",
+  "timestamp": "2026-04-08T03:57:04.808779"
+}

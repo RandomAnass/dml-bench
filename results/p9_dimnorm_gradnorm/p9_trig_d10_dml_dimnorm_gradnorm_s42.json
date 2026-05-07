@@ -1,0 +1,12 @@
+{
+  "key": "p9_trig_d10_dml_dimnorm_gradnorm_s42",
+  "method": "dml_dimnorm_gradnorm",
+  "dataset": "trig",
+  "dim": 10,
+  "seed": 42,
+  "test_value_mse": 6.913000106811523,
+  "test_grad_mse": 4.554378032684326,
+  "best_epoch": 1,
+  "time_s": 7.478981971740723,
+  "git_hash": "41cedc03021540ab25b276db02c8c42f697c423f"
+}

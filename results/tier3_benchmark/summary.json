@@ -1,0 +1,76 @@
+{
+  "config": {
+    "tier": 3,
+    "name": "Fill Remaining (\u03bb sweep, dim=1, 8192, 1000ep)"
+  },
+  "n_experiments": 10925,
+  "errors": [],
+  "total_time_s": 21026.75417280197,
+  "timestamp": "2026-04-26T13:28:23.921920",
+  "method_summary": {
+    "vanilla": {
+      "mean_value_mse": 3.3904387085041057,
+      "std_value_mse": 12.471553489094045,
+      "mean_grad_mse": 3774.389584710802,
+      "std_grad_mse": 37012.77114604899,
+      "mean_time_s": 16.002266193926335,
+      "count": 1440
+    },
+    "baseline_rf": {
+      "mean_value_mse": 0.5081380218887901,
+      "std_value_mse": 1.89211245256445,
+      "mean_grad_mse": 5999.361420463019,
+      "std_grad_mse": 43219.23285211556,
+      "mean_time_s": 2.4361905476070187,
+      "count": 1135
+    },
+    "baseline_krr": {
+      "mean_value_mse": 0.804900858160412,
+      "std_value_mse": 2.8605025402464714,
+      "mean_grad_mse": 4775.9673176436945,
+      "std_grad_mse": 41624.63114997346,
+      "mean_time_s": 3.0337022579714064,
+      "count": 1135
+    },
+    "baseline_gp": {
+      "mean_value_mse": 0.8684269880976524,
+      "std_value_mse": 4.970316038797222,
+      "mean_grad_mse": 4833.610812687135,
+      "std_grad_mse": 41604.40894236291,
+      "mean_time_s": 438.70029465322455,
+      "count": 1135
+    },
+    "dml_relobralo": {
+      "mean_value_mse": 3.4145838719690245,
+      "std_value_mse": 12.574353896249805,
+      "mean_grad_mse": 3772.3295472241302,
+      "std_grad_mse": 37058.18992275868,
+      "mean_time_s": 13.257187908556727,
+      "count": 1440
+    },
+    "dml_fixed": {
+      "mean_value_mse": 6.313289437988236,
+      "std_value_mse": 19.47168144719741,
+      "mean_grad_mse": 3089.750315605174,
+      "std_grad_mse": 33596.608814241095,
+      "mean_time_s": 15.431986264071682,
+      "count": 1760
+    },
+    "dml_softmax_balance": {
+      "mean_value_mse": 3.3240278124155402,
+      "std_value_mse": 12.438280156438793,
+      "mean_grad_mse": 3765.035466591327,
+      "std_grad_mse": 37001.164887471205,
+      "mean_time_s": 10.4903542884522,
+      "count": 1440
+    },
+    "dml_gradnorm": {
+      "mean_value_mse": 4.261571409796856,
+      "std_value_mse": 17.09834649456376,
+      "mean_grad_mse": 3776.049476150039,
+      "std_grad_mse": 37108.33575986281,
+      "mean_time_s": 30.146867449416053,
+      "count": 1440
+    }
+  }
+}

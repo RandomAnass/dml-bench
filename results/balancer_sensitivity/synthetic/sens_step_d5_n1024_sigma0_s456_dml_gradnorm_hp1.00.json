@@ -1,0 +1,17 @@
+{
+  "key": "sens_step_d5_n1024_sigma0_s456_dml_gradnorm_hp1.00",
+  "kind": "synthetic",
+  "func_type": "step",
+  "dim": 5,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 456,
+  "method": "dml_gradnorm",
+  "hp_name": "alpha",
+  "hp_value": 1.0,
+  "test_value_mse": 0.2611865171661737,
+  "test_grad_mse": 0.04480521575131705,
+  "best_epoch": 3,
+  "early_stopped": true,
+  "time_s": 11.952255725860596
+}

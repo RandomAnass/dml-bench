@@ -1,0 +1,14 @@
+{
+  "method": "dml_fixed",
+  "sigma": 0.5,
+  "seed": 42,
+  "test_value_mse": 3.4040659746776144e-05,
+  "test_grad_mse": 0.0012083476242219005,
+  "best_epoch": 18,
+  "time_s": 12.27,
+  "data_gen_s": 0.12,
+  "spot_range": [
+    0.5,
+    1.5
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "value": {
+    "bachelier": {
+      "0.0": {
+        "n_configs": 36,
+        "median_ratio": 0.10312059791351016
+      }
+    },
+    "black_scholes": {
+      "0.0": {
+        "n_configs": 6,
+        "median_ratio": 0.04540245774382462
+      }
+    },
+    "poly_trig": {
+      "0.0": {
+        "n_configs": 42,
+        "median_ratio": 0.04461628305074099
+      },
+      "0.05": {
+        "n_configs": 30,
+        "median_ratio": 0.26784482433123613
+      },
+      "0.1": {
+        "n_configs": 30,
+        "median_ratio": 0.47406212958719995
+      },
+      "0.2": {
+        "n_configs": 30,
+        "median_ratio": 0.7227745141725201
+      },
+      "0.5": {
+        "n_configs": 30,
+        "median_ratio": 1.2759021552000014
+      }
+    },
+    "trig": {
+      "0.0": {
+        "n_configs": 42,
+        "median_ratio": 0.9389877599963593
+      },
+      "0.05": {
+        "n_configs": 30,
+        "median_ratio": 1.0428877419930842
+      },
+      "0.1": {
+        "n_configs": 30,
+        "median_ratio": 1.0671175575714824
+      },
+      "0.2": {
+        "n_configs": 30,
+        "median_ratio": 1.065658273772307
+      },
+      "0.5": {
+        "n_configs": 30,
+        "median_ratio": 1.0838786658830992
+      }
+    },
+    "step": {
+      "0.0": {
+        "n_configs": 42,
+        "median_ratio": 1.307654132218375
+      },
+      "0.05": {
+        "n_configs": 30,
+        "median_ratio": 1.5291168475165997
+      },
+      "0.1": {
+        "n_configs": 30,
+        "median_ratio": 1.5293928044541627
+      },
+      "0.2": {
+        "n_configs": 30,
+        "median_ratio": 1.5291373642487753
+      },
+      "0.5": {
+        "n_configs": 30,
+        "median_ratio": 1.5335332601880727
+      }
+    },
+    "heston": {
+      "0.0": {
+        "n_configs": 6,
+        "median_ratio": 2.379147608433672
+      }
+    }
+  },
+  "grad": {
+    "bachelier": {
+      "0.0": {
+        "n_configs": 36,
+        "median_ratio": 0.11232989342043734
+      }
+    },
+    "black_scholes": {
+      "0.0": {
+        "n_configs": 6,
+        "median_ratio": 0.03088243988433558
+      }
+    },
+    "poly_trig": {
+      "0.0": {
+        "n_configs": 42,
+        "median_ratio": 0.02951159577699858
+      },
+      "0.05": {
+        "n_configs": 30,
+        "median_ratio": 0.0790356557937397
+      },
+      "0.1": {
+        "n_configs": 30,
+        "median_ratio": 0.1566683385550971
+      },
+      "0.2": {
+        "n_configs": 30,
+        "median_ratio": 0.33974809245657106
+      },
+      "0.5": {
+        "n_configs": 30,
+        "median_ratio": 0.6742309475427739
+      }
+    },
+    "trig": {
+      "0.0": {
+        "n_configs": 42,
+        "median_ratio": 0.9424588399921966
+      },
+      "0.05": {
+        "n_configs": 30,
+        "median_ratio": 0.5956942857265417
+      },
+      "0.1": {
+        "n_configs": 30,
+        "median_ratio": 0.7595075467737169
+      },
+      "0.2": {
+        "n_configs": 30,
+        "median_ratio": 0.9901384605034071
+      },
+      "0.5": {
+        "n_configs": 30,
+        "median_ratio": 0.9916352343956604
+      }
+    },
+    "step": {
+      "0.0": {
+        "n_configs": 42,
+        "median_ratio": 0.09042849545194642
+      },
+      "0.05": {
+        "n_configs": 30,
+        "median_ratio": 0.07327930908068184
+      },
+      "0.1": {
+        "n_configs": 30,
+        "median_ratio": 0.06964252058902567
+      },
+      "0.2": {
+        "n_configs": 30,
+        "median_ratio": 0.06895631956133795
+      },
+      "0.5": {
+        "n_configs": 30,
+        "median_ratio": 0.07095074721089813
+      }
+    },
+    "heston": {
+      "0.0": {
+        "n_configs": 6,
+        "median_ratio": 1.0019810347578795
+      }
+    }
+  }
+}

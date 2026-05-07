@@ -1,0 +1,90 @@
+{
+  "sigma_zero": {
+    "trig": {
+      "n": 240,
+      "value_wins": 143,
+      "grad_wins": 233,
+      "value_ties": 0,
+      "grad_ties": 0
+    },
+    "poly_trig": {
+      "n": 300,
+      "value_wins": 293,
+      "grad_wins": 300,
+      "value_ties": 0,
+      "grad_ties": 0
+    },
+    "step": {
+      "n": 230,
+      "value_wins": 27,
+      "grad_wins": 229,
+      "value_ties": 0,
+      "grad_ties": 0
+    },
+    "black_scholes": {
+      "n": 35,
+      "value_wins": 32,
+      "grad_wins": 35,
+      "value_ties": 0,
+      "grad_ties": 0
+    },
+    "bachelier": {
+      "n": 210,
+      "value_wins": 205,
+      "grad_wins": 209,
+      "value_ties": 0,
+      "grad_ties": 0
+    },
+    "heston": {
+      "n": 35,
+      "value_wins": 0,
+      "grad_wins": 10,
+      "value_ties": 0,
+      "grad_ties": 0
+    }
+  },
+  "all_sigma": {
+    "trig": {
+      "n": 840,
+      "value_wins": 358,
+      "grad_wins": 738,
+      "value_ties": 0,
+      "grad_ties": 0
+    },
+    "poly_trig": {
+      "n": 900,
+      "value_wins": 681,
+      "grad_wins": 821,
+      "value_ties": 0,
+      "grad_ties": 0
+    },
+    "step": {
+      "n": 830,
+      "value_wins": 71,
+      "grad_wins": 829,
+      "value_ties": 0,
+      "grad_ties": 0
+    },
+    "black_scholes": {
+      "n": 35,
+      "value_wins": 32,
+      "grad_wins": 35,
+      "value_ties": 0,
+      "grad_ties": 0
+    },
+    "bachelier": {
+      "n": 210,
+      "value_wins": 205,
+      "grad_wins": 209,
+      "value_ties": 0,
+      "grad_ties": 0
+    },
+    "heston": {
+      "n": 35,
+      "value_wins": 0,
+      "grad_wins": 10,
+      "value_ties": 0,
+      "grad_ties": 0
+    }
+  }
+}

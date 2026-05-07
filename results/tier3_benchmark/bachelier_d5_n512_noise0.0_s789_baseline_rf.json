@@ -1,0 +1,14 @@
+{
+  "method": "baseline_rf",
+  "func_type": "bachelier",
+  "dim": 5,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 789,
+  "lambda": 1.0,
+  "test_value_mse": 0.000657069320339997,
+  "test_grad_mse": 0.6998955954789811,
+  "time_s": 1.7738428115844727,
+  "key": "bachelier_d5_n512_noise0.0_s789_baseline_rf",
+  "timestamp": "2026-04-07T23:31:39.287717"
+}

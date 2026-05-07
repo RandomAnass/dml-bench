@@ -1,0 +1,16 @@
+{
+  "method": "vanilla",
+  "func_type": "poly_trig",
+  "dim": 20,
+  "n_samples": 1024,
+  "noise_level": 0.2,
+  "seed": 789,
+  "lambda": 1.0,
+  "test_value_mse": 0.4642694294452667,
+  "test_grad_mse": 0.5939151644706726,
+  "best_epoch": 127,
+  "time_s": 4.890056610107422,
+  "n_epochs_actual": 178,
+  "key": "poly_trig_d20_n1024_noise0.2_s789_vanilla",
+  "timestamp": "2026-04-06T21:08:17.853370"
+}

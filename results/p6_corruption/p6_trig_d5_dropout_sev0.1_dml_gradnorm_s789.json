@@ -1,0 +1,16 @@
+{
+  "key": "p6_trig_d5_dropout_sev0.1_dml_gradnorm_s789",
+  "method": "dml_gradnorm",
+  "dataset": "trig",
+  "corruption_type": "dropout",
+  "severity": 0.1,
+  "dim": 5,
+  "seed": 789,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 1.2660760879516602,
+  "test_grad_mse": 1.7840265035629272,
+  "best_epoch": 169,
+  "time_s": 35.33628964424133,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

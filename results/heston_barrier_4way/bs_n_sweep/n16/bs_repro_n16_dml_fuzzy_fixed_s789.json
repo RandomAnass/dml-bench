@@ -1,0 +1,10 @@
+{
+  "method": "dml_fuzzy_fixed",
+  "seed": 789,
+  "n_monitor": 16,
+  "test_value_mse": 4.399887881460099,
+  "test_grad_mse": 0.006733423851283951,
+  "best_epoch": 20,
+  "time_s": 11.32,
+  "data_gen_s": 0.01
+}

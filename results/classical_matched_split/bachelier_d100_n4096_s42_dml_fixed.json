@@ -1,0 +1,18 @@
+{
+  "method": "dml_fixed",
+  "func_type": "bachelier",
+  "dim": 100,
+  "n_samples": 4096,
+  "n_train": 2620,
+  "n_val": 656,
+  "n_test": 820,
+  "noise_level": 0.0,
+  "seed": 42,
+  "lambda": 1.0,
+  "split_train_frac": 0.64,
+  "test_value_mse": 3.0031159644732853e-09,
+  "test_grad_mse": 1.622995546423398e-09,
+  "time_s": 90.92232704162598,
+  "best_epoch": 493,
+  "early_stopped": false
+}

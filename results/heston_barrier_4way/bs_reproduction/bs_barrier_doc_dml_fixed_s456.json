@@ -1,0 +1,35 @@
+{
+  "method": "dml_fixed",
+  "trainer_method": "dml_fixed",
+  "seed": 456,
+  "payoff": "barrier_doc_call",
+  "model": "black_scholes",
+  "n_samples": 1024,
+  "k_paths": 10,
+  "test_value_mse": 0.9917328538860711,
+  "test_grad_mse": 0.006873139036859632,
+  "best_epoch": 45,
+  "time_s": 4.09,
+  "data_gen_s": 0.0,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "lambda_": 1.0,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "bs_params": {
+    "strike": 100.0,
+    "barrier": 85.0,
+    "vol": 0.2,
+    "r": 0.0,
+    "T": 1.0
+  },
+  "key": "bs_barrier_doc_dml_fixed_s456",
+  "timestamp": "2026-05-04T20:18:06.279652"
+}

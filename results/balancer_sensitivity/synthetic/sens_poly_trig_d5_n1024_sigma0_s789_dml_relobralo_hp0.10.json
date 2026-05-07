@@ -1,0 +1,17 @@
+{
+  "key": "sens_poly_trig_d5_n1024_sigma0_s789_dml_relobralo_hp0.10",
+  "kind": "synthetic",
+  "func_type": "poly_trig",
+  "dim": 5,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 789,
+  "method": "dml_relobralo",
+  "hp_name": "tau",
+  "hp_value": 0.1,
+  "test_value_mse": 2.590945243835449,
+  "test_grad_mse": 2.4111199378967285,
+  "best_epoch": 198,
+  "early_stopped": false,
+  "time_s": 25.709712743759155
+}

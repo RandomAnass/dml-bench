@@ -1,0 +1,12 @@
+{
+  "key": "p9_trig_d20_dml_sqrtdimnorm_gradnorm_s1000",
+  "method": "dml_sqrtdimnorm_gradnorm",
+  "dataset": "trig",
+  "dim": 20,
+  "seed": 1000,
+  "test_value_mse": 20.204931259155273,
+  "test_grad_mse": 8.75934886932373,
+  "best_epoch": 3,
+  "time_s": 6.045703649520874,
+  "git_hash": "41cedc03021540ab25b276db02c8c42f697c423f"
+}

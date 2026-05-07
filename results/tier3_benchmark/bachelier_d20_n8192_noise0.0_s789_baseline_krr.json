@@ -1,0 +1,14 @@
+{
+  "method": "baseline_krr",
+  "func_type": "bachelier",
+  "dim": 20,
+  "n_samples": 8192,
+  "noise_level": 0.0,
+  "seed": 789,
+  "lambda": 1.0,
+  "test_value_mse": 2.256177814090463e-05,
+  "test_grad_mse": 3.207708257967261e-05,
+  "time_s": 11.938596725463867,
+  "key": "bachelier_d20_n8192_noise0.0_s789_baseline_krr",
+  "timestamp": "2026-04-08T06:47:52.855144"
+}

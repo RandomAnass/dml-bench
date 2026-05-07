@@ -1,0 +1,16 @@
+{
+  "key": "p6_trig_d5_multiplicative_sev0.1_dml_fixed_s789",
+  "method": "dml_fixed",
+  "dataset": "trig",
+  "corruption_type": "multiplicative",
+  "severity": 0.1,
+  "dim": 5,
+  "seed": 789,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.29283004999160767,
+  "test_grad_mse": 0.45476871728897095,
+  "best_epoch": 297,
+  "time_s": 21.066669940948486,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

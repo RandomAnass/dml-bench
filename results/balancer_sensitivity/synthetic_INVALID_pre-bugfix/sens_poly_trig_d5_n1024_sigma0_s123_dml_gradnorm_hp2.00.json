@@ -1,0 +1,17 @@
+{
+  "key": "sens_poly_trig_d5_n1024_sigma0_s123_dml_gradnorm_hp2.00",
+  "kind": "synthetic",
+  "func_type": "poly_trig",
+  "dim": 5,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 123,
+  "method": "dml_gradnorm",
+  "hp_name": "alpha",
+  "hp_value": 2.0,
+  "test_value_mse": 6.587649345397949,
+  "test_grad_mse": 1.7139781713485718,
+  "best_epoch": 187,
+  "early_stopped": false,
+  "time_s": 43.11381411552429
+}

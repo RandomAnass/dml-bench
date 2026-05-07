@@ -1,0 +1,14 @@
+{
+  "method": "baseline_gp",
+  "func_type": "black_scholes",
+  "dim": 1,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 1000,
+  "lambda": 1.0,
+  "test_value_mse": 2.4553518453049e-05,
+  "test_grad_mse": 4.707118327888941e-06,
+  "time_s": 3.0755743980407715,
+  "key": "black_scholes_d1_n512_noise0.0_s1000_baseline_gp",
+  "timestamp": "2026-04-08T08:04:31.850426"
+}

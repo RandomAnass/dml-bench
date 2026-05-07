@@ -1,0 +1,36 @@
+{
+  "key": "spy_p8_misspec_d0.01_dml_relobralo_s123",
+  "method": "dml_relobralo",
+  "dataset": "spy_options",
+  "axis": "misspec",
+  "axis_label": "misspec_d0.01",
+  "perturbation": {
+    "sigma_staleness_days": 0,
+    "sigma_misspec_delta": 0.01,
+    "greek_additive_noise": 0.0,
+    "greek_multiplicative_noise": 0.0
+  },
+  "perturbation_seed": 2002636609,
+  "n_train": 10000,
+  "n_test": 10000,
+  "dim": 4,
+  "split_mode": "temporal",
+  "seed": 123,
+  "test_value_mse": 3.755188020505706e-05,
+  "test_grad_mse": 0.00019683470051967572,
+  "best_epoch": 296,
+  "time_s": 53.64,
+  "git_hash": "25da2c713892df542f6dacf3e8a940b1855ffe2a",
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 512,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "lambda_": 1.0,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  }
+}

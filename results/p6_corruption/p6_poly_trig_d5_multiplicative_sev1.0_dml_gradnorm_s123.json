@@ -1,0 +1,16 @@
+{
+  "key": "p6_poly_trig_d5_multiplicative_sev1.0_dml_gradnorm_s123",
+  "method": "dml_gradnorm",
+  "dataset": "poly_trig",
+  "corruption_type": "multiplicative",
+  "severity": 1.0,
+  "dim": 5,
+  "seed": 123,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.018829885870218277,
+  "test_grad_mse": 0.04355694353580475,
+  "best_epoch": 21,
+  "time_s": 12.100857257843018,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

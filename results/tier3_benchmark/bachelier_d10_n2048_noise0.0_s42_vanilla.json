@@ -1,0 +1,16 @@
+{
+  "method": "vanilla",
+  "func_type": "bachelier",
+  "dim": 10,
+  "n_samples": 2048,
+  "noise_level": 0.0,
+  "seed": 42,
+  "lambda": 1.0,
+  "test_value_mse": 1.9551054558172026e-07,
+  "test_grad_mse": 1.6318865644063183e-06,
+  "best_epoch": 619,
+  "time_s": 15.92930293083191,
+  "n_epochs_actual": 670,
+  "key": "bachelier_d10_n2048_noise0.0_s42_vanilla",
+  "timestamp": "2026-04-08T01:41:41.366754"
+}

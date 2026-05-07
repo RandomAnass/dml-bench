@@ -1,0 +1,737 @@
+{
+  "meta": {
+    "n_boot": 1000,
+    "rng_seed": 42,
+    "eps_floor": 1e-12,
+    "reference_method": "vanilla",
+    "cluster_unit": "(dataset, regime)"
+  },
+  "cells": {
+    "burgers_bare": {
+      "meta": {
+        "n_seen": 186,
+        "n_skipped": 0,
+        "n_pairs": 96
+      },
+      "per_method": {
+        "dml_fixed": {
+          "log_ratio_value": {
+            "median_log10": 0.0,
+            "factor": 1.0,
+            "factor_human": "1\u00d7 (+0.0% vs vanilla)",
+            "percentile_ci_95": [
+              -3.783458348633198e-07,
+              0.0
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.0,
+            "factor": 1.0,
+            "factor_human": "1\u00d7 (+0.0% vs vanilla)",
+            "percentile_ci_95": [
+              0.0,
+              0.0
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_fixed_half": {
+          "log_ratio_value": {
+            "median_log10": 0.0,
+            "factor": 1.0,
+            "factor_human": "1\u00d7 (+0.0% vs vanilla)",
+            "percentile_ci_95": [
+              -3.7846759712026166e-08,
+              0.0
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.0,
+            "factor": 1.0,
+            "factor_human": "1\u00d7 (+0.0% vs vanilla)",
+            "percentile_ci_95": [
+              0.0,
+              0.0
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_gradnorm": {
+          "log_ratio_value": {
+            "median_log10": -0.0011403153402438212,
+            "factor": 0.9973777709608773,
+            "factor_human": "0.997\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.001520058050131055,
+              -0.0007718843388532608
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": -7.617216417106789e-08,
+            "factor": 0.9999998246071257,
+            "factor_human": "1\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -1.4168043484141564e-06,
+              0.0
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_relobralo": {
+          "log_ratio_value": {
+            "median_log10": -0.0010558025704749253,
+            "factor": 0.9975718774103335,
+            "factor_human": "0.998\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.0014807193071863715,
+              -0.0008060268572907535
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.0,
+            "factor": 1.0,
+            "factor_human": "1\u00d7 (+0.0% vs vanilla)",
+            "percentile_ci_95": [
+              0.0,
+              0.0
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_warmup": {
+          "log_ratio_value": {
+            "median_log10": -0.0010972355628854963,
+            "factor": 0.9974767106094784,
+            "factor_human": "0.997\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.0013863799105550446,
+              -0.0008707213347167407
+            ],
+            "n_pairs": 16
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.0,
+            "factor": 1.0,
+            "factor_human": "1\u00d7 (+0.0% vs vanilla)",
+            "percentile_ci_95": [
+              0.0,
+              0.0
+            ],
+            "n_pairs": 16
+          }
+        }
+      }
+    },
+    "burgers_ic": {
+      "meta": {
+        "n_seen": 120,
+        "n_skipped": 0,
+        "n_pairs": 100
+      },
+      "per_method": {
+        "dml_fixed": {
+          "log_ratio_value": {
+            "median_log10": 1.091710118490358,
+            "factor": 12.351227424154237,
+            "factor_human": "12.4\u00d7 (+1135.1% vs vanilla)",
+            "percentile_ci_95": [
+              0.8586333198718593,
+              1.148285270361249
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.02339034419040659,
+            "factor": 1.0553350061035491,
+            "factor_human": "1.06\u00d7 (+5.5% vs vanilla)",
+            "percentile_ci_95": [
+              -0.07858819627786133,
+              0.04123650874871669
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_fixed_half": {
+          "log_ratio_value": {
+            "median_log10": 0.5643105602426977,
+            "factor": 3.666997047130242,
+            "factor_human": "3.67\u00d7 (+266.7% vs vanilla)",
+            "percentile_ci_95": [
+              0.45324296083994675,
+              0.63687664765508
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.002090847601316807,
+            "factor": 1.0048259621434943,
+            "factor_human": "1\u00d7 (+0.5% vs vanilla)",
+            "percentile_ci_95": [
+              -0.060168789671797264,
+              0.02388060524161188
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_gradnorm": {
+          "log_ratio_value": {
+            "median_log10": 1.395372003245778,
+            "factor": 24.85260991665743,
+            "factor_human": "24.9\u00d7 (+2385.3% vs vanilla)",
+            "percentile_ci_95": [
+              0.8044274631694096,
+              1.5238735749111947
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.1169119149625161,
+            "factor": 1.3089164173353198,
+            "factor_human": "1.31\u00d7 (+30.9% vs vanilla)",
+            "percentile_ci_95": [
+              0.03715595726620096,
+              0.1412718834904838
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_relobralo": {
+          "log_ratio_value": {
+            "median_log10": 0.6692809557768811,
+            "factor": 4.66961371411799,
+            "factor_human": "4.67\u00d7 (+367.0% vs vanilla)",
+            "percentile_ci_95": [
+              0.43732154440207216,
+              0.7839267207471601
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.01403434907784072,
+            "factor": 0.9682012765725728,
+            "factor_human": "0.968\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.0747333803080023,
+              0.04808097399054498
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_warmup": {
+          "log_ratio_value": {
+            "median_log10": -0.008274263325562302,
+            "factor": 0.9811281505408859,
+            "factor_human": "0.981\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.12692763777147786,
+              0.03746019795266168
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.02243289642414905,
+            "factor": 0.9496577210894576,
+            "factor_human": "0.95\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.0402201510090021,
+              0.005468270003096367
+            ],
+            "n_pairs": 20
+          }
+        }
+      }
+    },
+    "darcy_bare": {
+      "meta": {
+        "n_seen": 120,
+        "n_skipped": 0,
+        "n_pairs": 100
+      },
+      "per_method": {
+        "dml_fixed": {
+          "log_ratio_value": {
+            "median_log10": 0.04373993515219169,
+            "factor": 1.1059613122987613,
+            "factor_human": "1.11\u00d7 (+10.6% vs vanilla)",
+            "percentile_ci_95": [
+              0.04292291576779275,
+              0.04721459616123802
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.0011508631952811296,
+            "factor": 1.002653474686211,
+            "factor_human": "1\u00d7 (+0.3% vs vanilla)",
+            "percentile_ci_95": [
+              -0.014176562490863971,
+              0.019938455354825566
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_fixed_half": {
+          "log_ratio_value": {
+            "median_log10": 0.032035141421631705,
+            "factor": 1.0765523205354715,
+            "factor_human": "1.08\u00d7 (+7.7% vs vanilla)",
+            "percentile_ci_95": [
+              0.030075168930516274,
+              0.03369713446177525
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.03108739495419821,
+            "factor": 0.9309205234602964,
+            "factor_human": "0.931\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.05144045910753058,
+              0.0009372495323480717
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_gradnorm": {
+          "log_ratio_value": {
+            "median_log10": 0.04809028868077478,
+            "factor": 1.117095464850714,
+            "factor_human": "1.12\u00d7 (+11.7% vs vanilla)",
+            "percentile_ci_95": [
+              0.04017459674362323,
+              0.0582883758516895
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.014749570768867074,
+            "factor": 1.0345454399383347,
+            "factor_human": "1.03\u00d7 (+3.5% vs vanilla)",
+            "percentile_ci_95": [
+              -0.04764917016118157,
+              0.10724323939481734
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_relobralo": {
+          "log_ratio_value": {
+            "median_log10": 0.04282675476481032,
+            "factor": 1.1036382776412195,
+            "factor_human": "1.1\u00d7 (+10.4% vs vanilla)",
+            "percentile_ci_95": [
+              0.021761284448212778,
+              0.05056232858669955
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.026979075081041963,
+            "factor": 0.9397685888462055,
+            "factor_human": "0.94\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.04794880875882249,
+              0.016523059413279417
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_warmup": {
+          "log_ratio_value": {
+            "median_log10": 0.010773649853916718,
+            "factor": 1.0251175055192785,
+            "factor_human": "1.03\u00d7 (+2.5% vs vanilla)",
+            "percentile_ci_95": [
+              0.008881549574416867,
+              0.014647045675915913
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.08509537715084683,
+            "factor": 0.8220620937720741,
+            "factor_human": "0.822\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.09334474401425692,
+              -0.07948271101139431
+            ],
+            "n_pairs": 20
+          }
+        }
+      }
+    },
+    "darcy_ic": {
+      "meta": {
+        "n_seen": 120,
+        "n_skipped": 0,
+        "n_pairs": 100
+      },
+      "per_method": {
+        "dml_fixed": {
+          "log_ratio_value": {
+            "median_log10": -0.03178395779684628,
+            "factor": 0.9294286212318015,
+            "factor_human": "0.929\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.07832844125433863,
+              0.07665466099631241
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.47598014342627926,
+            "factor": 2.9921278290558266,
+            "factor_human": "2.99\u00d7 (+199.2% vs vanilla)",
+            "percentile_ci_95": [
+              0.38553949662285836,
+              0.5322195016663441
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_fixed_half": {
+          "log_ratio_value": {
+            "median_log10": -0.015987566958173924,
+            "factor": 0.9638566166480476,
+            "factor_human": "0.964\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.09865929724334031,
+              0.02931063775067336
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.09291150069855938,
+            "factor": 0.8073995430820441,
+            "factor_human": "0.807\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.21146496585017638,
+              -0.020031769115947208
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_gradnorm": {
+          "log_ratio_value": {
+            "median_log10": -0.009649200036621307,
+            "factor": 0.9780269000483753,
+            "factor_human": "0.978\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.07868536131824716,
+              0.07067594140978772
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.2873386166930154,
+            "factor": 1.9379323687985324,
+            "factor_human": "1.94\u00d7 (+93.8% vs vanilla)",
+            "percentile_ci_95": [
+              0.21401406193261535,
+              0.356905131836605
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_relobralo": {
+          "log_ratio_value": {
+            "median_log10": -0.014391471574729607,
+            "factor": 0.9674054471342333,
+            "factor_human": "0.967\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.05992510951698,
+              0.04877779616038278
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.16490005808183267,
+            "factor": 0.6840690504030853,
+            "factor_human": "0.684\u00d7 (1\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.19668517441659003,
+              -0.04176249066750028
+            ],
+            "n_pairs": 20
+          }
+        },
+        "dml_warmup": {
+          "log_ratio_value": {
+            "median_log10": 0.0034129046073859523,
+            "factor": 1.007889462353832,
+            "factor_human": "1.01\u00d7 (+0.8% vs vanilla)",
+            "percentile_ci_95": [
+              -0.028342847268979503,
+              0.05435934819073583
+            ],
+            "n_pairs": 20
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.19292470391646613,
+            "factor": 0.6413207563432117,
+            "factor_human": "0.641\u00d7 (2\u00d7 reduction vs vanilla)",
+            "percentile_ci_95": [
+              -0.2382596407700111,
+              -0.0729770007484476
+            ],
+            "n_pairs": 20
+          }
+        }
+      }
+    }
+  },
+  "pooled": {
+    "bare": {
+      "per_method": {
+        "dml_fixed": {
+          "log_ratio_value": {
+            "median_log10": 0.01953970563354098,
+            "factor": 1.0460193190354012,
+            "factor_human": "1.05\u00d7 (+4.6% vs vanilla)",
+            "cluster_ci_95": [
+              0.0,
+              0.04373993515219169
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.0,
+            "factor": 1.0,
+            "factor_human": "1\u00d7 (+0.0% vs vanilla)",
+            "cluster_ci_95": [
+              0.0,
+              0.0011508631952811296
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          }
+        },
+        "dml_fixed_half": {
+          "log_ratio_value": {
+            "median_log10": 0.01362812989893191,
+            "factor": 1.0318774693401032,
+            "factor_human": "1.03\u00d7 (+3.2% vs vanilla)",
+            "cluster_ci_95": [
+              0.0,
+              0.032035141421631705
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.0,
+            "factor": 1.0,
+            "factor_human": "1\u00d7 (+0.0% vs vanilla)",
+            "cluster_ci_95": [
+              -0.03108739495419821,
+              0.0
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          }
+        },
+        "dml_gradnorm": {
+          "log_ratio_value": {
+            "median_log10": 0.00700627368776692,
+            "factor": 1.0162633734004023,
+            "factor_human": "1.02\u00d7 (+1.6% vs vanilla)",
+            "cluster_ci_95": [
+              -0.0011403153402438212,
+              0.04809028868077478
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.0,
+            "factor": 1.0,
+            "factor_human": "1\u00d7 (+0.0% vs vanilla)",
+            "cluster_ci_95": [
+              -7.617216417106789e-08,
+              0.014749570768867074
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          }
+        },
+        "dml_relobralo": {
+          "log_ratio_value": {
+            "median_log10": 0.004245245915743992,
+            "factor": 1.0098229717157792,
+            "factor_human": "1.01\u00d7 (+1.0% vs vanilla)",
+            "cluster_ci_95": [
+              -0.0010558025704749253,
+              0.04282675476481032
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.0,
+            "factor": 1.0,
+            "factor_human": "1\u00d7 (+0.0% vs vanilla)",
+            "cluster_ci_95": [
+              -0.026979075081041963,
+              0.0
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          }
+        },
+        "dml_warmup": {
+          "log_ratio_value": {
+            "median_log10": 0.006711867934658021,
+            "factor": 1.0155746877083265,
+            "factor_human": "1.02\u00d7 (+1.6% vs vanilla)",
+            "cluster_ci_95": [
+              -0.0010972355628854963,
+              0.010773649853916718
+            ],
+            "n_clusters": 2,
+            "n_pairs": 36
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.07158487226488192,
+            "factor": 0.8480376379832356,
+            "factor_human": "0.848\u00d7 (1\u00d7 reduction vs vanilla)",
+            "cluster_ci_95": [
+              -0.08509537715084683,
+              0.0
+            ],
+            "n_clusters": 2,
+            "n_pairs": 36
+          }
+        }
+      }
+    },
+    "ic": {
+      "per_method": {
+        "dml_fixed": {
+          "log_ratio_value": {
+            "median_log10": 0.10788040668322932,
+            "factor": 1.2819775110410367,
+            "factor_human": "1.28\u00d7 (+28.2% vs vanilla)",
+            "cluster_ci_95": [
+              -0.03178395779684628,
+              1.091710118490358
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.11917314596555437,
+            "factor": 1.3157492949341543,
+            "factor_human": "1.32\u00d7 (+31.6% vs vanilla)",
+            "cluster_ci_95": [
+              0.02339034419040659,
+              0.47598014342627926
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          }
+        },
+        "dml_fixed_half": {
+          "log_ratio_value": {
+            "median_log10": 0.03443758038349014,
+            "factor": 1.0825241165666004,
+            "factor_human": "1.08\u00d7 (+8.3% vs vanilla)",
+            "cluster_ci_95": [
+              -0.015987566958173924,
+              0.5643105602426977
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.031910608648003616,
+            "factor": 0.929157616720892,
+            "factor_human": "0.929\u00d7 (1\u00d7 reduction vs vanilla)",
+            "cluster_ci_95": [
+              -0.09291150069855938,
+              0.002090847601316807
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          }
+        },
+        "dml_gradnorm": {
+          "log_ratio_value": {
+            "median_log10": 0.19840467206004914,
+            "factor": 1.5790819601099502,
+            "factor_human": "1.58\u00d7 (+57.9% vs vanilla)",
+            "cluster_ci_95": [
+              -0.009649200036621307,
+              1.395372003245778
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          },
+          "log_ratio_grad": {
+            "median_log10": 0.1478074617731493,
+            "factor": 1.40542431129194,
+            "factor_human": "1.41\u00d7 (+40.5% vs vanilla)",
+            "cluster_ci_95": [
+              0.1169119149625161,
+              0.2873386166930154
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          }
+        },
+        "dml_relobralo": {
+          "log_ratio_value": {
+            "median_log10": 0.07866386382494278,
+            "factor": 1.198571271291091,
+            "factor_human": "1.2\u00d7 (+19.9% vs vanilla)",
+            "cluster_ci_95": [
+              -0.014391471574729607,
+              0.6692809557768811
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.052085777454282764,
+            "factor": 0.886980807256695,
+            "factor_human": "0.887\u00d7 (1\u00d7 reduction vs vanilla)",
+            "cluster_ci_95": [
+              -0.16490005808183267,
+              -0.01403434907784072
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          }
+        },
+        "dml_warmup": {
+          "log_ratio_value": {
+            "median_log10": -0.005560832804267657,
+            "factor": 0.9872773354508514,
+            "factor_human": "0.987\u00d7 (1\u00d7 reduction vs vanilla)",
+            "cluster_ci_95": [
+              -0.008274263325562302,
+              0.0034129046073859523
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          },
+          "log_ratio_grad": {
+            "median_log10": -0.05786225663306867,
+            "factor": 0.8752613341907101,
+            "factor_human": "0.875\u00d7 (1\u00d7 reduction vs vanilla)",
+            "cluster_ci_95": [
+              -0.19292470391646613,
+              -0.02243289642414905
+            ],
+            "n_clusters": 2,
+            "n_pairs": 40
+          }
+        }
+      }
+    }
+  }
+}

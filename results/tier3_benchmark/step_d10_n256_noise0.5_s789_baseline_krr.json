@@ -1,0 +1,14 @@
+{
+  "method": "baseline_krr",
+  "func_type": "step",
+  "dim": 10,
+  "n_samples": 256,
+  "noise_level": 0.5,
+  "seed": 789,
+  "lambda": 1.0,
+  "test_value_mse": 0.44434102697208316,
+  "test_grad_mse": 0.22259315533834276,
+  "time_s": 0.011353492736816406,
+  "key": "step_d10_n256_noise0.5_s789_baseline_krr",
+  "timestamp": "2026-04-12T09:51:10.096906"
+}

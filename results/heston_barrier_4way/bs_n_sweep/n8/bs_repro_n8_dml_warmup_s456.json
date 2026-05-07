@@ -1,0 +1,10 @@
+{
+  "method": "dml_warmup",
+  "seed": 456,
+  "n_monitor": 8,
+  "test_value_mse": 1.8135844255831353,
+  "test_grad_mse": 0.00910068771734942,
+  "best_epoch": 253,
+  "time_s": 9.26,
+  "data_gen_s": 0.0
+}

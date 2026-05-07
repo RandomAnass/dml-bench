@@ -1,0 +1,16 @@
+{
+  "key": "p6_poly_trig_d5_gaussian_additive_sev0.1_dml_gradnorm_s123",
+  "method": "dml_gradnorm",
+  "dataset": "poly_trig",
+  "corruption_type": "gaussian_additive",
+  "severity": 0.1,
+  "dim": 5,
+  "seed": 123,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.0001876117312349379,
+  "test_grad_mse": 0.0014290250837802887,
+  "best_epoch": 107,
+  "time_s": 21.031808137893677,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

@@ -1,0 +1,16 @@
+{
+  "method": "dml_gradnorm",
+  "func_type": "trig",
+  "dim": 2,
+  "n_samples": 256,
+  "noise_level": 0.5,
+  "seed": 42,
+  "lambda": 1.0,
+  "test_value_mse": 0.29581695795059204,
+  "test_grad_mse": 2.2385811805725098,
+  "best_epoch": 83,
+  "time_s": 5.629786491394043,
+  "n_epochs_actual": 134,
+  "key": "trig_d2_n256_noise0.5_s42_dml_gradnorm",
+  "timestamp": "2026-04-07T05:13:31.336756"
+}

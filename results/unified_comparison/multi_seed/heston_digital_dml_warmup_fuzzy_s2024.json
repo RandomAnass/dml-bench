@@ -1,0 +1,29 @@
+{
+  "dataset": "heston_digital",
+  "method": "dml_warmup_fuzzy",
+  "seed": 2024,
+  "dim": 1,
+  "n_train": 820,
+  "n_test": 204,
+  "test_value_mse": 0.01621510911297169,
+  "test_grad_mse": 2.973148971134972e-07,
+  "time_s": 10.89,
+  "best_epoch": 14,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 13.604102591620764,
+  "lrm_var_mean": 0.04952820399136289,
+  "eval_source": "cos_method_semi_analytical",
+  "mode": "multi_seed",
+  "key": "heston_digital_dml_warmup_fuzzy_s2024",
+  "timestamp": "2026-04-07T19:32:47.493031"
+}

@@ -1,0 +1,29 @@
+{
+  "dataset": "barrier_bs",
+  "method": "dml_warmup_lrm",
+  "seed": 9999,
+  "dim": 1,
+  "n_train": 1639,
+  "n_test": 409,
+  "test_value_mse": 31.221901503174806,
+  "test_grad_mse": 29.78862172186579,
+  "time_s": 35.62,
+  "best_epoch": 131,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 17.030797004274405,
+  "lrm_var_mean": 292.0253540693253,
+  "eval_source": "lrm",
+  "mode": "multi_seed",
+  "key": "barrier_bs_dml_warmup_lrm_s9999",
+  "timestamp": "2026-02-23T14:25:56.784382"
+}

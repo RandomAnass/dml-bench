@@ -1,0 +1,71 @@
+{
+  "method": "dml_gradnorm",
+  "seed": 789,
+  "dataset": "spy_options",
+  "n_train": 50000,
+  "n_test": 10000,
+  "dim": 4,
+  "split_mode": "temporal",
+  "test_value_mse": 2.076883851531064e-08,
+  "test_grad_mse": 2.3657603844371666e-06,
+  "best_epoch": 315,
+  "time_s": 616.92,
+  "bs_vs_mid_rmse": 0.008836372622128838,
+  "metadata": {
+    "dataset": "spy_options_2020_2022",
+    "source": "Kaggle SPY EOD, CC0 license",
+    "target_mode": "bs_price",
+    "n_total_available": 1576419,
+    "n_train": 50000,
+    "n_test": 10000,
+    "d": 4,
+    "features": [
+      "moneyness",
+      "T",
+      "r",
+      "iv"
+    ],
+    "include_volume": false,
+    "moneyness_range": [
+      0.8500550964187328,
+      1.1499728997289973
+    ],
+    "T_range": [
+      0.019274469541409992,
+      2.9979466119096507
+    ],
+    "iv_range": [
+      0.01094,
+      1.16339
+    ],
+    "y_range": [
+      9.905526058140955e-05,
+      0.30474014751457723
+    ],
+    "bs_vs_mid_rmse": 0.008836372622128838,
+    "split_mode": "temporal",
+    "temporal_cutoff": "2021-07-01",
+    "embargo_days": 5,
+    "train_end_date": "2021-06-23",
+    "test_start_date": "2021-07-01",
+    "n_embargo_excluded": 11122,
+    "train_pool_size": 768972,
+    "test_pool_size": 796325,
+    "stratify_by_moneyness": true,
+    "seed": 789
+  },
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 512,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "lambda_": 1.0,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "key": "spy_n50000_s789_dml_gradnorm",
+  "timestamp": "2026-04-30T14:21:42.512822"
+}

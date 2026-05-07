@@ -1,0 +1,32 @@
+{
+  "dataset": "basket_d7",
+  "method": "dml_softmax_balance",
+  "seed": 2024,
+  "dim": 7,
+  "n_train": 3277,
+  "n_test": 819,
+  "test_value_mse": 0.024553484685936548,
+  "test_grad_mse": 0.00023703370024240024,
+  "time_s": 8.43,
+  "best_epoch": 3,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 7.45276571339751,
+  "lrm_var_mean": 0.0020887294697592576,
+  "eval_source": "lrm",
+  "mode": "multi_seed",
+  "key": "basket_d7_dml_softmax_balance_s2024",
+  "timestamp": "2026-02-23T18:32:46.259450",
+  "relabeled_from": "dml_relobralo",
+  "relabeled_reason": "Pre-2026-04-13-22:01 dml_relobralo data is the simplified softmax+EMA variant (now SoftmaxBalanceDmlLoss). Relabeled to dml_softmax_balance for label consistency. Original file archived under _legacy_relobralo_simplified/.",
+  "relabeled_at_utc": "2026-04-26T07:32:24Z"
+}

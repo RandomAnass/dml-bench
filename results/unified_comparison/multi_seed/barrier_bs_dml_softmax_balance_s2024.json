@@ -1,0 +1,32 @@
+{
+  "dataset": "barrier_bs",
+  "method": "dml_softmax_balance",
+  "seed": 2024,
+  "dim": 1,
+  "n_train": 1639,
+  "n_test": 409,
+  "test_value_mse": 102.97556128243514,
+  "test_grad_mse": 0.17882964782268446,
+  "time_s": 3.24,
+  "best_epoch": 4,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 16.766638115922483,
+  "lrm_var_mean": 300.11206461681434,
+  "eval_source": "analytical_reflection_principle",
+  "mode": "multi_seed",
+  "key": "barrier_bs_dml_softmax_balance_s2024",
+  "timestamp": "2026-04-07T19:14:29.959035",
+  "relabeled_from": "dml_relobralo",
+  "relabeled_reason": "Pre-2026-04-13-22:01 dml_relobralo data is the simplified softmax+EMA variant (now SoftmaxBalanceDmlLoss). Relabeled to dml_softmax_balance for label consistency. Original file archived under _legacy_relobralo_simplified/.",
+  "relabeled_at_utc": "2026-04-26T07:32:24Z"
+}

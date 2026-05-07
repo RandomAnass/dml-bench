@@ -1,0 +1,12 @@
+{
+  "key": "sens_burgers_ic_s789_dml_relobralo_hp0.10",
+  "kind": "pde",
+  "dataset": "burgers_ic",
+  "seed": 789,
+  "method": "dml_relobralo",
+  "hp_name": "tau",
+  "hp_value": 0.1,
+  "test_value_mse": 0.07251521944999695,
+  "test_grad_mse": 0.6771493554115295,
+  "time_s": 2437.1239535808563
+}

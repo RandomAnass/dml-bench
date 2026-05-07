@@ -1,0 +1,19 @@
+{
+  "method": "dml_softmax_balance",
+  "func_type": "poly_trig",
+  "dim": 1,
+  "n_samples": 1024,
+  "noise_level": 0.2,
+  "seed": 1000,
+  "lambda": 1.0,
+  "test_value_mse": 8.275052823591977e-05,
+  "test_grad_mse": 0.0010453566210344434,
+  "best_epoch": 70,
+  "time_s": 3.918332576751709,
+  "n_epochs_actual": 121,
+  "key": "poly_trig_d1_n1024_noise0.2_s1000_dml_softmax_balance",
+  "timestamp": "2026-04-08T14:24:03.446449",
+  "relabeled_from": "dml_relobralo",
+  "relabeled_reason": "Pre-2026-04-13-22:01 dml_relobralo data is the simplified softmax+EMA variant (now SoftmaxBalanceDmlLoss). Relabeled to dml_softmax_balance for label consistency. Original file archived under _legacy_relobralo_simplified/.",
+  "relabeled_at_utc": "2026-04-26T07:32:23Z"
+}

@@ -1,0 +1,87 @@
+{
+  "summary": {
+    "0.0": {
+      "dml_fixed": {
+        "n_seeds": 3,
+        "value_mse_mean": 4.3060811491610365e-06,
+        "value_mse_std": 4.366508634477928e-06,
+        "grad_mse_mean": 9.814932587423841e-05,
+        "grad_mse_std": 6.325046321130843e-05
+      },
+      "dml_warmup": {
+        "n_seeds": 3,
+        "value_mse_mean": 5.639816806020561e-06,
+        "value_mse_std": 4.469372874947912e-06,
+        "grad_mse_mean": 0.00013820029450438434,
+        "grad_mse_std": 5.197744158581308e-05
+      }
+    },
+    "0.1": {
+      "dml_fixed": {
+        "n_seeds": 3,
+        "value_mse_mean": 8.216845025644684e-06,
+        "value_mse_std": 4.974494550067207e-06,
+        "grad_mse_mean": 0.000268806113056381,
+        "grad_mse_std": 0.00011542278511801724
+      },
+      "dml_warmup": {
+        "n_seeds": 3,
+        "value_mse_mean": 1.0497708771271081e-05,
+        "value_mse_std": 6.099176771245755e-06,
+        "grad_mse_mean": 0.0002178405102233766,
+        "grad_mse_std": 3.078729576855064e-05
+      }
+    },
+    "0.5": {
+      "dml_fixed": {
+        "n_seeds": 3,
+        "value_mse_mean": 2.4266597740663625e-05,
+        "value_mse_std": 1.631798048106635e-05,
+        "grad_mse_mean": 0.0009207683396231323,
+        "grad_mse_std": 0.0004062220429768329
+      },
+      "dml_warmup": {
+        "n_seeds": 3,
+        "value_mse_mean": 9.253561803572609e-06,
+        "value_mse_std": 3.4202429721300546e-06,
+        "grad_mse_mean": 0.000997465244886141,
+        "grad_mse_std": 0.0003370091382721969
+      }
+    },
+    "1.0": {
+      "dml_fixed": {
+        "n_seeds": 3,
+        "value_mse_mean": 8.403981405668708e-05,
+        "value_mse_std": 1.5554664234955183e-05,
+        "grad_mse_mean": 0.002119864952126666,
+        "grad_mse_std": 0.0012238127634281626
+      },
+      "dml_warmup": {
+        "n_seeds": 3,
+        "value_mse_mean": 1.9429791903794553e-05,
+        "value_mse_std": 6.346828364965148e-06,
+        "grad_mse_mean": 0.002736838888637981,
+        "grad_mse_std": 0.0014945502053300593
+      }
+    }
+  },
+  "ratio": {
+    "0.0": {
+      "value_mse_warmup_over_fixed": 1.3097330520859736,
+      "grad_mse_warmup_over_fixed": 1.4080615763114297
+    },
+    "0.1": {
+      "value_mse_warmup_over_fixed": 1.27758388268342,
+      "grad_mse_warmup_over_fixed": 0.8104001346788027
+    },
+    "0.5": {
+      "value_mse_warmup_over_fixed": 0.38132917941217537,
+      "grad_mse_warmup_over_fixed": 1.0832966360402883
+    },
+    "1.0": {
+      "value_mse_warmup_over_fixed": 0.23119746422438114,
+      "grad_mse_warmup_over_fixed": 1.2910439817840103
+    }
+  },
+  "interpretation": "If hypothesis holds, value_mse_warmup_over_fixed should DECREASE as \u03c3 increases (warmup gain grows with noise)"
+}

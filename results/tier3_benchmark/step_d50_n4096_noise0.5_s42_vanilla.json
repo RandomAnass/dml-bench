@@ -1,0 +1,16 @@
+{
+  "method": "vanilla",
+  "func_type": "step",
+  "dim": 50,
+  "n_samples": 4096,
+  "noise_level": 0.5,
+  "seed": 42,
+  "lambda": 1.0,
+  "test_value_mse": 2.750342165305769,
+  "test_grad_mse": 0.33044872460363095,
+  "best_epoch": 14,
+  "time_s": 5.044223070144653,
+  "n_epochs_actual": 65,
+  "key": "step_d50_n4096_noise0.5_s42_vanilla",
+  "timestamp": "2026-04-13T01:49:49.890934"
+}

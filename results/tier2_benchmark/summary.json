@@ -1,0 +1,76 @@
+{
+  "config": {
+    "tier": 2,
+    "name": "Finance/Quant + Noise + Step"
+  },
+  "n_experiments": 7425,
+  "errors": [],
+  "total_time_s": 12888.261541128159,
+  "timestamp": "2026-04-26T11:14:15.436344",
+  "method_summary": {
+    "baseline_gp": {
+      "mean_value_mse": 3.427729920400061,
+      "std_value_mse": 9.964223529151726,
+      "mean_grad_mse": 7362.452344961076,
+      "std_grad_mse": 51072.08781191933,
+      "mean_time_s": 80.97451043260509,
+      "count": 725
+    },
+    "dml_fixed": {
+      "mean_value_mse": 11.351942861767805,
+      "std_value_mse": 24.35805622534696,
+      "mean_grad_mse": 5186.500794652578,
+      "std_grad_mse": 43718.2825520617,
+      "mean_time_s": 10.306017129988897,
+      "count": 1050
+    },
+    "dml_relobralo": {
+      "mean_value_mse": 11.4195846787788,
+      "std_value_mse": 24.697731223306256,
+      "mean_grad_mse": 5126.472432745682,
+      "std_grad_mse": 43120.28541466534,
+      "mean_time_s": 11.464400966508048,
+      "count": 1050
+    },
+    "baseline_rf": {
+      "mean_value_mse": 2.306450690089315,
+      "std_value_mse": 4.456876228869548,
+      "mean_grad_mse": 8526.284109665745,
+      "std_grad_mse": 53561.6791354835,
+      "mean_time_s": 3.566362398739519,
+      "count": 725
+    },
+    "dml_softmax_balance": {
+      "mean_value_mse": 11.18486406082517,
+      "std_value_mse": 23.84626799003884,
+      "mean_grad_mse": 5102.092360562688,
+      "std_grad_mse": 42778.80847121235,
+      "mean_time_s": 8.066724269049509,
+      "count": 1050
+    },
+    "dml_gradnorm": {
+      "mean_value_mse": 15.611830842509479,
+      "std_value_mse": 43.84850543650235,
+      "mean_grad_mse": 5091.083984256593,
+      "std_grad_mse": 42659.75229033287,
+      "mean_time_s": 20.147956313859847,
+      "count": 1050
+    },
+    "vanilla": {
+      "mean_value_mse": 11.340657860238311,
+      "std_value_mse": 23.65672339749508,
+      "mean_grad_mse": 5078.450381090718,
+      "std_grad_mse": 42517.210515165694,
+      "mean_time_s": 7.592111917223249,
+      "count": 1050
+    },
+    "baseline_krr": {
+      "mean_value_mse": 3.43410475090771,
+      "std_value_mse": 7.372524535555971,
+      "mean_grad_mse": 7387.434217424661,
+      "std_grad_mse": 51259.81642311543,
+      "mean_time_s": 1.1536934727635877,
+      "count": 725
+    }
+  }
+}

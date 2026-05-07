@@ -1,0 +1,18 @@
+{
+  "method": "vanilla",
+  "func_type": "bachelier",
+  "dim": 50,
+  "n_samples": 1024,
+  "n_train": 655,
+  "n_val": 164,
+  "n_test": 205,
+  "noise_level": 0.0,
+  "seed": 123,
+  "lambda": null,
+  "split_train_frac": 0.64,
+  "test_value_mse": 3.0413522697733455e-06,
+  "test_grad_mse": 1.6129610097328217e-06,
+  "time_s": 6.870724439620972,
+  "best_epoch": 106,
+  "early_stopped": true
+}

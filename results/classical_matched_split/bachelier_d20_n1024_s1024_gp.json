@@ -1,0 +1,17 @@
+{
+  "method": "baseline_gp",
+  "func_type": "bachelier",
+  "dim": 20,
+  "n_samples": 1024,
+  "n_train": 655,
+  "n_val": 164,
+  "n_test": 205,
+  "noise_level": 0.0,
+  "seed": 1024,
+  "lambda": null,
+  "split_train_frac": 0.64,
+  "test_value_mse": 4.297412025863529e-08,
+  "test_grad_mse": 2.4844686209439476e-07,
+  "time_s": 281.2325327396393,
+  "baseline_fit_time_s": null
+}

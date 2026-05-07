@@ -1,0 +1,16 @@
+{
+  "key": "p6_trig_d5_mixed_sev0.1_dml_gradnorm_s456",
+  "method": "dml_gradnorm",
+  "dataset": "trig",
+  "corruption_type": "mixed",
+  "severity": 0.1,
+  "dim": 5,
+  "seed": 456,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.5594072937965393,
+  "test_grad_mse": 1.0780495405197144,
+  "best_epoch": 298,
+  "time_s": 43.72356152534485,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

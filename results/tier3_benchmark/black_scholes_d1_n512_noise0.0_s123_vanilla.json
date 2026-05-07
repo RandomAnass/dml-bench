@@ -1,0 +1,16 @@
+{
+  "method": "vanilla",
+  "func_type": "black_scholes",
+  "dim": 1,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 123,
+  "lambda": 1.0,
+  "test_value_mse": 0.0002659594938514625,
+  "test_grad_mse": 1.3181175421199402e-05,
+  "best_epoch": 571,
+  "time_s": 14.67374873161316,
+  "n_epochs_actual": 622,
+  "key": "black_scholes_d1_n512_noise0.0_s123_vanilla",
+  "timestamp": "2026-04-08T08:00:37.614564"
+}

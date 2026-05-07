@@ -1,0 +1,16 @@
+{
+  "key": "p6_trig_d5_dropout_sev0.05_dml_fixed_s42",
+  "method": "dml_fixed",
+  "dataset": "trig",
+  "corruption_type": "dropout",
+  "severity": 0.05,
+  "dim": 5,
+  "seed": 42,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.0865011140704155,
+  "test_grad_mse": 0.17357325553894043,
+  "best_epoch": 180,
+  "time_s": 15.807901382446289,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

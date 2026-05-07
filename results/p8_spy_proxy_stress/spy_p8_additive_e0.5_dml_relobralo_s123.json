@@ -1,0 +1,36 @@
+{
+  "key": "spy_p8_additive_e0.5_dml_relobralo_s123",
+  "method": "dml_relobralo",
+  "dataset": "spy_options",
+  "axis": "additive",
+  "axis_label": "additive_e0.5",
+  "perturbation": {
+    "sigma_staleness_days": 0,
+    "sigma_misspec_delta": 0.0,
+    "greek_additive_noise": 0.5,
+    "greek_multiplicative_noise": 0.0
+  },
+  "perturbation_seed": 608895368,
+  "n_train": 10000,
+  "n_test": 10000,
+  "dim": 4,
+  "split_mode": "temporal",
+  "seed": 123,
+  "test_value_mse": 7.709389714535845e-05,
+  "test_grad_mse": 0.000817092769117365,
+  "best_epoch": 62,
+  "time_s": 15.58,
+  "git_hash": "25da2c713892df542f6dacf3e8a940b1855ffe2a",
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 512,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "lambda_": 1.0,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  }
+}

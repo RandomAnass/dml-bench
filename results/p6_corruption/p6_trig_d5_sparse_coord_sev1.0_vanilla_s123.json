@@ -1,0 +1,16 @@
+{
+  "key": "p6_trig_d5_sparse_coord_sev1.0_vanilla_s123",
+  "method": "vanilla",
+  "dataset": "trig",
+  "corruption_type": "sparse_coord",
+  "severity": 1.0,
+  "dim": 5,
+  "seed": 123,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 1.268487572669983,
+  "test_grad_mse": 4.264743804931641,
+  "best_epoch": 57,
+  "time_s": 5.783906698226929,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

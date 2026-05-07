@@ -1,0 +1,14 @@
+{
+  "method": "baseline_gp",
+  "func_type": "heston",
+  "dim": 1,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 42,
+  "lambda": 1.0,
+  "test_value_mse": 137.74238012314842,
+  "test_grad_mse": 481096.3167755825,
+  "time_s": 1.5122263431549072,
+  "key": "heston_d1_n512_noise0.0_s42_baseline_gp",
+  "timestamp": "2026-04-08T10:19:14.609803"
+}

@@ -1,0 +1,17 @@
+{
+  "key": "sens_trig_d5_n1024_sigma0_s1000_dml_relobralo_hp0.25",
+  "kind": "synthetic",
+  "func_type": "trig",
+  "dim": 5,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 1000,
+  "method": "dml_relobralo",
+  "hp_name": "tau",
+  "hp_value": 0.25,
+  "test_value_mse": 5.408224105834961,
+  "test_grad_mse": 7.889081001281738,
+  "best_epoch": 50,
+  "early_stopped": true,
+  "time_s": 12.947546243667603
+}

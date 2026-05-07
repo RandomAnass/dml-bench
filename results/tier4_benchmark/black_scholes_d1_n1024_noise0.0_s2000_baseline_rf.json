@@ -1,0 +1,14 @@
+{
+  "method": "baseline_rf",
+  "func_type": "black_scholes",
+  "dim": 1,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 2000,
+  "lambda": 1.0,
+  "test_value_mse": 0.014028884077162079,
+  "test_grad_mse": 6196.388402172099,
+  "time_s": 0.8682248592376709,
+  "key": "black_scholes_d1_n1024_noise0.0_s2000_baseline_rf",
+  "timestamp": "2026-04-14T21:50:23.780370"
+}

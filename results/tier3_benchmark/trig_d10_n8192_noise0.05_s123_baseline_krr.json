@@ -1,0 +1,14 @@
+{
+  "method": "baseline_krr",
+  "func_type": "trig",
+  "dim": 10,
+  "n_samples": 8192,
+  "noise_level": 0.05,
+  "seed": 123,
+  "lambda": 1.0,
+  "test_value_mse": 3.613128662109375,
+  "test_grad_mse": 4.271948451739501,
+  "time_s": 10.377995491027832,
+  "key": "trig_d10_n8192_noise0.05_s123_baseline_krr",
+  "timestamp": "2026-04-14T11:31:19.106262"
+}

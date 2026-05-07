@@ -1,0 +1,14 @@
+{
+  "method": "vanilla",
+  "func_type": "poly_trig",
+  "dim": 100,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 123,
+  "lambda": 1.0,
+  "test_value_mse": 4.771320343017578,
+  "test_grad_mse": 1.349496603012085,
+  "best_epoch": 21,
+  "n_epochs_actual": 0,
+  "time_s": 5.399559259414673
+}

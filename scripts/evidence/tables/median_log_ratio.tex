@@ -1,0 +1,5 @@
+% Abstract / §5.2 SPY purged-CV headline (S1+S5):
+On SPY options under purged walk-forward CV (\(n=5\) folds × 10 seeds), the median paired ratio of \texttt{dml\_fixed} to \texttt{vanilla} is \(\mathbf{2.29\times}\) on price MSE and \(\mathbf{1/270\times}\) on BS-implied Greek MSE (cluster bootstrap 95\% CI on the log-ratio medians: value \([10^{-0.15}, 10^{+0.45}]\), grad \([10^{-2.50}, 10^{-2.38}]\); clusters = fold).
+
+% §5.1 synthetic-smooth headline (S1+S5):
+On the smooth, low-frequency function families with exact gradients (1{,}050 paired configurations), the median \texttt{dml\_fixed}-vs-\texttt{vanilla} log-ratio is \(\mathbf{-1.11}\) on value MSE (0.0776× (13× reduction)) and \(\mathbf{-1.27}\) on gradient MSE (0.0531× (19× reduction)); cluster bootstrap 95\% CI value \([10^{-1.30}, 10^{-0.96}]\), grad \([10^{-1.43}, 10^{-1.05}]\); 84 clusters.

@@ -1,0 +1,36 @@
+{
+  "key": "spy_p8_staleness_k20_dml_fixed_s123",
+  "method": "dml_fixed",
+  "dataset": "spy_options",
+  "axis": "staleness",
+  "axis_label": "staleness_k20",
+  "perturbation": {
+    "sigma_staleness_days": 20,
+    "sigma_misspec_delta": 0.0,
+    "greek_additive_noise": 0.0,
+    "greek_multiplicative_noise": 0.0
+  },
+  "perturbation_seed": 1406837218,
+  "n_train": 10000,
+  "n_test": 10000,
+  "dim": 4,
+  "split_mode": "temporal",
+  "seed": 123,
+  "test_value_mse": 3.1057849295498143e-05,
+  "test_grad_mse": 7.979093780345372e-05,
+  "best_epoch": 316,
+  "time_s": 56.09,
+  "git_hash": "6777acf622e94be3a4fe924cac3fce27429069fd",
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 512,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "lambda_": 1.0,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  }
+}

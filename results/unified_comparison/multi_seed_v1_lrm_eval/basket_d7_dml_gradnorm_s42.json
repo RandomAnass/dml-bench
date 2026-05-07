@@ -1,0 +1,29 @@
+{
+  "dataset": "basket_d7",
+  "method": "dml_gradnorm",
+  "seed": 42,
+  "dim": 7,
+  "n_train": 3277,
+  "n_test": 819,
+  "test_value_mse": 0.028297911669357148,
+  "test_grad_mse": 0.00023753004921120527,
+  "time_s": 57.89,
+  "best_epoch": 86,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 7.904139772737539,
+  "lrm_var_mean": 0.0019981052312668234,
+  "eval_source": "lrm",
+  "mode": "multi_seed",
+  "key": "basket_d7_dml_gradnorm_s42",
+  "timestamp": "2026-02-23T18:19:14.943287"
+}

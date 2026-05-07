@@ -1,0 +1,17 @@
+{
+  "method": "baseline_gp",
+  "func_type": "trig",
+  "dim": 20,
+  "n_samples": 1024,
+  "n_train": 655,
+  "n_val": 164,
+  "n_test": 205,
+  "noise_level": 0.0,
+  "seed": 456,
+  "lambda": null,
+  "split_train_frac": 0.64,
+  "test_value_mse": 11.258329003536995,
+  "test_grad_mse": 5.682333933580942,
+  "time_s": 100.03975009918213,
+  "baseline_fit_time_s": null
+}

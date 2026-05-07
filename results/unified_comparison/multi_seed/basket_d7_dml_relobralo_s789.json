@@ -1,0 +1,29 @@
+{
+  "dataset": "basket_d7",
+  "method": "dml_relobralo",
+  "seed": 789,
+  "dim": 7,
+  "n_train": 3277,
+  "n_test": 819,
+  "test_value_mse": 0.0345919862865104,
+  "test_grad_mse": 1.3578566519763853e-05,
+  "time_s": 14.12,
+  "best_epoch": 85,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 7.704285548547932,
+  "lrm_var_mean": 0.00204405499905909,
+  "eval_source": "high_k_mc_lrm_100k",
+  "mode": "multi_seed",
+  "key": "basket_d7_dml_relobralo_s789",
+  "timestamp": "2026-04-26T07:44:28.571964"
+}

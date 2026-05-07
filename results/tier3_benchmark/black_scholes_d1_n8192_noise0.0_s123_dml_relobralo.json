@@ -1,0 +1,16 @@
+{
+  "method": "dml_relobralo",
+  "func_type": "black_scholes",
+  "dim": 1,
+  "n_samples": 8192,
+  "noise_level": 0.0,
+  "seed": 123,
+  "lambda": 1.0,
+  "test_value_mse": 1.1608207671513839e-06,
+  "test_grad_mse": 8.43974270757369e-08,
+  "best_epoch": 105,
+  "time_s": 13.621645450592041,
+  "n_epochs_actual": 156,
+  "key": "black_scholes_d1_n8192_noise0.0_s123_dml_relobralo",
+  "timestamp": "2026-04-26T08:39:33.622697"
+}

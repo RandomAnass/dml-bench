@@ -1,0 +1,17 @@
+{
+  "method": "baseline_krr",
+  "func_type": "bachelier",
+  "dim": 10,
+  "n_samples": 256,
+  "n_train": 163,
+  "n_val": 41,
+  "n_test": 52,
+  "noise_level": 0.0,
+  "seed": 123,
+  "lambda": null,
+  "split_train_frac": 0.64,
+  "test_value_mse": 0.00024172435006611077,
+  "test_grad_mse": 0.0005582504107212154,
+  "time_s": 0.4652266502380371,
+  "baseline_fit_time_s": null
+}

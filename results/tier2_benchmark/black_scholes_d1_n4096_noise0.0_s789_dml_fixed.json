@@ -1,0 +1,16 @@
+{
+  "method": "dml_fixed",
+  "func_type": "black_scholes",
+  "dim": 1,
+  "n_samples": 4096,
+  "noise_level": 0.0,
+  "seed": 789,
+  "lambda": 1.0,
+  "test_value_mse": 2.647650268742674e-07,
+  "test_grad_mse": 2.8403532695672296e-08,
+  "best_epoch": 497,
+  "time_s": 30.00274157524109,
+  "n_epochs_actual": 500,
+  "key": "black_scholes_d1_n4096_noise0.0_s789_dml_fixed",
+  "timestamp": "2026-04-06T11:43:17.219660"
+}

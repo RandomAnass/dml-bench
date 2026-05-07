@@ -1,0 +1,32 @@
+{
+  "synth": {
+    "label": "synth",
+    "n": 2670,
+    "median_log_ratio_value_smb_vs_relobralo": 0.00886099098482912,
+    "median_log_ratio_grad_smb_vs_relobralo": 0.014193084387428678,
+    "mean_log_ratio_value_smb_vs_relobralo": 0.10051911492452945,
+    "mean_log_ratio_grad_smb_vs_relobralo": 0.1878995307526286,
+    "n_value_smb_better": 1119,
+    "n_grad_smb_better": 1031
+  },
+  "mlp": {
+    "label": "rMD17 MLP-pairwise",
+    "n": 50,
+    "median_log_ratio_value_smb_vs_relobralo": -0.0026933140733129387,
+    "median_log_ratio_grad_smb_vs_relobralo": 0.01509730740781419,
+    "mean_log_ratio_value_smb_vs_relobralo": 0.0062618156154094565,
+    "mean_log_ratio_grad_smb_vs_relobralo": 0.02777985304512236,
+    "n_value_smb_better": 26,
+    "n_grad_smb_better": 18
+  },
+  "gatv2": {
+    "label": "rMD17 GATv2",
+    "n": 50,
+    "median_log_ratio_value_smb_vs_relobralo": -0.6050135511754429,
+    "median_log_ratio_grad_smb_vs_relobralo": -0.541883948201707,
+    "mean_log_ratio_value_smb_vs_relobralo": -0.6173261829441359,
+    "mean_log_ratio_grad_smb_vs_relobralo": -0.5727898239699125,
+    "n_value_smb_better": 50,
+    "n_grad_smb_better": 50
+  }
+}

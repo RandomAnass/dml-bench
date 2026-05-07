@@ -1,0 +1,440 @@
+{
+  "full": {
+    "digital_bs": [
+      "dml_warmup_fuzzy",
+      "dml_warmup_lrm",
+      "vanilla",
+      "dml_warmup",
+      "dml_fuzzy",
+      "dml_gradnorm_fuzzy",
+      "dml_lrm",
+      "dml_gradnorm_lrm",
+      "dml_fixed",
+      "dml_softmax_balance",
+      "dml_gradnorm",
+      "dml_relobralo"
+    ],
+    "barrier_bs": [
+      "vanilla",
+      "dml_warmup_fuzzy",
+      "dml_fuzzy",
+      "dml_gradnorm_fuzzy",
+      "dml_warmup_lrm",
+      "dml_warmup",
+      "dml_lrm",
+      "dml_gradnorm_lrm",
+      "dml_fixed",
+      "dml_softmax_balance",
+      "dml_gradnorm",
+      "dml_relobralo"
+    ],
+    "heston_digital": [
+      "dml_warmup",
+      "dml_warmup_fuzzy",
+      "dml_warmup_lrm",
+      "dml_fuzzy",
+      "vanilla",
+      "dml_gradnorm_fuzzy",
+      "dml_lrm",
+      "dml_gradnorm_lrm",
+      "dml_fixed",
+      "dml_softmax_balance",
+      "dml_relobralo",
+      "dml_gradnorm"
+    ],
+    "basket_d1": [
+      "dml_warmup_lrm",
+      "dml_warmup_fuzzy",
+      "dml_gradnorm_lrm",
+      "dml_gradnorm_fuzzy",
+      "dml_lrm",
+      "dml_fuzzy",
+      "vanilla",
+      "dml_warmup",
+      "dml_softmax_balance",
+      "dml_fixed",
+      "dml_gradnorm",
+      "dml_relobralo"
+    ],
+    "basket_d7": [
+      "dml_fuzzy",
+      "dml_lrm",
+      "dml_warmup_fuzzy",
+      "dml_warmup_lrm",
+      "dml_gradnorm_lrm",
+      "vanilla",
+      "dml_gradnorm_fuzzy",
+      "dml_softmax_balance",
+      "dml_warmup",
+      "dml_fixed",
+      "dml_gradnorm",
+      "dml_relobralo"
+    ]
+  },
+  "full_fuzzy_ahead": {
+    "digital_bs": false,
+    "barrier_bs": true,
+    "heston_digital": false,
+    "basket_d1": true,
+    "basket_d7": true
+  },
+  "lobo": {
+    "dml_fixed": {
+      "digital_bs": [
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "vanilla",
+        "dml_warmup",
+        "dml_fuzzy",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_softmax_balance",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ],
+      "barrier_bs": [
+        "vanilla",
+        "dml_warmup_fuzzy",
+        "dml_fuzzy",
+        "dml_gradnorm_fuzzy",
+        "dml_warmup_lrm",
+        "dml_warmup",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_softmax_balance",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ],
+      "heston_digital": [
+        "dml_warmup",
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "dml_fuzzy",
+        "vanilla",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_softmax_balance",
+        "dml_relobralo",
+        "dml_gradnorm"
+      ],
+      "basket_d1": [
+        "dml_warmup_lrm",
+        "dml_warmup_fuzzy",
+        "dml_gradnorm_lrm",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_fuzzy",
+        "vanilla",
+        "dml_warmup",
+        "dml_softmax_balance",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ],
+      "basket_d7": [
+        "dml_fuzzy",
+        "dml_lrm",
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "dml_gradnorm_lrm",
+        "vanilla",
+        "dml_gradnorm_fuzzy",
+        "dml_softmax_balance",
+        "dml_warmup",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ]
+    },
+    "dml_fixed_half": {
+      "digital_bs": [
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "vanilla",
+        "dml_warmup",
+        "dml_fuzzy",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ],
+      "barrier_bs": [
+        "vanilla",
+        "dml_warmup_fuzzy",
+        "dml_fuzzy",
+        "dml_gradnorm_fuzzy",
+        "dml_warmup_lrm",
+        "dml_warmup",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ],
+      "heston_digital": [
+        "dml_warmup",
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "dml_fuzzy",
+        "vanilla",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_relobralo",
+        "dml_gradnorm"
+      ],
+      "basket_d1": [
+        "dml_warmup_lrm",
+        "dml_warmup_fuzzy",
+        "dml_gradnorm_lrm",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_fuzzy",
+        "vanilla",
+        "dml_warmup",
+        "dml_softmax_balance",
+        "dml_fixed",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ],
+      "basket_d7": [
+        "dml_fuzzy",
+        "dml_lrm",
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "dml_gradnorm_lrm",
+        "vanilla",
+        "dml_gradnorm_fuzzy",
+        "dml_softmax_balance",
+        "dml_warmup",
+        "dml_fixed",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ]
+    },
+    "dml_gradnorm": {
+      "digital_bs": [
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "vanilla",
+        "dml_warmup",
+        "dml_fuzzy",
+        "dml_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_relobralo"
+      ],
+      "barrier_bs": [
+        "vanilla",
+        "dml_warmup_fuzzy",
+        "dml_fuzzy",
+        "dml_warmup_lrm",
+        "dml_warmup",
+        "dml_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_relobralo"
+      ],
+      "heston_digital": [
+        "dml_warmup",
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "dml_fuzzy",
+        "vanilla",
+        "dml_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_relobralo"
+      ],
+      "basket_d1": [
+        "dml_warmup_lrm",
+        "dml_warmup_fuzzy",
+        "dml_lrm",
+        "dml_fuzzy",
+        "vanilla",
+        "dml_warmup",
+        "dml_softmax_balance",
+        "dml_fixed",
+        "dml_relobralo"
+      ],
+      "basket_d7": [
+        "dml_fuzzy",
+        "dml_lrm",
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "vanilla",
+        "dml_softmax_balance",
+        "dml_warmup",
+        "dml_fixed",
+        "dml_relobralo"
+      ]
+    },
+    "dml_relobralo": {
+      "digital_bs": [
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "vanilla",
+        "dml_warmup",
+        "dml_fuzzy",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_gradnorm"
+      ],
+      "barrier_bs": [
+        "vanilla",
+        "dml_warmup_fuzzy",
+        "dml_fuzzy",
+        "dml_gradnorm_fuzzy",
+        "dml_warmup_lrm",
+        "dml_warmup",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_gradnorm"
+      ],
+      "heston_digital": [
+        "dml_warmup",
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "dml_fuzzy",
+        "vanilla",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_gradnorm"
+      ],
+      "basket_d1": [
+        "dml_warmup_lrm",
+        "dml_warmup_fuzzy",
+        "dml_gradnorm_lrm",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_fuzzy",
+        "vanilla",
+        "dml_warmup",
+        "dml_softmax_balance",
+        "dml_fixed",
+        "dml_gradnorm"
+      ],
+      "basket_d7": [
+        "dml_fuzzy",
+        "dml_lrm",
+        "dml_warmup_fuzzy",
+        "dml_warmup_lrm",
+        "dml_gradnorm_lrm",
+        "vanilla",
+        "dml_gradnorm_fuzzy",
+        "dml_softmax_balance",
+        "dml_warmup",
+        "dml_fixed",
+        "dml_gradnorm"
+      ]
+    },
+    "dml_warmup": {
+      "digital_bs": [
+        "vanilla",
+        "dml_fuzzy",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ],
+      "barrier_bs": [
+        "vanilla",
+        "dml_fuzzy",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ],
+      "heston_digital": [
+        "dml_fuzzy",
+        "vanilla",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "dml_fixed",
+        "dml_softmax_balance",
+        "dml_relobralo",
+        "dml_gradnorm"
+      ],
+      "basket_d1": [
+        "dml_gradnorm_lrm",
+        "dml_gradnorm_fuzzy",
+        "dml_lrm",
+        "dml_fuzzy",
+        "vanilla",
+        "dml_softmax_balance",
+        "dml_fixed",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ],
+      "basket_d7": [
+        "dml_fuzzy",
+        "dml_lrm",
+        "dml_gradnorm_lrm",
+        "vanilla",
+        "dml_gradnorm_fuzzy",
+        "dml_softmax_balance",
+        "dml_fixed",
+        "dml_gradnorm",
+        "dml_relobralo"
+      ]
+    }
+  },
+  "lobo_fuzzy_ahead": {
+    "dml_fixed": {
+      "digital_bs": false,
+      "barrier_bs": true,
+      "heston_digital": false,
+      "basket_d1": true,
+      "basket_d7": true
+    },
+    "dml_fixed_half": {
+      "digital_bs": false,
+      "barrier_bs": true,
+      "heston_digital": false,
+      "basket_d1": true,
+      "basket_d7": true
+    },
+    "dml_gradnorm": {
+      "digital_bs": false,
+      "barrier_bs": true,
+      "heston_digital": false,
+      "basket_d1": true,
+      "basket_d7": true
+    },
+    "dml_relobralo": {
+      "digital_bs": false,
+      "barrier_bs": true,
+      "heston_digital": false,
+      "basket_d1": true,
+      "basket_d7": true
+    },
+    "dml_warmup": {
+      "digital_bs": true,
+      "barrier_bs": true,
+      "heston_digital": true,
+      "basket_d1": true,
+      "basket_d7": true
+    }
+  }
+}

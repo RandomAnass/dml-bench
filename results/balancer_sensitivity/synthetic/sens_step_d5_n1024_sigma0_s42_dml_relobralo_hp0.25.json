@@ -1,0 +1,17 @@
+{
+  "key": "sens_step_d5_n1024_sigma0_s42_dml_relobralo_hp0.25",
+  "kind": "synthetic",
+  "func_type": "step",
+  "dim": 5,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 42,
+  "method": "dml_relobralo",
+  "hp_name": "tau",
+  "hp_value": 0.25,
+  "test_value_mse": 0.6734176799555454,
+  "test_grad_mse": 0.17145605542276182,
+  "best_epoch": 42,
+  "early_stopped": true,
+  "time_s": 13.0831778049469
+}

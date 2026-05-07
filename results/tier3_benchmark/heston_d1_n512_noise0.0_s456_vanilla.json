@@ -1,0 +1,16 @@
+{
+  "method": "vanilla",
+  "func_type": "heston",
+  "dim": 1,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 456,
+  "lambda": 1.0,
+  "test_value_mse": 0.22590013063560163,
+  "test_grad_mse": 274908.88142888586,
+  "best_epoch": 159,
+  "time_s": 5.1575562953948975,
+  "n_epochs_actual": 210,
+  "key": "heston_d1_n512_noise0.0_s456_vanilla",
+  "timestamp": "2026-04-08T10:20:19.363052"
+}

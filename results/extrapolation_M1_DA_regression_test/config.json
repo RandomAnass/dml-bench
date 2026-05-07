@@ -1,0 +1,55 @@
+{
+  "out_root": "results/extrapolation_M1_DA_regression_test",
+  "models": [
+    "siren"
+  ],
+  "n_train": 24,
+  "n_eval": 2400,
+  "train_domain": [
+    -1.0,
+    1.0
+  ],
+  "eval_domain": [
+    -3.0,
+    3.0
+  ],
+  "width": 64,
+  "depth": 3,
+  "fourier_k": 5,
+  "dml_lambda": 1.0,
+  "weight_decay": 1e-07,
+  "grad_clip": 10.0,
+  "lowess_frac": 0.2,
+  "base_lr": {
+    "softplus": 0.001,
+    "fourier_linear": 0.005,
+    "siren": 0.0005,
+    "snake": 0.001
+  },
+  "sigma_grid": [
+    0.0,
+    0.005,
+    0.01,
+    0.025,
+    0.05,
+    0.075,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.4,
+    0.6,
+    0.8,
+    1.2,
+    1.6,
+    2.0,
+    2.5,
+    3.0
+  ],
+  "n_seeds": 1,
+  "n_steps": 1600,
+  "smoke": false,
+  "wide_sigma": true,
+  "device": "cuda",
+  "n_da": 24
+}

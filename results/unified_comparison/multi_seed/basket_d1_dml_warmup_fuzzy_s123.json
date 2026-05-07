@@ -1,0 +1,29 @@
+{
+  "dataset": "basket_d1",
+  "method": "dml_warmup_fuzzy",
+  "seed": 123,
+  "dim": 1,
+  "n_train": 1639,
+  "n_test": 409,
+  "test_value_mse": 0.023841084206426673,
+  "test_grad_mse": 1.3224785551652297e-06,
+  "time_s": 14.19,
+  "best_epoch": 39,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 11.387762529595566,
+  "lrm_var_mean": 0.0007670225051350872,
+  "eval_source": "analytical",
+  "mode": "multi_seed",
+  "key": "basket_d1_dml_warmup_fuzzy_s123",
+  "timestamp": "2026-04-07T19:44:27.906736"
+}

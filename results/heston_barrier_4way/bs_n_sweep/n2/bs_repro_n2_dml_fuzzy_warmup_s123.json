@@ -1,0 +1,10 @@
+{
+  "method": "dml_fuzzy_warmup",
+  "seed": 123,
+  "n_monitor": 2,
+  "test_value_mse": 0.2325758600036697,
+  "test_grad_mse": 0.00035223666433119554,
+  "best_epoch": 312,
+  "time_s": 12.68,
+  "data_gen_s": 0.0
+}

@@ -1,0 +1,80 @@
+{
+  "n_monitor": 8,
+  "summary": {
+    "vanilla": {
+      "n_seeds": 5,
+      "value_mse_mean": 1.7074706539450673,
+      "value_mse_std": 1.0190315829836256,
+      "grad_mse_mean": 0.016141584972254885,
+      "grad_mse_std": 0.006619870023343934
+    },
+    "dml_fixed": {
+      "n_seeds": 5,
+      "value_mse_mean": 2.614291389238098,
+      "value_mse_std": 1.0781137913190195,
+      "grad_mse_mean": 0.00603393177742393,
+      "grad_mse_std": 0.0007632175190812665
+    },
+    "dml_warmup": {
+      "n_seeds": 5,
+      "value_mse_mean": 2.3631809103688957,
+      "value_mse_std": 0.43338836130994507,
+      "grad_mse_mean": 0.010245728259419794,
+      "grad_mse_std": 0.002233830895400842
+    },
+    "dml_lrm_fixed": {
+      "n_seeds": 5,
+      "value_mse_mean": 2.316354932471446,
+      "value_mse_std": 1.5771698216383392,
+      "grad_mse_mean": 0.010811353403285439,
+      "grad_mse_std": 0.005351307378261564
+    },
+    "dml_lrm_warmup": {
+      "n_seeds": 5,
+      "value_mse_mean": 0.7800946149396706,
+      "value_mse_std": 0.3970495037806332,
+      "grad_mse_mean": 0.005556840888350121,
+      "grad_mse_std": 0.00145112065705445
+    },
+    "dml_fuzzy_fixed": {
+      "n_seeds": 5,
+      "value_mse_mean": 1.5179012859640608,
+      "value_mse_std": 1.6115628105281516,
+      "grad_mse_mean": 0.0031128908859160004,
+      "grad_mse_std": 0.0008542322010124637
+    },
+    "dml_fuzzy_warmup": {
+      "n_seeds": 5,
+      "value_mse_mean": 0.40012602891448834,
+      "value_mse_std": 0.36907102195860747,
+      "grad_mse_mean": 0.002387753717764354,
+      "grad_mse_std": 0.0003852706320430155
+    }
+  },
+  "polynomial": {
+    "1": {
+      "val_mse": 19.155273906786707,
+      "delta_mse": 0.10821918102642517
+    },
+    "2": {
+      "val_mse": 0.6825668879445326,
+      "delta_mse": 0.010554549977414314
+    },
+    "3": {
+      "val_mse": 0.08841160804381694,
+      "delta_mse": 0.005157905057719451
+    },
+    "4": {
+      "val_mse": 0.08048384359038974,
+      "delta_mse": 0.00458598689716792
+    },
+    "5": {
+      "val_mse": 0.023386457115542752,
+      "delta_mse": 0.0027822318141204777
+    },
+    "6": {
+      "val_mse": 0.01298355499510152,
+      "delta_mse": 0.0020995756756742655
+    }
+  }
+}

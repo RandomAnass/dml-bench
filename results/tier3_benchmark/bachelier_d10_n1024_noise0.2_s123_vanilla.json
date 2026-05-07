@@ -1,0 +1,14 @@
+{
+  "method": "vanilla",
+  "func_type": "bachelier",
+  "dim": 10,
+  "n_samples": 1024,
+  "noise_level": 0.2,
+  "seed": 123,
+  "lambda": 1.0,
+  "test_value_mse": 4.3378356412809014e-07,
+  "test_grad_mse": 2.3081535537914512e-06,
+  "best_epoch": 494,
+  "time_s": 12.09446907043457,
+  "n_epochs_actual": 500
+}

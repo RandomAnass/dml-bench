@@ -1,0 +1,43 @@
+{
+  "test_value_mse": 0.3421581983566284,
+  "test_grad_mse": 13.593402862548828,
+  "final_train_loss": 0.9999929212845897,
+  "final_val_loss": 0.920744189620018,
+  "best_epoch": 17,
+  "early_stopped": true,
+  "n_epochs_logged": 68,
+  "time_s": 991.1176176071167,
+  "cache_sha16": "33e19d63742c7bad",
+  "hparams": {
+    "n_layers": 4,
+    "hidden_size": 256,
+    "input_dim": 2,
+    "n_fourier_modes": 0,
+    "lr": 0.005,
+    "batch_size": 256,
+    "n_epochs": 500,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5,
+    "max_grad_norm": 1.0,
+    "activation": "softplus",
+    "n_train": 540000,
+    "n_val": 10000,
+    "n_test": 10000
+  },
+  "run_metadata": {
+    "torch_version": "2.1.1+cu121",
+    "python_version": "3.9.18",
+    "platform": "Linux-5.15.0-143-generic-x86_64-with-glibc2.35",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA RTX A6000",
+    "gpu_count": 1,
+    "cuda_version": "12.1",
+    "git_hash": "unknown",
+    "git_dirty": null
+  },
+  "nu": 0.01,
+  "arch": "4x256",
+  "method": "vanilla",
+  "seed": 8,
+  "key": "burgers_nu0.01_4x256_vanilla_s8"
+}

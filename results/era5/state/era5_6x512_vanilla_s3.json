@@ -1,0 +1,41 @@
+{
+  "method": "vanilla",
+  "regime": "state",
+  "seed": 3,
+  "dataset": "era5_z500",
+  "resolution_deg": 1.0,
+  "n_points_per_epoch": 100000,
+  "MSEvalue": 0.10942322318553925,
+  "MSEgradient": 2.200769432067871,
+  "geostrophic_wind_MAE_ms": 6.570202106091509,
+  "epoch_stopped": 10,
+  "training_time_s": 262.9288878440857,
+  "cache_sha16": "104de76798bb7c1b",
+  "hparams": {
+    "n_layers": 6,
+    "hidden_size": 512,
+    "input_dim": 21,
+    "regime": "state",
+    "n_epochs": 200,
+    "lr": 0.005,
+    "batch_size": 256,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5,
+    "max_grad_norm": 1.0,
+    "activation": "softplus",
+    "n_points_per_epoch": 100000
+  },
+  "run_metadata": {
+    "torch_version": "2.4.1",
+    "python_version": "3.11.11",
+    "platform": "Linux-5.15.0-143-generic-x86_64-with-glibc2.35",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA RTX A6000",
+    "gpu_count": 1,
+    "cuda_version": "12.0",
+    "git_hash": "1122b0cadce243e988e9ed9103845866ca79c43a",
+    "git_dirty": true
+  },
+  "arch": "6x512",
+  "key": "era5_6x512_vanilla_s3"
+}

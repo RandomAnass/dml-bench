@@ -1,0 +1,29 @@
+{
+  "dataset": "digital_bs",
+  "method": "dml_gradnorm_lrm",
+  "seed": 123,
+  "dim": 1,
+  "n_train": 1639,
+  "n_test": 409,
+  "test_value_mse": 0.010732213381756688,
+  "test_grad_mse": 2.8458277265608433e-06,
+  "time_s": 6.76,
+  "best_epoch": 5,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 19.083968295963068,
+  "lrm_var_mean": 0.0007653439927162099,
+  "eval_source": "analytical",
+  "mode": "multi_seed",
+  "key": "digital_bs_dml_gradnorm_lrm_s123",
+  "timestamp": "2026-04-07T18:43:53.789250"
+}

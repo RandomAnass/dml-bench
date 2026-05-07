@@ -1,0 +1,9 @@
+model,region,arm,sigma_star,status,mean_log_ratio_sigma0,std_log_ratio_sigma0,mean_log_ratio_max_sigma,n_seeds
+siren,all,dml_da,1.032513558218465,observed,-0.2199807387945966,,0.2296644144765136,1
+siren,all,dml_train,0.005270100913000486,observed,-0.0467933136768116,,0.3052241767482926,1
+siren,far_extrap,dml_da,0.0,left_censored,0.038377287657195,,0.1041949817647498,1
+siren,far_extrap,dml_train,0.0,left_censored,0.0871428384007203,,0.2068717941820774,1
+siren,interpolation,dml_da,0.3663984939170344,observed,-0.3326666774121299,,1.300228155336904,1
+siren,interpolation,dml_train,0.5202630830215162,observed,-0.5754243662599969,,1.3343989918693828,1
+siren,near_extrap,dml_da,3.0,right_censored,-1.1701405280753518,,-0.1759775090089289,1
+siren,near_extrap,dml_train,0.18709900605391522,observed,-0.2542929920572184,,-0.125686434985313,1

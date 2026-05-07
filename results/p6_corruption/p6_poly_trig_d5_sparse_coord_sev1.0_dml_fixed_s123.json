@@ -1,0 +1,16 @@
+{
+  "key": "p6_poly_trig_d5_sparse_coord_sev1.0_dml_fixed_s123",
+  "method": "dml_fixed",
+  "dataset": "poly_trig",
+  "corruption_type": "sparse_coord",
+  "severity": 1.0,
+  "dim": 5,
+  "seed": 123,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.06064328923821449,
+  "test_grad_mse": 0.32300716638565063,
+  "best_epoch": 132,
+  "time_s": 13.47472596168518,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}

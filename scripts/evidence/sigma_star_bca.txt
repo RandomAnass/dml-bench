@@ -1,0 +1,5 @@
+sigma* (noise crossover) — DML vs vanilla, smooth families
+
+  poly_trig    sigma* = 0.3875   95% CI [0.1925, 0.4727]
+  trig         sigma* = 0.03409090909090909   95% CI [0.0174, 0.0631]
+  bachelier    sigma* = undef   CI undefined

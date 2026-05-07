@@ -1,0 +1,31 @@
+{
+  "method": "dml_lrm_fixed",
+  "trainer_method": "dml_fixed",
+  "seed": 123,
+  "test_value_mse": 0.6857422530414118,
+  "test_grad_mse": 0.001948884060233883,
+  "best_epoch": 28,
+  "time_s": 3.2,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "lambda_": 1.0,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "gk_params": {
+    "strike": 100.0,
+    "barrier": 85.0,
+    "vol": 0.2,
+    "r": 0.0,
+    "T_total": 0.6666666666666666,
+    "n_monitor": 2
+  },
+  "key": "gk_repro_bs_n2_dml_lrm_fixed_s123",
+  "timestamp": "2026-05-04T22:04:12.235630"
+}

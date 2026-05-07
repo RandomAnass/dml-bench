@@ -1,0 +1,29 @@
+{
+  "dataset": "digital_bs",
+  "method": "dml_relobralo",
+  "seed": 789,
+  "dim": 1,
+  "n_train": 1639,
+  "n_test": 409,
+  "test_value_mse": 0.10830115553714635,
+  "test_grad_mse": 0.00011138071407303992,
+  "time_s": 7.39,
+  "best_epoch": 106,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 18.777142368926253,
+  "lrm_var_mean": 0.0007752176401962347,
+  "eval_source": "analytical",
+  "mode": "multi_seed",
+  "key": "digital_bs_dml_relobralo_s789",
+  "timestamp": "2026-04-26T07:38:18.912422"
+}

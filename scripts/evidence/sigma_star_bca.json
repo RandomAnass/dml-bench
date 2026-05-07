@@ -1,0 +1,72 @@
+{
+  "target_method": "dml_fixed",
+  "baseline_method": "vanilla",
+  "smooth_functions": [
+    "poly_trig",
+    "trig",
+    "bachelier"
+  ],
+  "n_boot": 1000,
+  "results": {
+    "poly_trig": {
+      "point_estimate": 0.3875,
+      "ci_method": "percentile_2.5_97.5_over_valid_bootstrap_resamples",
+      "ci_lower": 0.1925,
+      "ci_upper": 0.4727272727272728,
+      "n_boot": 1000,
+      "n_valid": 808,
+      "n_undefined": 192,
+      "sigmas_observed": [
+        0.0,
+        0.05,
+        0.1,
+        0.2,
+        0.5
+      ],
+      "winrate_observed": [
+        0.9666666666666667,
+        0.82,
+        0.74,
+        0.5666666666666667,
+        0.46
+      ]
+    },
+    "trig": {
+      "point_estimate": 0.03409090909090909,
+      "ci_method": "percentile_2.5_97.5_over_valid_bootstrap_resamples",
+      "ci_lower": 0.017441860465116282,
+      "ci_upper": 0.06305072463768116,
+      "n_boot": 1000,
+      "n_valid": 1000,
+      "n_undefined": 0,
+      "sigmas_observed": [
+        0.0,
+        0.05,
+        0.1,
+        0.2,
+        0.5
+      ],
+      "winrate_observed": [
+        0.6,
+        0.4533333333333333,
+        0.3933333333333333,
+        0.32,
+        0.26666666666666666
+      ]
+    },
+    "bachelier": {
+      "point_estimate": null,
+      "ci_method": "insufficient bootstrap samples (less than 50 valid resamples)",
+      "ci_lower": null,
+      "ci_upper": null,
+      "n_boot": 1000,
+      "n_undefined": 1000,
+      "sigmas_observed": [
+        0.0
+      ],
+      "winrate_observed": [
+        0.9777777777777777
+      ]
+    }
+  }
+}

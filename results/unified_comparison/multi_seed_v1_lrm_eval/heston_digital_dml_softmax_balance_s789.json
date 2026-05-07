@@ -1,0 +1,32 @@
+{
+  "dataset": "heston_digital",
+  "method": "dml_softmax_balance",
+  "seed": 789,
+  "dim": 1,
+  "n_train": 820,
+  "n_test": 204,
+  "test_value_mse": 0.034620214000527665,
+  "test_grad_mse": 0.0055200996350506185,
+  "time_s": 4.88,
+  "best_epoch": 13,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 12.483904051328713,
+  "lrm_var_mean": 0.04989359617828089,
+  "eval_source": "lrm",
+  "mode": "multi_seed",
+  "key": "heston_digital_dml_softmax_balance_s789",
+  "timestamp": "2026-02-23T18:41:59.813844",
+  "relabeled_from": "dml_relobralo",
+  "relabeled_reason": "Pre-2026-04-13-22:01 dml_relobralo data is the simplified softmax+EMA variant (now SoftmaxBalanceDmlLoss). Relabeled to dml_softmax_balance for label consistency. Original file archived under _legacy_relobralo_simplified/.",
+  "relabeled_at_utc": "2026-04-26T07:32:24Z"
+}

@@ -1,0 +1,17 @@
+{
+  "method": "vanilla",
+  "func_type": "poly_trig",
+  "dim": 10,
+  "n_samples": 1024,
+  "noise_level": 0.0,
+  "seed": 456,
+  "lambda": 1.0,
+  "arch_name": "large",
+  "n_layers": 6,
+  "hidden_size": 512,
+  "test_value_mse": 0.08272089809179306,
+  "test_grad_mse": 1.1031676530838013,
+  "best_epoch": 161,
+  "n_epochs_actual": 0,
+  "time_s": 19.964842557907104
+}

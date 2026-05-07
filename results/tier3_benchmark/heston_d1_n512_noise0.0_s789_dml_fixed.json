@@ -1,0 +1,16 @@
+{
+  "method": "dml_fixed",
+  "func_type": "heston",
+  "dim": 1,
+  "n_samples": 512,
+  "noise_level": 0.0,
+  "seed": 789,
+  "lambda": 1.0,
+  "test_value_mse": 1.6013921852927013,
+  "test_grad_mse": 427293.37330172205,
+  "best_epoch": 16,
+  "time_s": 2.6317126750946045,
+  "n_epochs_actual": 67,
+  "key": "heston_d1_n512_noise0.0_s789_dml_fixed",
+  "timestamp": "2026-04-08T10:20:55.015752"
+}

@@ -1,0 +1,13 @@
+{
+  "key": "p7_barrier_bs_eps0.5_dml_gradnorm_fuzzy_s789",
+  "method": "dml_gradnorm_fuzzy",
+  "trainer_method": "dml_gradnorm",
+  "dataset": "barrier_bs",
+  "eps_mult": 0.5,
+  "seed": 789,
+  "test_value_mse": 29.727058907560274,
+  "test_grad_mse": 0.043823620960130774,
+  "best_epoch": 12,
+  "time_s": 9.843229293823242,
+  "git_hash": "41cedc03021540ab25b276db02c8c42f697c423f"
+}

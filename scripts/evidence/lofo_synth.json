@@ -1,0 +1,39 @@
+{
+  "full": {
+    "n": 1050,
+    "median_log_ratio_value": -0.5559972419700232,
+    "median_log_ratio_grad": -1.069346589357918
+  },
+  "drop_bachelier": {
+    "n": 840,
+    "median_log_ratio_value": -0.08413022430101443,
+    "median_log_ratio_grad": -1.1651785513387156
+  },
+  "drop_black_scholes": {
+    "n": 1015,
+    "median_log_ratio_value": -0.512277607606011,
+    "median_log_ratio_grad": -1.04315568905498
+  },
+  "drop_heston": {
+    "n": 1015,
+    "median_log_ratio_value": -0.6179508677279997,
+    "median_log_ratio_grad": -1.1343584828664723
+  },
+  "drop_poly_trig": {
+    "n": 750,
+    "median_log_ratio_value": -0.01899877713191069,
+    "median_log_ratio_grad": -0.9185817328821655
+  },
+  "drop_step": {
+    "n": 820,
+    "median_log_ratio_value": -0.9382066592523306,
+    "median_log_ratio_grad": -1.0639437027240914
+  },
+  "drop_trig": {
+    "n": 810,
+    "median_log_ratio_value": -0.6743107571457829,
+    "median_log_ratio_grad": -1.174372783052502
+  },
+  "sign_flips_value": [],
+  "sign_flips_grad": []
+}

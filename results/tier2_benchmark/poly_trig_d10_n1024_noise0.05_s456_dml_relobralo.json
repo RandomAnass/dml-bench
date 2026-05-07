@@ -1,0 +1,16 @@
+{
+  "method": "dml_relobralo",
+  "func_type": "poly_trig",
+  "dim": 10,
+  "n_samples": 1024,
+  "noise_level": 0.05,
+  "seed": 456,
+  "lambda": 1.0,
+  "test_value_mse": 0.0035490775480866432,
+  "test_grad_mse": 0.011179487220942974,
+  "best_epoch": 499,
+  "time_s": 16.273271560668945,
+  "n_epochs_actual": 500,
+  "key": "poly_trig_d10_n1024_noise0.05_s456_dml_relobralo",
+  "timestamp": "2026-04-26T08:59:12.869039"
+}

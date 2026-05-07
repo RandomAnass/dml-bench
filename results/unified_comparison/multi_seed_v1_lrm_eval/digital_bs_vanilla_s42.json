@@ -1,0 +1,29 @@
+{
+  "dataset": "digital_bs",
+  "method": "vanilla",
+  "seed": 42,
+  "dim": 1,
+  "n_train": 1639,
+  "n_test": 409,
+  "test_value_mse": 0.009020176080532485,
+  "test_grad_mse": 0.00012909757793407717,
+  "time_s": 16.37,
+  "best_epoch": 85,
+  "hparams": {
+    "n_epochs": 500,
+    "batch_size": 256,
+    "n_layers": 4,
+    "hidden_size": 256,
+    "activation": "softplus",
+    "lr": 0.005,
+    "max_grad_norm": 1.0,
+    "scheduler_patience": 20,
+    "scheduler_factor": 0.5
+  },
+  "epsilon": 18.883805177765517,
+  "lrm_var_mean": 0.0007479451343557244,
+  "eval_source": "analytical",
+  "mode": "multi_seed",
+  "key": "digital_bs_vanilla_s42",
+  "timestamp": "2026-02-23T13:38:28.413016"
+}

@@ -1,0 +1,16 @@
+{
+  "key": "p6_poly_trig_d5_gaussian_additive_sev1.0_vanilla_s123",
+  "method": "vanilla",
+  "dataset": "poly_trig",
+  "corruption_type": "gaussian_additive",
+  "severity": 1.0,
+  "dim": 5,
+  "seed": 123,
+  "n_samples": 2048,
+  "n_epochs_target": 300,
+  "test_value_mse": 0.00048429990420117974,
+  "test_grad_mse": 0.007913927547633648,
+  "best_epoch": 299,
+  "time_s": 14.450798988342285,
+  "git_hash": "d76f90f38c0d20cfe90cd2358849285b4ed77334"
+}
